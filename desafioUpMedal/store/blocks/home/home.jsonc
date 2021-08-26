@@ -109,13 +109,13 @@
 
   "image#1": {
     "props": {
-      "src": "https://i.imgur.com/f82QPk2.png"
+      "src": "https://i.imgur.com/xuBetdY.png"
     }
   },
 
   "image#2": {
     "props": {
-      "src": "https://i.imgur.com/fppEFVP.png"
+      "src": "https://i.imgur.com/N7fpX4w.png"
     }
   },
 
@@ -127,7 +127,7 @@
 
   "image#4": {
     "props": {
-      "src": "https://i.imgur.com/LYOxvT1.png"
+      "src": "https://i.imgur.com/DPA0jDl.png"
     }
   },
 
@@ -148,7 +148,6 @@
       "text": "##### **Setor**"
     }
   },
-
 
   "flex-layout.row#imagesDesktopMiddle": {
     "props": {
@@ -194,7 +193,6 @@
       "text": "##### **Por categoria de tecnologia**"
     }
   },
-
 
   "flex-layout.row#imagesDesktopBottom": {
     "props": {
@@ -248,11 +246,13 @@
   "gallery": {
     "props": {
       "blockClass": "teste",
-      "layouts": [{
-        "name": "two",
-        "component": "OneOrTwoLineSummary",
-        "itemsPerRow": 2
-      }],
+      "layouts": [
+        {
+          "name": "two",
+          "component": "OneOrTwoLineSummary",
+          "itemsPerRow": 2
+        }
+      ],
       "OneOrTwoLineSummary": "product-summary.shelf"
     }
   },
@@ -406,11 +406,13 @@
   },
   "gallery#mobile": {
     "props": {
-      "layouts": [{
-        "name": "one",
-        "component": "OneLineSummary",
-        "itemsPerRow": 1
-      }],
+      "layouts": [
+        {
+          "name": "one",
+          "component": "OneLineSummary",
+          "itemsPerRow": 1
+        }
+      ],
       "OneLineSummary": "product-summary.shelf#mobile"
     }
   },
