@@ -5,7 +5,10 @@
       "responsive-layout.desktop#home",
       "responsive-layout.mobile#home",
       "flex-layout.row#imagesDesktop",
+      "rich-text#confira",
+      "rich-text#setor",
       "flex-layout.row#imagesDesktopMiddle",
+      "rich-text#categoria",
       "flex-layout.row#imagesDesktopBottom"
     ]
   },
@@ -98,6 +101,9 @@
   },
 
   "flex-layout.row#imagesDesktop": {
+    "props": {
+      "blockClass": "imagesDesktop1"
+    },
     "children": ["image#1", "image#2", "image#3", "image#4"]
   },
 
@@ -125,7 +131,29 @@
     }
   },
 
+  "rich-text#confira": {
+    "props": {
+      "blockClass": "textoConfira",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "# Confira as soluções"
+    }
+  },
+
+  "rich-text#setor": {
+    "props": {
+      "blockClass": "textoSetor",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "##### **Setor**"
+    }
+  },
+
+
   "flex-layout.row#imagesDesktopMiddle": {
+    "props": {
+      "blockClass": "imagesDesktopMiddle"
+    },
     "children": [
       "image#1middle",
       "image#2middle",
@@ -158,7 +186,20 @@
     }
   },
 
+  "rich-text#categoria": {
+    "props": {
+      "blockClass": "imagesDesktopBottom",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "##### **Por categoria de tecnologia**"
+    }
+  },
+
+
   "flex-layout.row#imagesDesktopBottom": {
+    "props": {
+      "blockClass": "imagesDesktopBottom"
+    },
     "children": [
       "image#1bottom",
       "image#2bottom",
@@ -207,13 +248,11 @@
   "gallery": {
     "props": {
       "blockClass": "teste",
-      "layouts": [
-        {
-          "name": "two",
-          "component": "OneOrTwoLineSummary",
-          "itemsPerRow": 2
-        }
-      ],
+      "layouts": [{
+        "name": "two",
+        "component": "OneOrTwoLineSummary",
+        "itemsPerRow": 2
+      }],
       "OneOrTwoLineSummary": "product-summary.shelf"
     }
   },
@@ -367,13 +406,11 @@
   },
   "gallery#mobile": {
     "props": {
-      "layouts": [
-        {
-          "name": "one",
-          "component": "OneLineSummary",
-          "itemsPerRow": 1
-        }
-      ],
+      "layouts": [{
+        "name": "one",
+        "component": "OneLineSummary",
+        "itemsPerRow": 1
+      }],
       "OneLineSummary": "product-summary.shelf#mobile"
     }
   },

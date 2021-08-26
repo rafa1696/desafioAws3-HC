@@ -3,10 +3,12 @@
 .flexRowContent--flexrowcontentfooter {
   background-color: #232f3e;
 }
+
 .flexRowContent--flexrowcontentfooter {
   background-color: #232f3e;
   justify-content: center;
 }
+
 .flexCol--flexcolcontentfooter {
   justify-content: center;
   align-items: center;
@@ -14,4 +16,25 @@
 
 .flexRow {
   width: 100%;
+}
+
+.flexRow--imagesDesktop1 {
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 1920px) {
+  .flexRow--imagesDesktop1 {
+    padding-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .flexRow--imagesDesktopMiddle {
+    padding-left: 10vw;
+    margin-right: 10vw;
+  }
+
+  .flexRow--imagesDesktopBottom {
+    padding-left: 10vw;
+    margin-right: 10vw;
+  }
 }

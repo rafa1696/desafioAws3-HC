@@ -1,5 +1,4 @@
 .container {
-  /* background-color: #303030; */
   padding: 0px;
 }
 
@@ -8,6 +7,12 @@
     margin-left: 0;
     margin-right: 0;
   }
+}
+
+.infoCardContainer {
+  width: 100vw !important;
+  height: 35vh;
+  margin-bottom: 1rem;
 }
 
 .searchBarInnerContainer--searchheaderdesktop {
@@ -32,26 +37,6 @@
 
 .searchBarIcon {
   color: white;
-}
-
-.imageElement--banner1 {
-  border-radius: 4mm;
-  margin: 3mm;
-}
-
-.imageElement--banner2 {
-  border-radius: 4mm;
-}
-
-.infoCardImage--info-card-leads {
-  width: 370px;
-  height: 200px;
-  border-radius: 2mm;
-  margin: 4mm;
-}
-
-.infoCardImageContainer {
-  background-color: none !important;
 }
 
 .infoCardSubhead--info-card-leads {
