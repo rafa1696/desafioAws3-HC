@@ -1,5 +1,8 @@
 {
     "store.custom#leads": {
       "path": "/leads"
+    },
+    "store.custom#about": {
+      "path": "/about"
     }
 }

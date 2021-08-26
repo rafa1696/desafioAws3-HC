@@ -1,0 +1,17 @@
+{
+    "store.custom#about": {
+        "blocks": [
+            "rich-text#1"
+        ]
+    },
+    "rich-text#1": {
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Visit our [help](https://help.vtex.com/en/faq/what-is-vtex-io) section.\n*Be Bold!*\n**This is italic**",
+            "textColor": "c-on-emphasis",
+            "font": "t-heading-5",
+            "blockClass": "help-message"
+        }
+    }
+}

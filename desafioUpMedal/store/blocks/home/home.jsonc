@@ -43,6 +43,7 @@
       "image#banner2"
     ],
     "props": {
+      "blockClass": "imagensBanner",
       "autoplay": {
         "timeout": 7000,
         "stopOnHover": true

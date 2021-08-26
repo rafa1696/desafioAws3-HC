@@ -2,9 +2,7 @@
     "tab-list#home": {
         "children": [
             "tab-list.item#home1",
-            "tab-list.item#home2",
-            "tab-list.item#home3",
-            "tab-list.item#home4"
+            "tab-list.item#home2"
         ],
         "props":{
           "blockClass":"tablayouthomedesktop"
@@ -12,36 +10,22 @@
     },
     "tab-list.item#home1": {
         "props": {
-            "tabId": "promocao",
-            "label": "PROMOÇÃO",
+            "tabId": "solucoes",
+            "label": "SOLUÇÕES",
             "defaultActiveTab": true
         }
     },
     "tab-list.item#home2": {
         "props": {
-            "tabId": "corinthians",
-            "label": "CORINTHIANS"
-        }
-    },
-    "tab-list.item#home3": {
-        "props": {
-            "tabId": "palmeiras",
-            "label": "Palmeiras"
-        }
-    },
-    "tab-list.item#home4": {
-        "props": {
-            "tabId": "todos",
-            "label": "Todos"
+            "tabId": "sobre",
+            "label": "SOBRE"
         }
     },
     //MOBILE
     "tab-list#homemobile": {
         "children": [
             "tab-list.item#homemobile1",
-            "tab-list.item#homemobile2",
-            "tab-list.item#homemobile3",
-            "tab-list.item#homemobile4"
+            "tab-list.item#homemobile2"
         ],
         "props": {
             "blockClass": "tablayouthomemobile"
@@ -49,27 +33,15 @@
     },
     "tab-list.item#homemobile1": {
         "props": {
-            "tabId": "promocaomob",
-            "label": "PROMOÇÃO",
+            "tabId": "solucoesmob",
+            "label": "SOLUÇÕES",
             "defaultActiveTab": true
         }
     },
     "tab-list.item#homemobile2": {
         "props": {
-            "tabId": "corinthiansmob",
-            "label": "CORINTHIANS"
-        }
-    },
-    "tab-list.item#homemobile3": {
-        "props": {
-            "tabId": "palmeirasmob",
-            "label": "Palmeiras"
-        }
-    },
-    "tab-list.item#homemobile4": {
-        "props": {
-            "tabId": "todosmob",
-            "label": "Todos"
+            "tabId": "sobremob",
+            "label": "SOBRE"
         }
     }
 }

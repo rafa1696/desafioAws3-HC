@@ -3,52 +3,34 @@
   "tab-content#home": {
     "children": [
       "tab-content.item#home1",
-      "tab-content.item#home2",
-      "tab-content.item#home3",
-      "tab-content.item#home4"
+      "tab-content.item#home2"
     ]
   },
  
   "tab-content.item#home1": {
     "children": [
-      "flex-layout.col#structurepromocao"
+      "flex-layout.col#structuresolucoes"
     ],
     "props": {
-      "tabId": "promocao"
+      "tabId": "solucoes"
     }
   },
   "tab-content.item#home2": {
     "children": [
-      "flex-layout.col#structurecorinthians"
+      "flex-layout.col#structuresobre"
     ],
     "props": {
-      "tabId": "corinthians"
+      "tabId": "sobre"
     }
   },
-   "tab-content.item#home3": {
-    "children": [
-      "flex-layout.col#structurepalmeiras"
-    ],
-    "props": {
-      "tabId": "palmeiras"
-    }
-  },
-  "tab-content.item#home4": {
-    "children": [
-      "flex-layout.col#structuretodos"
-    ],
-    "props": {
-      "tabId": "todos"
-    }
-  },
-  "flex-layout.col#structurepromocao":{
+  "flex-layout.col#structuresolucoes":{
     "children":[
       "slider-layout#home",
       "info-card#promocao"
     ]
   },
   /*Definindo flex-layout.col*/
-  "flex-layout.col#structurecorinthians": {
+  "flex-layout.col#structuresobre": {
     "children": [
       "slider-layout#home",
       //"list-context.product-list" >> Outro block que pode ser utilizado para exibição dos produtos, mas em slider
@@ -56,64 +38,31 @@
       
     ]
   },
-  "flex-layout.col#structurepalmeiras": {
-    "children": [
-      "slider-layout#home",
-      //"list-context.product-list" >> Outro block que pode ser utilizado para exibição dos produtos, mas em slider
-      "search-result-layout.customQuery#palmeiras"
-      
-    ]
-  },
-  "flex-layout.col#structuretodos": {
-    "children": [
-      "slider-layout#home",
-      //"list-context.product-list" >> Outro block que pode ser utilizado para exibição dos produtos, mas em slider
-      "search-result-layout.customQuery#todos"
-     ]
-  },
   //MOBILE
   "tab-content#homemobile": {
     "children": [
       "tab-content.item#homemobile1",
-      "tab-content.item#homemobile2",
-      "tab-content.item#homemobile3",
-      "tab-content.item#homemobile4"
+      "tab-content.item#homemobile2"
     ]
   },
  
   "tab-content.item#homemobile1": {
     "children": [
-      "flex-layout.col#structurepromocaomobile"
+      "flex-layout.col#structuresolucoesmobile"
     ],
     "props": {
-      "tabId": "promocaomob"
+      "tabId": "solucoesmob"
     }
   },
   "tab-content.item#homemobile2": {
     "children": [
-      "flex-layout.col#structurecorinthiansmobile"
+      "flex-layout.col#structuresobremobile"
     ],
     "props": {
-      "tabId": "corinthiansmob"
+      "tabId": "sobremob"
     }
   },
-   "tab-content.item#homemobile3": {
-    "children": [
-      "flex-layout.col#structurepalmeirasmobile"
-    ],
-    "props": {
-      "tabId": "palmeirasmob"
-    }
-  },
-  "tab-content.item#homemobile4": {
-    "children": [
-      "flex-layout.col#structuretodosmobile"
-    ],
-    "props": {
-      "tabId": "todosmob"
-    }
-  },
-  "flex-layout.col#structurepromocaomobile":{
+  "flex-layout.col#structuresolucoesmobile":{
     "children":[
       "slider-layout#homemobile",
       //"info-card#promocaomobile",
@@ -121,27 +70,12 @@
     ]
   },
   /*Definindo flex-layout.col*/
-  "flex-layout.col#structurecorinthiansmobile": {
+  "flex-layout.col#structuresobremobile": {
     "children": [
       "slider-layout#homemobile",
       //"list-context.product-list" >> Outro block que pode ser utilizado para exibição dos produtos, mas em slider
       "search-result-layout.customQuery#corinthiansmobile"
       
     ]
-  },
-  "flex-layout.col#structurepalmeirasmobile": {
-    "children": [
-      "slider-layout#homemobile",
-      //"list-context.product-list" >> Outro block que pode ser utilizado para exibição dos produtos, mas em slider
-      "search-result-layout.customQuery#palmeirasmobile"
-      
-    ]
-  },
-  "flex-layout.col#structuretodosmobile": {
-    "children": [
-      "slider-layout#homemobile",
-      //"list-context.product-list" >> Outro block que pode ser utilizado para exibição dos produtos, mas em slider
-      "search-result-layout.customQuery#todosmobile"
-     ]
   }
 }

@@ -1,5 +1,5 @@
 {
-  "vendor": "hiringcoders2021",
+  "vendor": "hiringcoders202108",
   "name": "desafioupmedal-mtech",
   "version": "0.1.1",
   "builders": {
@@ -47,7 +47,7 @@
     "vtex.sticky-layout": "0.x",
     "vtex.add-to-cart-button": "0.x",
     "vtex.product-list": "0.x",
-    "hiringcoders2021.leads": "0.x",
+    "hiringcoders202108.leads": "0.x",
     "vtex.store-link": "0.x"
   },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
