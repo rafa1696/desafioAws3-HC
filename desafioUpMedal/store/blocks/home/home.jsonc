@@ -179,7 +179,7 @@
 
   //Conteúdo Comum dos Tabs-Content e stack-layout da página de promoção mobile utilizado para captura de Leads
   "slider-layout#homemobile": {
-    "children": ["image#banner1mobile", "image#banner2mobile"],
+    "children": ["info-card#mob1", "info-card#mob2", "info-card#mob3", "info-card#mob4"],
     "props": {
       "autoplay": {
         "timeout": 7000,
@@ -191,18 +191,56 @@
       "showNavigationArrows": "desktopOnly"
     }
   },
-  "image#banner1mobile": {
+  "info-card#mob1": {
     "props": {
-      "src": "assets/banner1.png",
-      "maxWidth": "100%",
-      "blockClass": "banner1"
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
     }
   },
-  "image#banner2mobile": {
+  "info-card#mob2": {
     "props": {
-      "src": "assets/banner2.png",
-      "maxWidth": "100%",
-      "blockClass": "banner2"
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473022652379186/bg2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#mob3": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473025252847616/bg3.jpg",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#mob4": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473026301407302/bg4.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
     }
   },
   "stack-layout#promocaomobile": {
