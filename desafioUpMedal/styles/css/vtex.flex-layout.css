@@ -1,15 +1,17 @@
-.flexRowContent--flexrowcontentheader, .flexRowContent--flexrowcontentheadermobile, .flexRowContent--flexrowcontentfooter {
-    background-color: #000000;
+.flexRowContent--flexrowcontentheader,
+.flexRowContent--flexrowcontentheadermobile,
+.flexRowContent--flexrowcontentfooter {
+  background-color: #232f3e;
 }
 .flexRowContent--flexrowcontentfooter {
-    background-color: #424242;
-    justify-content: center;
+  background-color: #232f3e;
+  justify-content: center;
 }
 .flexCol--flexcolcontentfooter {
-    justify-content: center;
-    align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .flexRow {
-    width: 100%;
+  width: 100%;
 }
