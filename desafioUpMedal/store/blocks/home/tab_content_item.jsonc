@@ -1,33 +1,22 @@
 {
-    
   "tab-content#home": {
-    "children": [
-      "tab-content.item#home1",
-      "tab-content.item#home2"
-    ]
+    "children": ["tab-content.item#home1", "tab-content.item#home2"]
   },
- 
+
   "tab-content.item#home1": {
-    "children": [
-      "flex-layout.col#structuresolucoes"
-    ],
+    "children": ["flex-layout.col#structuresolucoes"],
     "props": {
       "tabId": "solucoes"
     }
   },
   "tab-content.item#home2": {
-    "children": [
-      "flex-layout.col#structuresobre"
-    ],
+    "children": ["flex-layout.col#structuresobre"],
     "props": {
       "tabId": "sobre"
     }
   },
-  "flex-layout.col#structuresolucoes":{
-    "children":[
-      "slider-layout#home",
-      "info-card#promocao"
-    ]
+  "flex-layout.col#structuresolucoes": {
+    "children": ["slider-layout#home"]
   },
   /*Definindo flex-layout.col*/
   "flex-layout.col#structuresobre": {
@@ -35,39 +24,27 @@
       "slider-layout#home",
       //"list-context.product-list" >> Outro block que pode ser utilizado para exibição dos produtos, mas em slider
       "search-result-layout.customQuery#corinthians"
-      
     ]
   },
   //MOBILE
   "tab-content#homemobile": {
-    "children": [
-      "tab-content.item#homemobile1",
-      "tab-content.item#homemobile2"
-    ]
+    "children": ["tab-content.item#homemobile1", "tab-content.item#homemobile2"]
   },
- 
+
   "tab-content.item#homemobile1": {
-    "children": [
-      "flex-layout.col#structuresolucoesmobile"
-    ],
+    "children": ["flex-layout.col#structuresolucoesmobile"],
     "props": {
       "tabId": "solucoesmob"
     }
   },
   "tab-content.item#homemobile2": {
-    "children": [
-      "flex-layout.col#structuresobremobile"
-    ],
+    "children": ["flex-layout.col#structuresobremobile"],
     "props": {
       "tabId": "sobremob"
     }
   },
-  "flex-layout.col#structuresolucoesmobile":{
-    "children":[
-      "slider-layout#homemobile",
-      //"info-card#promocaomobile",
-      "stack-layout#promocaomobile"
-    ]
+  "flex-layout.col#structuresolucoesmobile": {
+    "children": ["slider-layout#homemobile", "stack-layout#promocaomobile"]
   },
   /*Definindo flex-layout.col*/
   "flex-layout.col#structuresobremobile": {
@@ -75,7 +52,6 @@
       "slider-layout#homemobile",
       //"list-context.product-list" >> Outro block que pode ser utilizado para exibição dos produtos, mas em slider
       "search-result-layout.customQuery#corinthiansmobile"
-      
     ]
   }
 }

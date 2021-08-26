@@ -3,7 +3,10 @@
     "blocks": [
       /*Definimos aqui os blocos de resposta para Desktop e Mobile */
       "responsive-layout.desktop#home",
-      "responsive-layout.mobile#home"
+      "responsive-layout.mobile#home",
+      "flex-layout.row#imagesDesktop",
+      "flex-layout.row#imagesDesktopMiddle",
+      "flex-layout.row#imagesDesktopBottom"
     ]
   },
   /*Inicio da configuração da resposta ao DESKTOP. Assim como no MOBILE 
@@ -94,6 +97,100 @@
     }
   },
 
+  "flex-layout.row#imagesDesktop": {
+    "children": ["image#1", "image#2", "image#3", "image#4"]
+  },
+
+  "image#1": {
+    "props": {
+      "src": "https://i.imgur.com/f82QPk2.png"
+    }
+  },
+
+  "image#2": {
+    "props": {
+      "src": "https://i.imgur.com/fppEFVP.png"
+    }
+  },
+
+  "image#3": {
+    "props": {
+      "src": "https://i.imgur.com/HAKUZiG.png"
+    }
+  },
+
+  "image#4": {
+    "props": {
+      "src": "https://i.imgur.com/LYOxvT1.png"
+    }
+  },
+
+  "flex-layout.row#imagesDesktopMiddle": {
+    "children": [
+      "image#1middle",
+      "image#2middle",
+      "image#3middle",
+      "image#4middle"
+    ]
+  },
+
+  "image#1middle": {
+    "props": {
+      "src": "https://i.imgur.com/8KCqn67.png"
+    }
+  },
+
+  "image#2middle": {
+    "props": {
+      "src": "https://i.imgur.com/ACtOKm4.png"
+    }
+  },
+
+  "image#3middle": {
+    "props": {
+      "src": "https://i.imgur.com/HAbsGTe.png"
+    }
+  },
+
+  "image#4middle": {
+    "props": {
+      "src": "https://i.imgur.com/8KCqn67.png"
+    }
+  },
+
+  "flex-layout.row#imagesDesktopBottom": {
+    "children": [
+      "image#1bottom",
+      "image#2bottom",
+      "image#3bottom",
+      "image#4bottom"
+    ]
+  },
+
+  "image#1bottom": {
+    "props": {
+      "src": "https://i.imgur.com/kEtDkRe.png"
+    }
+  },
+
+  "image#2bottom": {
+    "props": {
+      "src": "https://i.imgur.com/TJ7Z6gt.png"
+    }
+  },
+
+  "image#3bottom": {
+    "props": {
+      "src": "https://i.imgur.com/CwEcYGC.png"
+    }
+  },
+
+  "image#4bottom": {
+    "props": {
+      "src": "https://i.imgur.com/huUjPld.png"
+    }
+  },
+
   //Configuração do Custom Query Desktop, como que o produto aparece na home no Desktop!!!
   "search-result-layout.desktop": {
     "children": ["flex-layout.row#search"]
@@ -138,21 +235,6 @@
     }
   },
 
-  // Infocard utilizado na página de promoção para captura de Leads
-  "info-card#promocao": {
-    "props": {
-      "id": "info-card-leads",
-      "isFullModeStyle": false,
-      "textPosition": "left",
-      "imageUrl": "assets/pugnocomputador.jpg",
-      "subhead": "Quer receber nossas promçoes? <br><br>Deixe que nosso mascote envia ;)",
-      "callToActionText": "Cadastre-se",
-      "callToActionUrl": "/leads",
-      "blockClass": "info-card-leads",
-      "textAlignment": "center"
-    }
-  },
-
   /*Inicio da configuração da resposta ao MOBILE. Assim como no DESKTOP 
   foi definido um container flex-layout para estrutura da página*/
   "responsive-layout.mobile#home": {
@@ -179,7 +261,12 @@
 
   //Conteúdo Comum dos Tabs-Content e stack-layout da página de promoção mobile utilizado para captura de Leads
   "slider-layout#homemobile": {
-    "children": ["info-card#mob1", "info-card#mob2", "info-card#mob3", "info-card#mob4"],
+    "children": [
+      "info-card#mob1",
+      "info-card#mob2",
+      "info-card#mob3",
+      "info-card#mob4"
+    ],
     "props": {
       "autoplay": {
         "timeout": 7000,
@@ -250,7 +337,7 @@
     "props": {
       "blockClass": "imagestackpromocaomobile",
       "width": "95%",
-      "src": "assets/pugnocomputadormobile.jpg"
+      "src": ""
     }
   },
   "link#stackpromocaomobile": {
