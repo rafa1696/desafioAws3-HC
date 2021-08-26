@@ -27,8 +27,6 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "search-bar#desktop",
-      //"locale-switcher",
-      //"login",
       "flex-layout.col#spacer",
       "minicart.v2"
     ]
@@ -65,10 +63,7 @@
   },
   "flex-layout.row#mobile": {
     "children": [
-      //"drawer",
       "flex-layout.col#logo-mobile",
-      //"flex-layout.col#spacer",
-      //"login",
       "search-bar#mobile",
       "minicart.v2#mobile"
     ],
@@ -79,9 +74,6 @@
       "blockClass": "flexrowcontentheadermobile"
     }
   },
-  /*"drawer": {
-    "children": []
-  }*/
   "flex-layout.col#logo-mobile": {
     "props": {
       "verticalAlign": "middle"

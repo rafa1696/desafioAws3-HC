@@ -15,6 +15,15 @@
   margin-bottom: 1rem;
 }
 
+.infoCardHeadline--info-card-example,
+.infoCardSubhead--info-card-example {
+  color: #fff;
+}
+
+.infoCardCallActionText--info-card-example {
+  color: #527fff;
+}
+
 .searchBarInnerContainer--searchheaderdesktop {
   width: 700px;
 }

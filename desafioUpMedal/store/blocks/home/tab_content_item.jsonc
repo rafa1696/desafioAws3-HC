@@ -21,9 +21,7 @@
   /*Definindo flex-layout.col*/
   "flex-layout.col#structuresobre": {
     "children": [
-      "slider-layout#home",
-      //"list-context.product-list" >> Outro block que pode ser utilizado para exibição dos produtos, mas em slider
-      "search-result-layout.customQuery#corinthians"
+      "slider-layout#home"
     ]
   },
   //MOBILE
@@ -49,9 +47,7 @@
   /*Definindo flex-layout.col*/
   "flex-layout.col#structuresobremobile": {
     "children": [
-      "slider-layout#homemobile",
-      //"list-context.product-list" >> Outro block que pode ser utilizado para exibição dos produtos, mas em slider
-      "search-result-layout.customQuery#corinthiansmobile"
+      "slider-layout#homemobile"
     ]
   }
 }
