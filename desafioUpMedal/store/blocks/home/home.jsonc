@@ -9,28 +9,19 @@
   /*Inicio da configuração da resposta ao DESKTOP. Assim como no MOBILE 
   foi definido um container flex-layout para estrutura da página*/
   "responsive-layout.desktop#home": {
-    "children": [
-      "flex-layout.row#containerhome"
-    ]
+    "children": ["flex-layout.row#containerhome"]
   },
   "flex-layout.row#containerhome": {
-    "children": [
-      "tab-layout#homedesktop"
-    ]
+    "children": ["tab-layout#homedesktop"]
   },
   /*Tanto para Desktop ou MOBILE os Tab-list e Tab-Content do Tab-Layout estão definidos 
   nos arquivos tab_lis_item e tab_content_item respectivamente*/
   "tab-layout#homedesktop": {
-    "children": [
-      "sticky-layout",
-      "tab-content#home"
-    ]
+    "children": ["sticky-layout", "tab-content#home"]
   },
   //Tanto para Desktop ou MOBILE o Stick foi utilizado para travar o tab-list no topo
   "sticky-layout": {
-    "children": [
-      "tab-list#home"
-    ],
+    "children": ["tab-list#home"],
     "props": {
       "position": "top",
       "verticalSpacing": 64
@@ -38,12 +29,7 @@
   },
   // Inicio das declarações dos itens comuns do tab-content desktop
   "slider-layout#home": {
-    "children": [
-      "image#banner1",
-      "image#banner2",
-      "image#banner3",
-      "image#banner4"
-    ],
+    "children": ["info-card#1", "info-card#2", "info-card#3", "info-card#4"],
     "props": {
       "blockClass": "imagensBanner",
       "autoplay": {
@@ -55,61 +41,75 @@
       }
     }
   },
-  "image#banner1": {
+  "info-card#1": {
     "props": {
-      "src": "assets/banner1.png",
-      "maxWidth": "100vw",
-      "blockClass": "banner1"
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
     }
   },
-  "image#banner2": {
+  "info-card#2": {
     "props": {
-      "src": "assets/banner1.png",
-      "maxWidth": "100vw",
-      "blockClass": "banner1"
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473022652379186/bg2.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
     }
   },
-  "image#banner3": {
+  "info-card#3": {
     "props": {
-      "src": "assets/banner1.png",
-      "maxWidth": "100vw",
-      "blockClass": "banner1"
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473025252847616/bg3.jpg",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
     }
   },
-  "image#banner4": {
+  "info-card#4": {
     "props": {
-      "src": "assets/banner1.png",
-      "maxWidth": "100vw",
-      "blockClass": "banner1"
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473026301407302/bg4.png",
+      "headline": "Clearance Sale",
+      "callToActionText": "DISCOVER",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
     }
   },
 
-   //Configuração do Custom Query Desktop, como que o produto aparece na home no Desktop!!!
+  //Configuração do Custom Query Desktop, como que o produto aparece na home no Desktop!!!
   "search-result-layout.desktop": {
-    "children": [
-      "flex-layout.row#search"
-    ]
+    "children": ["flex-layout.row#search"]
   },
   "flex-layout.row#search": {
-    "children": [
-      "flex-layout.col#search"
-    ]
+    "children": ["flex-layout.col#search"]
   },
   "flex-layout.col#search": {
-    "children": [
-      "search-content",
-      "search-fetch-more"
-    ]
+    "children": ["search-content", "search-fetch-more"]
   },
   "search-content": {
-    "blocks": [
-      "gallery",
-      "not-found"
-    ]
+    "blocks": ["gallery", "not-found"]
   },
   "gallery": {
     "props": {
-      "blockClass":"teste",
+      "blockClass": "teste",
       "layouts": [
         {
           "name": "two",
@@ -156,30 +156,21 @@
   /*Inicio da configuração da resposta ao MOBILE. Assim como no DESKTOP 
   foi definido um container flex-layout para estrutura da página*/
   "responsive-layout.mobile#home": {
-    "children": [
-      "flex-layout.row#containerhomemobile"
-    ]
+    "children": ["flex-layout.row#containerhomemobile"]
   },
   "flex-layout.row#containerhomemobile": {
-    "children": [
-      "tab-layout#homemobile"
-    ]
+    "children": ["tab-layout#homemobile"]
   },
 
   /*Tanto para Desktop ou MOBILE os Tab-list e Tab-Content do Tab-Layout estão definidos 
   nos arquivos tab_lis_item e tab_content_item respectivamente*/
   "tab-layout#homemobile": {
-    "children": [
-      "sticky-layout#homemobile",
-      "tab-content#homemobile"
-    ]
+    "children": ["sticky-layout#homemobile", "tab-content#homemobile"]
   },
 
-    //Tanto para Desktop ou MOBILE o Stick foi utilizado para travar o tab-lis no topo
+  //Tanto para Desktop ou MOBILE o Stick foi utilizado para travar o tab-lis no topo
   "sticky-layout#homemobile": {
-    "children": [
-      "tab-list#homemobile"
-    ],
+    "children": ["tab-list#homemobile"],
     "props": {
       "position": "top",
       "verticalSpacing": 62
@@ -188,10 +179,7 @@
 
   //Conteúdo Comum dos Tabs-Content e stack-layout da página de promoção mobile utilizado para captura de Leads
   "slider-layout#homemobile": {
-    "children": [
-      "image#banner1mobile",
-      "image#banner2mobile"
-    ],
+    "children": ["image#banner1mobile", "image#banner2mobile"],
     "props": {
       "autoplay": {
         "timeout": 7000,
@@ -200,7 +188,7 @@
       "itemsPerPage": {
         "mobile": 1
       },
-      "showNavigationArrows":"desktopOnly"
+      "showNavigationArrows": "desktopOnly"
     }
   },
   "image#banner1mobile": {
@@ -217,81 +205,68 @@
       "blockClass": "banner2"
     }
   },
-  "stack-layout#promocaomobile":{
-    "children":[
-      "image#stackpromocaomobile",
-      "link#stackpromocaomobile"
-    ]
+  "stack-layout#promocaomobile": {
+    "children": ["image#stackpromocaomobile", "link#stackpromocaomobile"]
   },
   "image#stackpromocaomobile": {
-       "props": {
-         "blockClass": "imagestackpromocaomobile",
-         "width": "95%",
-         "src": "assets/pugnocomputadormobile.jpg"
-       }
-     },
-     "link#stackpromocaomobile": {
-       "props": {
-         "displayMode": "button",
-         "buttonProps": {
-           "variant": "primary",
-           "size": "large"
-         },
-         "href": "/leads",
-         "label": "Cadastre-se!"
-       }
-     },
-
-     //Configuração do Custom Query mobile, como que o produto aparece na home mobile!!!
-     "search-result-layout.mobile": {
-      "children": [
-        "flex-layout.row#searchmobile"
-      ]
-    },
-    "flex-layout.row#searchmobile": {
-      "children": [
-        "flex-layout.col#searchmobile"
-      ]
-    },
-    "flex-layout.col#searchmobile": {
-      "children": [
-        "search-content#mobile",
-        "search-fetch-more"
-      ]
-    },
-    "search-content#mobile": {
-      "blocks": [
-        "gallery#mobile",
-        "not-found"
-      ]
-    },
-    "gallery#mobile": {
-      "props": {
-        "layouts": [
-          {
-            "name": "one",
-            "component": "OneLineSummary",
-            "itemsPerRow": 1
-          }
-        ],
-        "OneLineSummary": "product-summary.shelf#mobile"
-      }
-    },
-    "product-summary.shelf#mobile": {
-      "children": [
-        "product-summary-name",
-        "product-images",
-        "product-summary-space",
-        "product-price",
-        "product-summary-space",
-        "add-to-cart-button#homemobile"
-      ]
-    },
-    "add-to-cart-button#homemobile": {
-      "props": {
-        "onClickBehavior": "go-to-product-page",
-        "text": "Ver Detalhes",
-        "blockClass": "productsummaryhome"
-      }
+    "props": {
+      "blockClass": "imagestackpromocaomobile",
+      "width": "95%",
+      "src": "assets/pugnocomputadormobile.jpg"
     }
+  },
+  "link#stackpromocaomobile": {
+    "props": {
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "primary",
+        "size": "large"
+      },
+      "href": "/leads",
+      "label": "Cadastre-se!"
+    }
+  },
+
+  //Configuração do Custom Query mobile, como que o produto aparece na home mobile!!!
+  "search-result-layout.mobile": {
+    "children": ["flex-layout.row#searchmobile"]
+  },
+  "flex-layout.row#searchmobile": {
+    "children": ["flex-layout.col#searchmobile"]
+  },
+  "flex-layout.col#searchmobile": {
+    "children": ["search-content#mobile", "search-fetch-more"]
+  },
+  "search-content#mobile": {
+    "blocks": ["gallery#mobile", "not-found"]
+  },
+  "gallery#mobile": {
+    "props": {
+      "layouts": [
+        {
+          "name": "one",
+          "component": "OneLineSummary",
+          "itemsPerRow": 1
+        }
+      ],
+      "OneLineSummary": "product-summary.shelf#mobile"
+    }
+  },
+  "product-summary.shelf#mobile": {
+    "children": [
+      "product-summary-name",
+      "product-images",
+      "product-summary-space",
+      "product-price",
+      "product-summary-space",
+      "add-to-cart-button#homemobile"
+    ]
+  },
+  "add-to-cart-button#homemobile": {
+    "props": {
+      "onClickBehavior": "go-to-product-page",
+      "text": "Ver Detalhes",
+      "blockClass": "productsummaryhome"
+    }
+  }
 }
