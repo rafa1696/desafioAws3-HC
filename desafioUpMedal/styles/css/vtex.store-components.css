@@ -1,6 +1,10 @@
 .container {
   /* background-color: #303030; */
   padding: 0px;
+  margin-top: 9rem;
+}
+.logoImage{
+  margin-top: 1rem;
 }
 
 @media screen and (width: 1920px) {

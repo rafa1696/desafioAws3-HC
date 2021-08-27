@@ -1,6 +1,6 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+    "blocks": ["header-layout.desktop", "header-layout.mobile","vtex.menu@2.x:menu"]
   },
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
@@ -12,9 +12,9 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#desktop"]
+    "children": ["flex-layout.row#1-desktop"]
   },
-  "flex-layout.row#desktop": {
+  "flex-layout.row#1-desktop": {
     "props": {
       "horizontalAlign": "center",
       "verticalAlign": "center",
@@ -26,18 +26,16 @@
     "children": [
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
-      "search-bar#desktop",
-      //"locale-switcher",
-      //"login",
-      "flex-layout.col#spacer",
-      "minicart.v2"
+      "vtex.menu@2.x:menu#websites",
+      "link#signup"
     ]
   },
-  "search-bar#desktop": {
+  /*"search-bar#desktop": {
     "props": {
       "blockClass": "searchheaderdesktop"
     }
-  },
+  },*/
+
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
@@ -57,20 +55,21 @@
       "height": 35
     }
   },
+
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
   "sticky-layout#mobile": {
-    "children": ["flex-layout.row#mobile"]
+    "children": ["flex-layout.row#1-mobile"]
   },
-  "flex-layout.row#mobile": {
+  "flex-layout.row#1-mobile": {
     "children": [
       //"drawer",
-      "flex-layout.col#logo-mobile",
+      "flex-layout.col#logo-mobile"
       //"flex-layout.col#spacer",
       //"login",
-      "search-bar#mobile",
-      "minicart.v2#mobile"
+      //"search-bar#mobile",
+      //"minicart.v2#mobile"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -82,6 +81,7 @@
   /*"drawer": {
     "children": []
   }*/
+
   "flex-layout.col#logo-mobile": {
     "props": {
       "verticalAlign": "middle"
@@ -95,8 +95,8 @@
       "url": "assets/logoheader.png",
       "width": "80"
     }
-  },
-  "minicart.v2#mobile": {
+  }
+ /*, "minicart.v2#mobile": {
     "props": {
       "blockClass": "minicartheadermobile"
     },
@@ -106,5 +106,5 @@
     "props": {
       "blockClass": "searchheadermobile"
     }
-  }
+  }*/
 }
