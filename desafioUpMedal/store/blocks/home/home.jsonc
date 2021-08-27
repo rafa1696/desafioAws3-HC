@@ -1,7 +1,10 @@
 {
   "store.home": {
     "blocks": [
+<<<<<<< HEAD
       /*Definimos aqui os blocos de resposta para Desktop e Mobile */
+=======
+>>>>>>> 2a7aa487a1b494aacc169e0b441c613f7e937c28
       "slider-layout#home",
       "flex-layout.row#imagesDesktop",
       "rich-text#confira",
@@ -11,7 +14,9 @@
       "flex-layout.row#imagesDesktopBottom"
     ]
   },
-  // Inicio das declarações dos itens comuns do tab-content desktop
+  
+  // 4 infocards para mostrar conteúdo dos banners
+
   "slider-layout#home": {
     "children": ["info-card#1", "info-card#2", "info-card#3", "info-card#4"],
     "props": {
@@ -147,7 +152,7 @@
 
   "image#1middle": {
     "props": {
-      "src": "https://i.imgur.com/8KCqn67.png"
+      "src": "https://i.imgur.com/QxnwMGc.png"
     }
   },
 
@@ -214,51 +219,8 @@
     }
   },
 
-  //Configuração do Custom Query Desktop, como que o produto aparece na home no Desktop!!!
-  "search-result-layout.desktop": {
-    "children": ["flex-layout.row#search"]
-  },
-  "flex-layout.row#search": {
-    "children": ["flex-layout.col#search"]
-  },
-  "flex-layout.col#search": {
-    "children": ["search-content", "search-fetch-more"]
-  },
-  "search-content": {
-    "blocks": ["gallery", "not-found"]
-  },
-  "gallery": {
-    "props": {
-      "blockClass": "teste",
-      "layouts": [
-        {
-          "name": "two",
-          "component": "OneOrTwoLineSummary",
-          "itemsPerRow": 2
-        }
-      ],
-      "OneOrTwoLineSummary": "product-summary.shelf"
-    }
-  },
-  "product-summary.shelf": {
-    "children": [
-      "product-summary-name",
-      "product-images",
-      "product-summary-space",
-      "product-price",
-      "product-summary-space",
-      "add-to-cart-button#home"
-    ]
-  },
-  "add-to-cart-button#home": {
-    "props": {
-      "onClickBehavior": "go-to-product-page",
-      "text": "Ver Detalhes",
-      "blockClass": "productsummaryhome"
-    }
-  },
+  //Parte móvel do site com 4 infocards
 
-  //Conteúdo Comum dos Tabs-Content e stack-layout da página de promoção mobile utilizado para captura de Leads
   "slider-layout#homemobile": {
     "children": [
       "info-card#mob1",
@@ -283,8 +245,9 @@
       "isFullModeStyle": true,
       "textPosition": "center",
       "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "headline": "Comece a criar com a AWS ainda hoje",
+      "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+      "callToActionText": "Comece a usar gratuitamente",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -296,8 +259,9 @@
       "isFullModeStyle": true,
       "textPosition": "center",
       "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473022652379186/bg2.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "headline": "Conheça a plataforma, os produtos de nuvem e os recursos da AWS",
+      "callToActionMode": "link",
+      "callToActionText": "Comece a usar",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -309,8 +273,10 @@
       "isFullModeStyle": true,
       "textPosition": "center",
       "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473025252847616/bg3.jpg",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "headline": "Modernize sua infraestrutura de dados",
+      "subhead": "Migre de datastores autogerenciados para serviços da AWS totalmente gerenciados para economizar tempo, custos e melhorar a produtividade",
+      "callToActionMode": "link",
+      "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -322,75 +288,13 @@
       "isFullModeStyle": true,
       "textPosition": "center",
       "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473026301407302/bg4.png",
-      "headline": "Clearance Sale",
-      "callToActionText": "DISCOVER",
+      "headline": "Hospede aplicativos web estáticos",
+      "subhead": "O AWS Amplify oferece um fluxo de trabalho simples baseado em GIT para implantar aplicativos Web estáticos na AWS",
+      "callToActionMode": "link",
+      "callToActionText": "Saiba mais",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-example",
       "textAlignment": "center"
-    }
-  },
-  "stack-layout#promocaomobile": {
-    "children": ["image#stackpromocaomobile", "link#stackpromocaomobile"]
-  },
-  "image#stackpromocaomobile": {
-    "props": {
-      "blockClass": "imagestackpromocaomobile",
-      "width": "95%",
-      "src": ""
-    }
-  },
-  "link#stackpromocaomobile": {
-    "props": {
-      "displayMode": "button",
-      "buttonProps": {
-        "variant": "primary",
-        "size": "large"
-      },
-      "href": "/leads",
-      "label": "Cadastre-se!"
-    }
-  },
-
-  //Configuração do Custom Query mobile, como que o produto aparece na home mobile!!!
-  "search-result-layout.mobile": {
-    "children": ["flex-layout.row#searchmobile"]
-  },
-  "flex-layout.row#searchmobile": {
-    "children": ["flex-layout.col#searchmobile"]
-  },
-  "flex-layout.col#searchmobile": {
-    "children": ["search-content#mobile", "search-fetch-more"]
-  },
-  "search-content#mobile": {
-    "blocks": ["gallery#mobile", "not-found"]
-  },
-  "gallery#mobile": {
-    "props": {
-      "layouts": [
-        {
-          "name": "one",
-          "component": "OneLineSummary",
-          "itemsPerRow": 1
-        }
-      ],
-      "OneLineSummary": "product-summary.shelf#mobile"
-    }
-  },
-  "product-summary.shelf#mobile": {
-    "children": [
-      "product-summary-name",
-      "product-images",
-      "product-summary-space",
-      "product-price",
-      "product-summary-space",
-      "add-to-cart-button#homemobile"
-    ]
-  },
-  "add-to-cart-button#homemobile": {
-    "props": {
-      "onClickBehavior": "go-to-product-page",
-      "text": "Ver Detalhes",
-      "blockClass": "productsummaryhome"
     }
   }
 }
