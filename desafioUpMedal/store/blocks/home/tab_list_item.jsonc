@@ -1,47 +1,41 @@
 {
-    "tab-list#home": {
-        "children": [
-            "tab-list.item#home1",
-            "tab-list.item#home2"
-        ],
-        "props":{
-          "blockClass":"tablayouthomedesktop"
-        }
-    },
-    "tab-list.item#home1": {
-        "props": {
-            "tabId": "solucoes",
-            "label": "SOLUÇÕES",
-            "defaultActiveTab": true
-        }
-    },
-    "tab-list.item#home2": {
-        "props": {
-            "tabId": "sobre",
-            "label": "SOBRE"
-        }
-    },
-    //MOBILE
-    "tab-list#homemobile": {
-        "children": [
-            "tab-list.item#homemobile1",
-            "tab-list.item#homemobile2"
-        ],
-        "props": {
-            "blockClass": "tablayouthomemobile"
-        }
-    },
-    "tab-list.item#homemobile1": {
-        "props": {
-            "tabId": "solucoesmob",
-            "label": "SOLUÇÕES",
-            "defaultActiveTab": true
-        }
-    },
-    "tab-list.item#homemobile2": {
-        "props": {
-            "tabId": "sobremob",
-            "label": "SOBRE"
-        }
+  "tab-list#home": {
+    "children": ["tab-list.item#home1", "tab-list.item#home2"],
+    "props": {
+      "blockClass": "tablayouthomedesktop"
     }
+  },
+  "tab-list.item#home1": {
+    "props": {
+      "tabId": "solucoes",
+      "label": "SOLUÇÕES",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#home2": {
+    "props": {
+      "tabId": "sobre",
+      "label": "SOBRE"
+    }
+  },
+  //MOBILE
+  "tab-list#homemobile": {
+    "children": ["tab-list.item#homemobile1", "tab-list.item#homemobile2"],
+    "props": {
+      "blockClass": "tablayouthomemobile"
+    }
+  },
+  "tab-list.item#homemobile1": {
+    "props": {
+      "tabId": "solucoesmob",
+      "label": "SOLUÇÕES",
+      "defaultActiveTab": true
+    }
+  },
+  "tab-list.item#homemobile2": {
+    "props": {
+      "tabId": "sobremob",
+      "label": "SOBRE"
+    }
+  }
 }

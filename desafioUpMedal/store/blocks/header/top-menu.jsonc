@@ -1,247 +1,243 @@
 {
-    "vtex.menu@2.x:menu#websites": {
-        "children": [
-          "menu-item#contact",
-          "menu-item#about",
-          
-          "menu-item#support",
-          "menu-item#loggin"
-          
-          //"menu-item#signup"
-        ]
+  "vtex.menu@2.x:menu#websites": {
+    "children": [
+      "menu-item#contact",
+      "menu-item#about",
+
+      "menu-item#support",
+      "menu-item#loggin"
+
+      //"menu-item#signup"
+    ]
+  },
+  "menu-item#contact": {
+    "props": {
+      "id": "menu-item-contact",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://aws.amazon.com/pt/contact-us/",
+        "noFollow": false,
+        "tagTitle": "Entre em contato conosco",
+        "text": "Entre em contato conosco"
+      }
+    }
+  },
+  "menu-item#about": {
+    "props": {
+      "id": "menu-item-about",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/about",
+        "noFollow": false,
+        "tagTitle": "Sobre",
+        "text": "Sobre"
+      }
+    }
+  },
+  "menu-item#support": {
+    "props": {
+      "id": "menu-item-support",
+      "type": "custom",
+
+      "highlight": false,
+      "iconProps": {
+        "id": "caret",
+        "isActive": true,
+        "size": 16
+      },
+      "itemProps": {
+        "type": "external",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Suporte",
+        "text": "Suporte"
+      }
     },
-    "menu-item#contact": {
-        "props": {
-          "id": "menu-item-contact",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "external",
-            "href": "https://aws.amazon.com/pt/contact-us/",
-            "noFollow": false,
-            "tagTitle": "Entre em contato conosco",
-            "text": "Entre em contato conosco"
-          }
-        }
+    "blocks": ["vtex.menu@2.x:submenu#support"] // Defining a submenu
+  },
+  "vtex.menu@2.x:submenu#support": {
+    "props": {
+      "width": "auto"
     },
-    "menu-item#about": {
-          "props": {
-            "id": "menu-item-about",
-            "type": "custom",
-            "iconId": null,
-            "highlight": false,
-            "itemProps": {
-              "type": "internal",
-              "href": "/about",
-              "noFollow": false,
-              "tagTitle": "Sobre",
-              "text": "Sobre"
-            }
-          }
+    "children": ["vtex.menu@2.x:menu#submenusupport"]
+  },
+  "vtex.menu@2.x:menu#submenusupport": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenu"
     },
-    "menu-item#support": {
-        "props": {
-          "id": "menu-item-support",
-          "type": "custom",
-          
-          "highlight": false,
-          "iconProps":{
-            "id": "caret",
-            "isActive": true,
-            "size":16
-          },
-          "itemProps": {
-            "type": "external",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Suporte",
-            "text": "Suporte"
-          }
-        },
-        "blocks": ["vtex.menu@2.x:submenu#support"] // Defining a submenu
+    "children": [
+      "menu-item#submenusupport-support-center",
+      "menu-item#submenusupport-knowledge-center",
+      "menu-item#submenusupport-aws-support"
+    ]
+  },
+  "menu-item#submenusupport-support-center": {
+    "props": {
+      "id": "menu-item-support-center",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://console.aws.amazon.com/support/home/?nc2=h_ql_cu",
+        "noFollow": false,
+        "tagTitle": "Centro de suporte",
+        "text": "Centro de suporte"
+      }
+    }
+  },
+  "menu-item#submenusupport-knowledge-center": {
+    "props": {
+      "id": "menu-item-knowledge-center",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://aws.amazon.com/pt/premiumsupport/knowledge-center/?nc2=h_m_ma",
+        "noFollow": false,
+        "tagTitle": "Central de conhecimento",
+        "text": "Central de conhecimento"
+      }
+    }
+  },
+  "menu-item#submenusupport-aws-support": {
+    "props": {
+      "id": "menu-item-aws-support",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://console.aws.amazon.com/support/home/",
+        "noFollow": false,
+        "tagTitle": "Visão geral do AWS Support",
+        "text": "Visão geral do AWS Support"
+      }
+    }
+  },
+  "menu-item#loggin": {
+    "props": {
+      "id": "menu-item-loggin",
+      "type": "custom",
+      "highlight": false,
+      "iconProps": {
+        "id": "caret",
+        "isActive": true,
+        "size": 16
+      },
+      "itemProps": {
+        "type": "external",
+        "href": "/",
+        "noFollow": false,
+        "tagTitle": "Minha conta",
+        "text": "Minha conta"
+      }
     },
-    "vtex.menu@2.x:submenu#support": {
-        "props": {
-            "width": "auto"
-        },
-        "children": [
-          "vtex.menu@2.x:menu#submenusupport"
-        ]
+    "blocks": ["vtex.menu@2.x:submenu#loggin"]
+  },
+  "vtex.menu@2.x:submenu#loggin": {
+    "props": {
+      "width": "auto"
     },
-    "vtex.menu@2.x:menu#submenusupport": {
-        "props": {
-            "orientation": "vertical",
-            "blockClass":"submenu"
-         },
-        "children": [
-          "menu-item#submenusupport-support-center",
-          "menu-item#submenusupport-knowledge-center",
-          "menu-item#submenusupport-aws-support"
-        ]
+    "children": ["vtex.menu@2.x:menu#submenuloggin"]
+  },
+  "vtex.menu@2.x:menu#submenuloggin": {
+    "props": {
+      "orientation": "vertical",
+      "blockClass": "submenu"
     },
-    "menu-item#submenusupport-support-center":{
-          "props": {
-              "id": "menu-item-support-center",
-              "type": "custom",
-              "iconId": null,
-              "highlight": false,
-              "itemProps": {
-            "type": "external",
-            "href": "https://console.aws.amazon.com/support/home/?nc2=h_ql_cu",
-            "noFollow": false,
-            "tagTitle": "Centro de suporte",
-            "text": "Centro de suporte"
-              }
-          }
-    },
-    "menu-item#submenusupport-knowledge-center":{
-        "props": {
-          "id": "menu-item-knowledge-center",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "external",
-            "href": "https://aws.amazon.com/pt/premiumsupport/knowledge-center/?nc2=h_m_ma",
-            "noFollow": false,
-            "tagTitle": "Central de conhecimento",
-            "text": "Central de conhecimento"
-          }
-        }
-    },
-    "menu-item#submenusupport-aws-support":{
-        "props": {
-          "id": "menu-item-aws-support",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "external",
-            "href": "https://console.aws.amazon.com/support/home/",
-            "noFollow": false,
-            "tagTitle": "Visão geral do AWS Support",
-            "text": "Visão geral do AWS Support"
-          }
-        }
-    },
-    "menu-item#loggin": {
-        "props": {
-          "id": "menu-item-loggin",
-          "type": "custom",
-          "highlight": false,
-          "iconProps":{
-            "id": "caret",
-            "isActive": true,
-            "size":16
-          },
-          "itemProps": {
-            "type": "external",
-            "href": "/",
-            "noFollow": false,
-            "tagTitle": "Minha conta",
-            "text": "Minha conta"
-          }
-        },
-        "blocks": ["vtex.menu@2.x:submenu#loggin"] 
-    },
-    "vtex.menu@2.x:submenu#loggin": {
-        "props": {
-            "width": "auto"
-        },
-        "children": [
-          "vtex.menu@2.x:menu#submenuloggin"
-        ]
-    },
-    "vtex.menu@2.x:menu#submenuloggin": {
-        "props": {
-            "orientation": "vertical",
-            "blockClass":"submenu"
-         },
-        "children": [
-          "menu-item#submenuloggin-console-management",
-          "menu-item#submenuloggin-manage-account",
-          "menu-item#submenuloggin-console-billing",
-          "menu-item#submenuloggin-console-credential",
-          "menu-item#submenuloggin-aws-phd"
-        ]
-    },
-    "menu-item#submenuloggin-console-management":{
-          "props": {
-              "id": "menu-item-console-management",
-              "type": "custom",
-              "iconId": null,
-              "highlight": false,
-              "itemProps": {
-            "type": "external",
-            "href": "https://console.aws.amazon.com/?nc2=h_m_mc",
-            "noFollow": false,
-            "tagTitle": "Console de gerenciamento da AWS",
-            "text": "Console de gerenciamento da AWS"
-              }
-          }
-    },
-    "menu-item#submenuloggin-manage-account":{
-        "props": {
-          "id": "menu-item-manage-account",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "external",
-            "href": "https://portal.aws.amazon.com/gp/aws/manageYourAccount?nc2=h_m_ma",
-            "noFollow": false,
-            "tagTitle": "Configurações da conta",
-            "text": "Configurações da conta"
-          }
-        }
-    },
-    "menu-item#submenuloggin-console-billing":{
-        "props": {
-          "id": "menu-item-console-billing",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "external",
-            "href": "https://console.aws.amazon.com/billing/home?nc2=h_m_bc",
-            "noFollow": false,
-            "tagTitle": "Gerenciamento de faturamento e custo",
-            "text": "Gerenciamento de faturamento e custo"
-          }
-        }
-    },
-    "menu-item#submenuloggin-console-credential":{
-        "props": {
-          "id": "menu-item-console-credential",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "external",
-            "href": "https://console.aws.amazon.com/iam/home?nc2=h_m_sc#security_credential",
-            "noFollow": false,
-            "tagTitle": "Credenciais de segurança",
-            "text": "Credenciais de segurança"
-          }
-        }
-    },
-    "menu-item#submenuloggin-aws-phd":{
-        "props": {
-          "id": "menu-item-aws-phd",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "external",
-            "href": "https://phd.aws.amazon.com/?nc2=h_m_sc",
-            "noFollow": false,
-            "tagTitle": "AWS Personal Health Dashboard",
-            "text": "AWS Personal Health Dashboard"
-          }
-        }
-    },
-    /*"menu-item#signup": {
+    "children": [
+      "menu-item#submenuloggin-console-management",
+      "menu-item#submenuloggin-manage-account",
+      "menu-item#submenuloggin-console-billing",
+      "menu-item#submenuloggin-console-credential",
+      "menu-item#submenuloggin-aws-phd"
+    ]
+  },
+  "menu-item#submenuloggin-console-management": {
+    "props": {
+      "id": "menu-item-console-management",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://console.aws.amazon.com/?nc2=h_m_mc",
+        "noFollow": false,
+        "tagTitle": "Console de gerenciamento da AWS",
+        "text": "Console de gerenciamento da AWS"
+      }
+    }
+  },
+  "menu-item#submenuloggin-manage-account": {
+    "props": {
+      "id": "menu-item-manage-account",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://portal.aws.amazon.com/gp/aws/manageYourAccount?nc2=h_m_ma",
+        "noFollow": false,
+        "tagTitle": "Configurações da conta",
+        "text": "Configurações da conta"
+      }
+    }
+  },
+  "menu-item#submenuloggin-console-billing": {
+    "props": {
+      "id": "menu-item-console-billing",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://console.aws.amazon.com/billing/home?nc2=h_m_bc",
+        "noFollow": false,
+        "tagTitle": "Gerenciamento de faturamento e custo",
+        "text": "Gerenciamento de faturamento e custo"
+      }
+    }
+  },
+  "menu-item#submenuloggin-console-credential": {
+    "props": {
+      "id": "menu-item-console-credential",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://console.aws.amazon.com/iam/home?nc2=h_m_sc#security_credential",
+        "noFollow": false,
+        "tagTitle": "Credenciais de segurança",
+        "text": "Credenciais de segurança"
+      }
+    }
+  },
+  "menu-item#submenuloggin-aws-phd": {
+    "props": {
+      "id": "menu-item-aws-phd",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "external",
+        "href": "https://phd.aws.amazon.com/?nc2=h_m_sc",
+        "noFollow": false,
+        "tagTitle": "AWS Personal Health Dashboard",
+        "text": "AWS Personal Health Dashboard"
+      }
+    }
+  },
+  /*"menu-item#signup": {
         "props": {
           "id": "menu-item-signup",
           "type": "custom",
@@ -257,15 +253,15 @@
         }
     },*/
 
-    "link#signup": {
-        "props": {
-          "displayMode":"button",
-          "buttonProps":{
-            "variant": "secondary", 
-            "size": "regular"
-          },  
-          "href": "https://portal.aws.amazon.com/billing/signup#/start",
-          "label": "Crie uma conta da AWS"
-        }
-      }     
+  "link#signup": {
+    "props": {
+      "displayMode": "button",
+      "buttonProps": {
+        "variant": "secondary",
+        "size": "regular"
+      },
+      "href": "https://portal.aws.amazon.com/billing/signup#/start",
+      "label": "SignUp"
+    }
+  }
 }

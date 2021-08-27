@@ -1,6 +1,10 @@
 {
   "header": {
-    "blocks": ["header-layout.desktop", "header-layout.mobile","vtex.menu@2.x:menu"]
+    "blocks": [
+      "header-layout.desktop",
+      "header-layout.mobile",
+      "vtex.menu@2.x:menu"
+    ]
   },
   "header.full": {
     "blocks": ["header-layout.desktop", "header-layout.mobile"]
@@ -96,7 +100,7 @@
       "width": "80"
     }
   }
- /*, "minicart.v2#mobile": {
+  /*, "minicart.v2#mobile": {
     "props": {
       "blockClass": "minicartheadermobile"
     },

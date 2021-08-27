@@ -17,6 +17,9 @@
   white-space: normal;
   text-transform: uppercase;
 }
+.listItem :global(.vtex-button):hover {
+  color: #f07114;
+}
 
 .listItemActive :global(.vtex-button) {
   color: #fff;

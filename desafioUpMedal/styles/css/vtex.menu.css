@@ -1,7 +1,11 @@
-.submenuWrapper{
-    background-color: #232f3e;
-  }
+.submenuWrapper {
+  background-color: #232f3e;
+}
 
-  .styledLink:hover{
-      color: orange;
-  }
+.styledLinkContent {
+  color: #fff;
+}
+
+.styledLinkContent:hover {
+  color: #f07114;
+}
