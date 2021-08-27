@@ -38,6 +38,8 @@
   color: white!important;
 }
 
+/* Espaçamento do componente flex row em telas 1920x1080 */
+
 @media screen and (min-width: 1920px) {
   .flexRow--imagesDesktop1 {
     padding-left: 10vw;

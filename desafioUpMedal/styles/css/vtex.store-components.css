@@ -11,6 +11,8 @@
   }
 }
 
+/* Espaçamento do logo */
+
 .logoImage {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -104,13 +106,6 @@
   }
 }
 
-.currencyContainer {
-  color: #fff;
-  font-size: 1.5rem;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-}
-
 .imageElement--imagestackpromocaomobile {
   object-fit: cover;
   border-radius: 3mm;
@@ -121,6 +116,13 @@
 }
 
 /* Cores do preço de produtos */
+
+.currencyContainer {
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
 
 .currencyCode {
   color: #000;

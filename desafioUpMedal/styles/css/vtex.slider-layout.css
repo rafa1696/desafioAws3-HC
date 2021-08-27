@@ -1,3 +1,5 @@
+/* Largura do banner em tela 1920x1080 */
+
 @media screen and (min-width: 1920) {
     .slideChildrenContainer {
         width: 100vw!important;

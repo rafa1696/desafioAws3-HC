@@ -1,7 +1,6 @@
 {
   "store.home": {
     "blocks": [
-      /*Definimos aqui os blocos de resposta para Desktop e Mobile */
       "slider-layout#home",
       "flex-layout.row#imagesDesktop",
       "rich-text#confira",
@@ -11,7 +10,9 @@
       "flex-layout.row#imagesDesktopBottom"
     ]
   },
-  // Inicio das declarações dos itens comuns do tab-content desktop
+  
+  // 4 infocards para mostrar conteúdo dos banners
+
   "slider-layout#home": {
     "children": ["info-card#1", "info-card#2", "info-card#3", "info-card#4"],
     "props": {
@@ -214,51 +215,8 @@
     }
   },
 
-  //Configuração do Custom Query Desktop, como que o produto aparece na home no Desktop!!!
-  "search-result-layout.desktop": {
-    "children": ["flex-layout.row#search"]
-  },
-  "flex-layout.row#search": {
-    "children": ["flex-layout.col#search"]
-  },
-  "flex-layout.col#search": {
-    "children": ["search-content", "search-fetch-more"]
-  },
-  "search-content": {
-    "blocks": ["gallery", "not-found"]
-  },
-  "gallery": {
-    "props": {
-      "blockClass": "teste",
-      "layouts": [
-        {
-          "name": "two",
-          "component": "OneOrTwoLineSummary",
-          "itemsPerRow": 2
-        }
-      ],
-      "OneOrTwoLineSummary": "product-summary.shelf"
-    }
-  },
-  "product-summary.shelf": {
-    "children": [
-      "product-summary-name",
-      "product-images",
-      "product-summary-space",
-      "product-price",
-      "product-summary-space",
-      "add-to-cart-button#home"
-    ]
-  },
-  "add-to-cart-button#home": {
-    "props": {
-      "onClickBehavior": "go-to-product-page",
-      "text": "Ver Detalhes",
-      "blockClass": "productsummaryhome"
-    }
-  },
+  //Parte móvel do site com 4 infocards
 
-  //Conteúdo Comum dos Tabs-Content e stack-layout da página de promoção mobile utilizado para captura de Leads
   "slider-layout#homemobile": {
     "children": [
       "info-card#mob1",
@@ -333,70 +291,6 @@
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-example",
       "textAlignment": "center"
-    }
-  },
-  "stack-layout#promocaomobile": {
-    "children": ["image#stackpromocaomobile", "link#stackpromocaomobile"]
-  },
-  "image#stackpromocaomobile": {
-    "props": {
-      "blockClass": "imagestackpromocaomobile",
-      "width": "95%",
-      "src": ""
-    }
-  },
-  "link#stackpromocaomobile": {
-    "props": {
-      "displayMode": "button",
-      "buttonProps": {
-        "variant": "primary",
-        "size": "large"
-      },
-      "href": "/leads",
-      "label": "Cadastre-se!"
-    }
-  },
-
-  //Configuração do Custom Query mobile, como que o produto aparece na home mobile!!!
-  "search-result-layout.mobile": {
-    "children": ["flex-layout.row#searchmobile"]
-  },
-  "flex-layout.row#searchmobile": {
-    "children": ["flex-layout.col#searchmobile"]
-  },
-  "flex-layout.col#searchmobile": {
-    "children": ["search-content#mobile", "search-fetch-more"]
-  },
-  "search-content#mobile": {
-    "blocks": ["gallery#mobile", "not-found"]
-  },
-  "gallery#mobile": {
-    "props": {
-      "layouts": [
-        {
-          "name": "one",
-          "component": "OneLineSummary",
-          "itemsPerRow": 1
-        }
-      ],
-      "OneLineSummary": "product-summary.shelf#mobile"
-    }
-  },
-  "product-summary.shelf#mobile": {
-    "children": [
-      "product-summary-name",
-      "product-images",
-      "product-summary-space",
-      "product-price",
-      "product-summary-space",
-      "add-to-cart-button#homemobile"
-    ]
-  },
-  "add-to-cart-button#homemobile": {
-    "props": {
-      "onClickBehavior": "go-to-product-page",
-      "text": "Ver Detalhes",
-      "blockClass": "productsummaryhome"
     }
   }
 }
