@@ -1,27 +1,55 @@
+/* Espaçamento do container principal da home */
+
 .container {
   padding: 0px;
 }
-.logoImage {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
 
-@media screen and (width: 1920px) {
+@media screen and (min-width: 1920px) {
   .container {
     margin-left: 0;
     margin-right: 0;
   }
 }
 
+.logoImage {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+/* Tamanhos do banner na página principal */
+
 .infoCardContainer {
   width: 100vw !important;
-  height: 35vh;
   margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+  .infoCardContainer {
+    height: 35vh;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .infoCardTextContainer {
+    height: 27rem;
+  }
 }
 
 .infoCardHeadline--info-card-example,
 .infoCardSubhead--info-card-example {
   color: #fff;
+}
+
+/* Espaçamento interno do Título e Subtítulo do banner */
+
+@media screen and (max-width: 768px) {
+
+  .infoCardHeadline--info-card-example,
+  .infoCardSubhead--info-card-example {
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
 }
 
 .infoCardCallActionText--info-card-example {
@@ -60,12 +88,20 @@
   margin-left: 70mm;
 }
 
+/* Configurações do botão presente no banner */
+
 .infoCardCallActionContainer :global(.vtex-button) {
   background-color: black;
   color: white;
   border: none;
   border-radius: 3mm;
-  margin-left: 70mm;
+  margin-left: auto;
+}
+
+@media screen and (min-width: 768px){
+  .infoCardCallActionContainer :global(.vtex-button){
+    margin: 1.5rem;
+  }
 }
 
 .currencyContainer {
@@ -84,6 +120,8 @@
   width: 100%;
 }
 
+/* Cores do preço de produtos */
+
 .currencyCode {
   color: #000;
 }
@@ -91,12 +129,15 @@
 .currencyLiteral {
   color: #000;
 }
+
 .currencyInteger {
   color: #000;
 }
+
 .currencyDecimal {
   color: #000;
 }
+
 .currencyFraction {
   color: #000;
 }
