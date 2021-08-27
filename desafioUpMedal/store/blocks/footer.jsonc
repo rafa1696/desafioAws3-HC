@@ -1,7 +1,8 @@
 {
     "footer": {
         "blocks": [
-            "footer-layout.desktop"
+            "footer-layout.desktop",
+            "footer-layout.mobile"
         ]
     },
     "footer-layout.desktop": {
@@ -11,6 +12,9 @@
         ]
     },
     "flex-layout.row#fileiraPrincipal": {
+        "props": {
+            "blockClass": "rodape1"
+        },
         "children": [
             "flex-layout.col#coluna1",
             "flex-layout.col#coluna2",
@@ -30,35 +34,38 @@
     },
     "flex-layout.col#coluna2": {
         "children": [
-            "rich-text#saibaMais"
+            "rich-text#recursos"
         ]
     },
     "rich-text#recursos": {
         "props": {
-            "text": "Saiba mais sobre a AWS"
+            "text": "Recursos da AWS"
         }
     },
     "flex-layout.col#coluna3": {
         "children": [
-            "rich-text#saibaMais"
+            "rich-text#devs"
         ]
     },
     "rich-text#devs": {
         "props": {
-            "text": "Saiba mais sobre a AWS"
+            "text": "Desenvolvedores da AWS"
         }
     },
     "flex-layout.col#coluna4": {
         "children": [
-            "rich-text#saibaMais"
+            "rich-text#ajuda"
         ]
     },
     "rich-text#ajuda": {
         "props": {
-            "text": "Saiba mais sobre a AWS"
+            "text": "Ajuda"
         }
     },
     "flex-layout.row#fileiraSecundaria": {
+        "props": {
+            "blockClass": "rodape2"
+        },
         "children": [
             "rich-text#lingua1",
             "rich-text#lingua2",
@@ -79,5 +86,33 @@
         "props": {
             "text": "Español"
         }
+    },
+
+    "footer-layout.mobile": {
+        "children": [
+            "flex-layout.col#colunaPrincipal",
+            "flex-layout.col#colunaSecundaria"
+        ]
+    },
+    "flex-layout.col#colunaPrincipal": {
+        "props":{
+            "blockClass": "rodapeMob1"
+        },
+        "children":[
+            "rich-text#saibaMais",
+            "rich-text#recursos",
+            "rich-text#devs",
+            "rich-text#ajuda"
+        ]
+    },
+    "flex-layout.col#colunaSecundaria": {
+        "props":{
+            "blockClass": "rodapeMob2"
+        },
+        "children":[
+            "rich-text#lingua1",
+            "rich-text#lingua2",
+            "rich-text#lingua3"
+        ]
     }
 }
