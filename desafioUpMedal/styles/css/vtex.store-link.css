@@ -1,16 +1,20 @@
 .buttonLink {
   color: white;
-  background-color: #232f3e;
-  border-color: #232f3e;
-  border-radius: 3mm;
-  max-width: fit-content;
+  background-color: #f07114;
+  border-color: #f07114;
+  max-width: 100%;
+  height: 2%;
+  padding: 0px;
   font-size: 0.9rem;
-  margin-bottom: 10%;
 }
 
 .buttonLink:hover {
   color: #f07114;
+  background-color: #fff;
 }
-.label {
-  padding: 2mm;
+
+.link {
+  max-width: 100%;
+  margin-right: 5px;
+  margin-top: 5px;
 }
