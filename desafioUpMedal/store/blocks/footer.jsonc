@@ -13,7 +13,7 @@
     },
     "flex-layout.row#fileiraPrincipal": {
         "props": {
-            "blockClass": "rodape1"
+            "blockClass": "rodapeDesk1"
         },
         "children": [
             "flex-layout.col#coluna1",
@@ -29,6 +29,7 @@
     },
     "rich-text#saibaMais": {
         "props": {
+            "textColor": "c-on-emphasis",
             "text": "Saiba mais sobre a AWS"
         }
     },
@@ -39,6 +40,7 @@
     },
     "rich-text#recursos": {
         "props": {
+            "textColor": "c-on-emphasis",
             "text": "Recursos da AWS"
         }
     },
@@ -49,6 +51,7 @@
     },
     "rich-text#devs": {
         "props": {
+            "textColor": "c-on-emphasis",
             "text": "Desenvolvedores da AWS"
         }
     },
@@ -59,18 +62,26 @@
     },
     "rich-text#ajuda": {
         "props": {
+            "textColor": "c-on-emphasis",
             "text": "Ajuda"
         }
     },
     "flex-layout.row#fileiraSecundaria": {
         "props": {
-            "blockClass": "rodape2"
+            "blockClass": "rodapeDesk2"
         },
         "children": [
+            "rich-text#idiomaDesk",
             "rich-text#lingua1",
             "rich-text#lingua2",
             "rich-text#lingua3"
         ]
+    },
+    "rich-text#idiomaDesk": {
+        "props": {
+            "textColor": "c-active-border-action-primary",
+            "text": "Idioma"
+        }
     },
     "rich-text#lingua1": {
         "props": {
@@ -90,29 +101,48 @@
 
     "footer-layout.mobile": {
         "children": [
-            "flex-layout.col#colunaPrincipal",
-            "flex-layout.col#colunaSecundaria"
+            "flex-layout.row#fileiraPrincipalMob"
         ]
     },
-    "flex-layout.col#colunaPrincipal": {
-        "props":{
+    "flex-layout.row#fileiraPrincipalMob": {
+        "props": {
             "blockClass": "rodapeMob1"
         },
-        "children":[
+        "children": [
             "rich-text#saibaMais",
             "rich-text#recursos",
             "rich-text#devs",
-            "rich-text#ajuda"
+            "rich-text#ajuda",
+            "rich-text#idiomaMob",
+            "rich-text#lingua1Mob",
+            "rich-text#lingua2Mob",
+            "rich-text#lingua3Mob"
+
         ]
     },
-    "flex-layout.col#colunaSecundaria": {
-        "props":{
-            "blockClass": "rodapeMob2"
-        },
-        "children":[
-            "rich-text#lingua1",
-            "rich-text#lingua2",
-            "rich-text#lingua3"
-        ]
+    "rich-text#idiomaMob": {
+        "props": {
+            "textColor": "c-on-emphasis",
+            "font": "t-heading-6",
+            "text": "Idioma"
+        }
+    },
+    "rich-text#lingua1Mob": {
+        "props": {
+            "textColor": "c-on-emphasis",
+            "text": "Português"
+        }
+    },
+    "rich-text#lingua2Mob": {
+        "props": {
+            "textColor": "c-on-emphasis",
+            "text": "English"
+        }
+    },
+    "rich-text#lingua3Mob": {
+        "props": {
+            "textColor": "c-on-emphasis",
+            "text": "Español"
+        }
     }
 }

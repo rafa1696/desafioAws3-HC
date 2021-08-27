@@ -22,13 +22,20 @@
   margin-top: 3rem;
 }
 
-.flexRow--rodape1 {
+.flexRow--rodapeDesk1 {
   background-color: #232f3e;
+  padding-left: 20vw;
+  margin-top: 2rem;
+}
+
+.flexRow--rodapeDesk2 {
   padding-left: 20vw;
 }
 
-.flexRow--rodape2 {
-  padding-left: 20vw;
+.flexRow--rodapeMob1 {
+  background-color: #232f3e;
+  padding: 2rem;
+  color: white!important;
 }
 
 @media screen and (min-width: 1920px) {
