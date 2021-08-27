@@ -6,6 +6,11 @@
   margin-bottom: 1rem;
 }
 
+.logoImage--logomobile{
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
+}
+
 @media screen and (width: 1920px) {
   .container {
     margin-left: 0;
@@ -28,9 +33,9 @@
   color: #527fff;
 }
 
-.searchBarInnerContainer--searchheaderdesktop {
+/*.searchBarInnerContainer--searchheaderdesktop {
   width: 700px;
-}
+}*/
 
 .searchBarContainer :global(.vtex-input__suffix) {
   background-color: #232f3e;

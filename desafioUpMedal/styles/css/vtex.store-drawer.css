@@ -1,0 +1,10 @@
+.drawer{
+    background-color: #232f3e;
+  }
+
+  .closeIconButton,
+  .openIconContainer{
+    margin-top: .75rem;
+    color: #fff;
+  }
+

@@ -16,7 +16,7 @@
     "props": {
       "blockClass": "sticky-header"
     },
-    "children": ["flex-layout.row#1-desktop"]
+    "children": ["flex-layout.row#1-desktop","flex-layout.row#2-desktop"]
   },
   "flex-layout.row#1-desktop": {
     "props": {
@@ -29,17 +29,18 @@
     },
     "children": [
       "flex-layout.col#logo-desktop",
-      "flex-layout.col#spacer",
+      //"flex-layout.col#spacer",
+      "search-bar#desktop",
       "vtex.menu@2.x:menu#websites",
       "link#signup",
-      "flex-layout.col#spacer"
+      "minicart.v2"
     ]
   },
-  /*"search-bar#desktop": {
+  "search-bar#desktop": {
     "props": {
       "blockClass": "searchheaderdesktop"
     }
-  },*/
+  },
 
   "flex-layout.col#spacer": {
     "props": {
@@ -60,7 +61,25 @@
       "height": 35
     }
   },
-
+  "flex-layout.row#2-desktop":{
+    "props": {
+      "blockClass": "category-menu",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#category-menu"
+    ]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
   "header-layout.mobile": {
     "children": ["sticky-layout#mobile"]
   },
@@ -69,12 +88,12 @@
   },
   "flex-layout.row#1-mobile": {
     "children": [
-      //"drawer",
-      "flex-layout.col#logo-mobile"
+      "drawer",
+      "flex-layout.col#logo-mobile",
       //"flex-layout.col#spacer",
-      //"login",
-      //"search-bar#mobile",
-      //"minicart.v2#mobile"
+      
+      "search-bar#mobile",
+      "minicart.v2#mobile"
     ],
     "props": {
       "preventHorizontalStretch": true,
@@ -83,10 +102,34 @@
       "blockClass": "flexrowcontentheadermobile"
     }
   },
-  /*"drawer": {
-    "children": []
-  }*/
-
+   "drawer": {
+    "children": ["menu#drawer"]
+  },
+  "menu#drawer": {
+    "children": [
+      "menu-item#contact",
+      "menu-item#about",
+      "menu-item#submenusupport-support-center",
+      "menu-item#submenusupport-knowledge-center",
+      "menu-item#submenusupport-aws-support",
+      "menu-item#submenuloggin-console-management",
+      "menu-item#submenuloggin-manage-account",
+      "menu-item#submenuloggin-console-billing",
+      "menu-item#submenuloggin-console-credential",
+      "menu-item#submenuloggin-aws-phd",
+      "menu-item#pricing",
+      "menu-item#documentation",
+      "menu-item#learn",
+      "menu-item#partners",
+      "menu-item#marketplace",
+      "menu-item#customer",
+      "menu-item#events",
+      "link#signup"
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
   "flex-layout.col#logo-mobile": {
     "props": {
       "verticalAlign": "middle"
@@ -95,13 +138,14 @@
   },
   "logo#mobile": {
     "props": {
+      "blockClass":"logomobile",
       "title": "Logo",
       "href": "/",
       "url": "assets/logoheader.png",
-      "width": "80"
+      "width": "55"
     }
-  }
-  /*, "minicart.v2#mobile": {
+  },
+  "minicart.v2#mobile": {
     "props": {
       "blockClass": "minicartheadermobile"
     },
@@ -111,5 +155,5 @@
     "props": {
       "blockClass": "searchheadermobile"
     }
-  }*/
+  }
 }

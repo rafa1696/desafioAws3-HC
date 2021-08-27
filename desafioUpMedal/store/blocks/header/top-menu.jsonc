@@ -3,11 +3,8 @@
     "children": [
       "menu-item#contact",
       "menu-item#about",
-
       "menu-item#support",
       "menu-item#loggin"
-
-      //"menu-item#signup"
     ]
   },
   "menu-item#contact": {
@@ -47,13 +44,16 @@
 
       "highlight": false,
       "iconProps": {
-        "id": "caret",
-        "isActive": true,
-        "size": 16
+        "id": "sti-check",
+        "size": 16,
+        "viewBox": "0 0 16 16",
+        "orientation": "right",
+        "activeClassName": "white",
+        "mutedClassName": "c-action-primary"
       },
       "itemProps": {
         "type": "external",
-        "href": "/",
+        "href": "#",
         "noFollow": false,
         "tagTitle": "Suporte",
         "text": "Suporte"
@@ -237,22 +237,6 @@
       }
     }
   },
-  /*"menu-item#signup": {
-        "props": {
-          "id": "menu-item-signup",
-          "type": "custom",
-          "iconId": null,
-          "highlight": false,
-          "itemProps": {
-            "type": "external",
-            "href": "https://portal.aws.amazon.com/billing/signup#/start",
-            "noFollow": false,
-            "tagTitle": "Crie uma conta da AWS",
-            "text": "Crie uma conta da AWS"
-          }
-        }
-    },*/
-
   "link#signup": {
     "props": {
       "displayMode": "button",

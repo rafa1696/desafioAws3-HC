@@ -16,5 +16,6 @@
 .link {
   max-width: 100%;
   margin-right: 5px;
-  margin-top: 5px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

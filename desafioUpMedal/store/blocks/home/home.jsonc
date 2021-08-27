@@ -2,6 +2,7 @@
   "store.home": {
     "blocks": [
       /*Definimos aqui os blocos de resposta para Desktop e Mobile */
+      "slider-layout#home",
       "flex-layout.row#imagesDesktop",
       "rich-text#confira",
       "rich-text#setor",
