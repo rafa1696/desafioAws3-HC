@@ -31,7 +31,8 @@
       "flex-layout.col#logo-desktop",
       "flex-layout.col#spacer",
       "vtex.menu@2.x:menu#websites",
-      "link#signup"
+      "link#signup",
+      "flex-layout.col#spacer"
     ]
   },
   /*"search-bar#desktop": {

@@ -2,8 +2,6 @@
   "store.home": {
     "blocks": [
       /*Definimos aqui os blocos de resposta para Desktop e Mobile */
-      "responsive-layout.desktop#home",
-      "responsive-layout.mobile#home",
       "flex-layout.row#imagesDesktop",
       "rich-text#confira",
       "rich-text#setor",
@@ -11,27 +9,6 @@
       "rich-text#categoria",
       "flex-layout.row#imagesDesktopBottom"
     ]
-  },
-  /*Inicio da configuração da resposta ao DESKTOP. Assim como no MOBILE 
-  foi definido um container flex-layout para estrutura da página*/
-  "responsive-layout.desktop#home": {
-    "children": ["flex-layout.row#containerhome"]
-  },
-  "flex-layout.row#containerhome": {
-    "children": ["tab-layout#homedesktop"]
-  },
-  /*Tanto para Desktop ou MOBILE os Tab-list e Tab-Content do Tab-Layout estão definidos 
-  nos arquivos tab_lis_item e tab_content_item respectivamente*/
-  "tab-layout#homedesktop": {
-    "children": ["sticky-layout", "tab-content#home"]
-  },
-  //Tanto para Desktop ou MOBILE o Stick foi utilizado para travar o tab-list no topo
-  "sticky-layout": {
-    "children": ["tab-list#home"],
-    "props": {
-      "position": "top",
-      "verticalSpacing": 64
-    }
   },
   // Inicio das declarações dos itens comuns do tab-content desktop
   "slider-layout#home": {
@@ -277,30 +254,6 @@
       "onClickBehavior": "go-to-product-page",
       "text": "Ver Detalhes",
       "blockClass": "productsummaryhome"
-    }
-  },
-
-  /*Inicio da configuração da resposta ao MOBILE. Assim como no DESKTOP 
-  foi definido um container flex-layout para estrutura da página*/
-  "responsive-layout.mobile#home": {
-    "children": ["flex-layout.row#containerhomemobile"]
-  },
-  "flex-layout.row#containerhomemobile": {
-    "children": ["tab-layout#homemobile"]
-  },
-
-  /*Tanto para Desktop ou MOBILE os Tab-list e Tab-Content do Tab-Layout estão definidos 
-  nos arquivos tab_lis_item e tab_content_item respectivamente*/
-  "tab-layout#homemobile": {
-    "children": ["sticky-layout#homemobile", "tab-content#homemobile"]
-  },
-
-  //Tanto para Desktop ou MOBILE o Stick foi utilizado para travar o tab-lis no topo
-  "sticky-layout#homemobile": {
-    "children": ["tab-list#homemobile"],
-    "props": {
-      "position": "top",
-      "verticalSpacing": 62
     }
   },
 
