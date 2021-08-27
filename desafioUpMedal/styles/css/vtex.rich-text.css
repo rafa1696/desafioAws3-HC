@@ -4,12 +4,15 @@
 
 .container--textoSetor {
   margin: 2rem;
+  color: #000!important;
 }
 
 .container--textoConfira {
   margin-top: 2rem;
+  color: #000;
 }
 
 .container--imagesDesktopBottom {
   margin: 2rem;
+  color: #000;
 }
