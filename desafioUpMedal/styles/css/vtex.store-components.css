@@ -1,7 +1,7 @@
 .container {
   padding: 0px;
 }
-.logoImage{
+.logoImage {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
@@ -82,4 +82,21 @@
 
 .searchBarInnerContainer--searchheadermobile {
   width: 100%;
+}
+
+.currencyCode {
+  color: #000;
+}
+
+.currencyLiteral {
+  color: #000;
+}
+.currencyInteger {
+  color: #000;
+}
+.currencyDecimal {
+  color: #000;
+}
+.currencyFraction {
+  color: #000;
 }
