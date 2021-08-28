@@ -85,6 +85,8 @@
     }
   },
 
+  // Imagens sobre começar a trabalhar com a AWS
+
   "flex-layout.row#imagesDesktop": {
     "props": {
       "blockClass": "imagesDesktop1"
@@ -116,6 +118,8 @@
     }
   },
 
+  // Rich texts com texto "Confira" e "Setor"
+
   "rich-text#confira": {
     "props": {
       "blockClass": "textoConfira",
@@ -134,6 +138,8 @@
     }
   },
 
+  // Cartões sobre segmentos e soluções da AWS
+
   "flex-layout.row#imagesDesktopMiddle": {
     "props": {
       "blockClass": "imagesDesktopMiddle"
@@ -145,6 +151,8 @@
       "image#4middle"
     ]
   },
+
+  // Parte do meio
 
   "image#1middle": {
     "props": {
@@ -170,6 +178,8 @@
     }
   },
 
+  // Rich text "Categoria de tecnologia"
+
   "rich-text#categoria": {
     "props": {
       "blockClass": "imagesDesktopBottom",
@@ -178,6 +188,8 @@
       "text": "##### **Por categoria de tecnologia**"
     }
   },
+
+  // Parte final dos cartões
 
   "flex-layout.row#imagesDesktopBottom": {
     "props": {
@@ -215,7 +227,7 @@
     }
   },
 
-  //Parte móvel do site com 4 infocards
+  //4 banners do topo na versão móvel
 
   "slider-layout#homemobile": {
     "children": [

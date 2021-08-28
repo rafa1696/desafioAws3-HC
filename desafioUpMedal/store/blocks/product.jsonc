@@ -1,4 +1,7 @@
 {
+
+  // Declaração do breadcrumb e fileira inicial da página de produtos
+
   "store.product": {
     "children": ["breadcrumb", "flex-layout.row#main"]
   },
@@ -7,12 +10,19 @@
     "props": {
       "marginTop": 6
     },
+
+    // Filhos da fileira são duas colunas, uma na esquerda e outra na direita
+
     "children": ["flex-layout.col#left", "flex-layout.col#right"]
   },
+
+  // Imagens do produto na coluna da esquerda
 
   "flex-layout.col#left": {
     "children": ["product-images"]
   },
+
+  // Propriedades da coluna direita e declarações de filhos
 
   "flex-layout.col#right": {
     "props": {
@@ -29,12 +39,16 @@
     ]
   },
 
+  // Configuração do preço dos produtos
+
   "product-price": {
     "props": {
       "showSavings": true,
       "showListPrice": true
     }
   },
+
+  // Seletor de SKU e quantidade 
 
   "flex-layout.row#qty-sku": {
     "children": ["sku-selector", "product-quantity"]
