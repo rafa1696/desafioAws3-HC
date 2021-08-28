@@ -1,17 +1,70 @@
 {
     "store.custom#about": {
         "blocks": [
-            "rich-text#1"
+            "info-card#topo",
+            "info-card#meio",
+            "info-card#final",
+            "slider-layout#parceiros"
         ]
     },
-    "rich-text#1": {
+    "info-card#topo": {
         "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "Visit our [help](https://help.vtex.com/en/faq/what-is-vtex-io) section.\n*Be Bold!*\n**This is italic**",
-            "textColor": "c-on-emphasis",
-            "font": "t-heading-5",
-            "blockClass": "help-message"
+            "id": "info-card-aws-topo",
+            "isFullModeStyle": false,
+            "textPosition": "center",
+            "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
+            "headline": "O que é a AWS?",
+            "subhead": "O serviço web da Amazon é uma plataforma que oferece soluções de computação em nuvem flexíveis, confiáveis, escaláveis, fáceis de usar e econômicas. A AWS é uma plataforma de computação abrangente e fácil de usar oferecida pela Amazon.A plataforma é desenvolvida com uma combinação de infraestrutura como serviço(IaaS), plataforma como serviço(PaaS) e ofertas de software embalado como serviço(SaaS).",
+            "callToActionText": "Crie uma conta AWS",
+            "callToActionUrl": "/sale/d",
+            "blockClass": "info-card-aws-topo",
+            "textAlignment": "left"
+        }
+    },
+    "info-card#meio": {
+        "props": {
+            "id": "info-card-aws-meio",
+            "isFullModeStyle": true,
+            "textPosition": "center",
+            "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
+            "headline": "Comece a criar com a AWS ainda hoje",
+            "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+            "callToActionText": "Comece a usar gratuitamente",
+            "callToActionUrl": "/sale/d",
+            "blockClass": "info-card-aws-meio",
+            "textAlignment": "center"
+        }
+    },
+    "info-card#final": {
+        "props": {
+            "id": "info-card-aws-final",
+            "isFullModeStyle": true,
+            "textPosition": "center",
+            "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
+            "headline": "Comece a criar com a AWS ainda hoje",
+            "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+            "callToActionText": "Comece a usar gratuitamente",
+            "callToActionUrl": "/sale/d",
+            "blockClass": "info-card-aws-final",
+            "textAlignment": "center"
+        }
+    },
+    "slider-layout#parceiros": {
+        "children": ["rich-text#mock"],
+        "props": {
+            "blockClass": "imagensBannerParceiros",
+            "autoplay": {
+                "timeout": 7000,
+                "stopOnHover": true
+            },
+            "itemsPerPage": {
+                "desktop": 1
+            }
+        }
+    },
+    "rich-text#mock": {
+        "props":{
+            "text": "Remova esse rich text"
         }
     }
 }
