@@ -4,7 +4,7 @@
       "menu-item#contact",
       "menu-item#about",
       "menu-item#support",
-      "menu-item#loggin"
+      "menu-item#login"
     ]
   },
   "menu-item#contact": {
@@ -43,14 +43,6 @@
       "type": "custom",
 
       "highlight": false,
-      "iconProps": {
-        "id": "sti-check",
-        "size": 16,
-        "viewBox": "0 0 16 16",
-        "orientation": "right",
-        "activeClassName": "white",
-        "mutedClassName": "c-action-primary"
-      },
       "itemProps": {
         "type": "external",
         "href": "#",
@@ -123,46 +115,41 @@
       }
     }
   },
-  "menu-item#loggin": {
+  "menu-item#login": {
     "props": {
-      "id": "menu-item-loggin",
+      "id": "menu-item-login",
       "type": "custom",
       "highlight": false,
-      "iconProps": {
-        "id": "caret",
-        "isActive": true,
-        "size": 16
-      },
       "itemProps": {
         "type": "external",
-        "href": "/",
+        "href": "#",
         "noFollow": false,
         "tagTitle": "Minha conta",
         "text": "Minha conta"
       }
     },
-    "blocks": ["vtex.menu@2.x:submenu#loggin"]
+    "blocks": ["vtex.menu@2.x:submenu#login"]
   },
-  "vtex.menu@2.x:submenu#loggin": {
+  "vtex.menu@2.x:submenu#login": {
     "props": {
       "width": "auto"
     },
-    "children": ["vtex.menu@2.x:menu#submenuloggin"]
+    "children": ["vtex.menu@2.x:menu#submenulogin"]
   },
-  "vtex.menu@2.x:menu#submenuloggin": {
+  "vtex.menu@2.x:menu#submenulogin": {
     "props": {
       "orientation": "vertical",
       "blockClass": "submenu"
     },
     "children": [
-      "menu-item#submenuloggin-console-management",
-      "menu-item#submenuloggin-manage-account",
-      "menu-item#submenuloggin-console-billing",
-      "menu-item#submenuloggin-console-credential",
-      "menu-item#submenuloggin-aws-phd"
+      "menu-item#submenulogin-console-management",
+      "menu-item#submenulogin-manage-account",
+      "menu-item#submenulogin-console-billing",
+      "menu-item#submenulogin-console-credential",
+      "menu-item#submenulogin-aws-phd"
     ]
   },
-  "menu-item#submenuloggin-console-management": {
+  "menu-item#submenulogin-console-management": {
     "props": {
       "id": "menu-item-console-management",
       "type": "custom",
@@ -177,7 +164,7 @@
       }
     }
   },
-  "menu-item#submenuloggin-manage-account": {
+  "menu-item#submenulogin-manage-account": {
     "props": {
       "id": "menu-item-manage-account",
       "type": "custom",
@@ -192,7 +179,7 @@
       }
     }
   },
-  "menu-item#submenuloggin-console-billing": {
+  "menu-item#submenulogin-console-billing": {
     "props": {
       "id": "menu-item-console-billing",
       "type": "custom",
@@ -207,7 +194,7 @@
       }
     }
   },
-  "menu-item#submenuloggin-console-credential": {
+  "menu-item#submenulogin-console-credential": {
     "props": {
       "id": "menu-item-console-credential",
       "type": "custom",
@@ -222,7 +209,7 @@
       }
     }
   },
-  "menu-item#submenuloggin-aws-phd": {
+  "menu-item#submenulogin-aws-phd": {
     "props": {
       "id": "menu-item-aws-phd",
       "type": "custom",

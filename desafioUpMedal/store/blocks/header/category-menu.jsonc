@@ -1,7 +1,8 @@
 {
     "vtex.menu@2.x:menu#category-menu": {
         "children": [
-         "menu-item#servicos-aws",
+         "menu-item#hardware-aws",   
+         "menu-item#solucoes-aws",
          "menu-item#pricing",
          "menu-item#documentation",
          "menu-item#learn",
@@ -11,16 +12,28 @@
          "menu-item#events"
         ]
     },
-    "menu-item#servicos-aws": {
+    /**/
+    "menu-item#hardware-aws": {
         "props": {
-          "id": "menu-item-servicos-aws",
+          "id": "menu-item-hardware-aws",
           "type": "custom",
           "highlight": false,
-          "iconProps": {
-            "id": "caret",
-            "isActive": true,
-            "size": 16
-          },
+          "itemProps": {
+            "type": "external",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Produtos",
+            "text": "Produtos"
+          }
+        }
+        //"blocks": ["vtex.menu@2.x:submenu#hardware-aws"]
+    },
+    
+    "menu-item#solucoes-aws": {
+        "props": {
+          "id": "menu-item-solucoes-aws",
+          "type": "custom",
+          "highlight": false,
           "itemProps": {
             "type": "external",
             "href": "#",
@@ -29,30 +42,30 @@
             "text": "Soluções"
           }
         },
-        "blocks": ["vtex.menu@2.x:submenu#servicos-aws"]
+        "blocks": ["vtex.menu@2.x:submenu#solucoes-aws"]
     },
-    "vtex.menu@2.x:submenu#servicos-aws": {
+    "vtex.menu@2.x:submenu#solucoes-aws": {
         "props": {
           "width": "auto"
         },
-        "children": ["vtex.menu@2.x:menu#submenuservicos-aws"]
+        "children": ["vtex.menu@2.x:menu#submenusolucoes-aws"]
     },
-    "vtex.menu@2.x:menu#submenuservicos-aws": {
+    "vtex.menu@2.x:menu#submenusolucoes-aws": {
         "props": {
           "orientation": "vertical",
           "blockClass": "submenu"
         },
         "children": [
-          "menu-item#submenuservicos-aws-amazon-rds",
-          "menu-item#submenuservicos-aws-aws-lambda",
-          "menu-item#submenuservicos-aws-amazon-ec2",
-          "menu-item#submenuservicos-aws-amazon-dynabodb",
-          "menu-item#submenuservicos-aws-amazon-aurora",
-          "menu-item#submenuservicos-aws-amazon-vpc",
-          "menu-item#submenuservicos-aws-amazon-s3"
+          "menu-item#submenusolucoes-aws-amazon-rds",
+          "menu-item#submenusolucoes-aws-aws-lambda",
+          "menu-item#submenusolucoes-aws-amazon-ec2",
+          "menu-item#submenusolucoes-aws-amazon-dynabodb",
+          "menu-item#submenusolucoes-aws-amazon-aurora",
+          "menu-item#submenusolucoes-aws-amazon-vpc",
+          "menu-item#submenusolucoes-aws-amazon-s3"
         ]
     },
-    "menu-item#submenuservicos-aws-amazon-rds": {
+    "menu-item#submenusolucoes-aws-amazon-rds": {
         "props": {
           "id": "menu-item-amazon-rds",
           "type": "custom",
@@ -67,7 +80,7 @@
           }
         }
     },
-    "menu-item#submenuservicos-aws-aws-lambda": {
+    "menu-item#submenusolucoes-aws-aws-lambda": {
         "props": {
           "id": "menu-item-aws-lambda",
           "type": "custom",
@@ -82,7 +95,7 @@
           }
         }
     },
-    "menu-item#submenuservicos-aws-amazon-ec2": {
+    "menu-item#submenusolucoes-aws-amazon-ec2": {
         "props": {
           "id": "menu-item-amazon-ec2",
           "type": "custom",
@@ -97,7 +110,7 @@
           }
         }
     },
-    "menu-item#submenuservicos-aws-amazon-dynabodb": {
+    "menu-item#submenusolucoes-aws-amazon-dynabodb": {
         "props": {
           "id": "menu-item-amazon-dynabodb",
           "type": "custom",
@@ -112,7 +125,7 @@
           }
         }
     },
-    "menu-item#submenuservicos-aws-amazon-aurora": {
+    "menu-item#submenusolucoes-aws-amazon-aurora": {
         "props": {
           "id": "menu-item-amazon-aurora",
           "type": "custom",
@@ -127,7 +140,7 @@
           }
         }
     },
-    "menu-item#submenuservicos-aws-amazon-vpc": {
+    "menu-item#submenusolucoes-aws-amazon-vpc": {
         "props": {
           "id": "menu-item-amazon-vpc",
           "type": "custom",
@@ -142,7 +155,7 @@
           }
         }
     },
-    "menu-item#submenuservicos-aws-amazon-s3": {
+    "menu-item#submenusolucoes-aws-amazon-s3": {
         "props": {
           "id": "menu-item-amazon-s3",
           "type": "custom",

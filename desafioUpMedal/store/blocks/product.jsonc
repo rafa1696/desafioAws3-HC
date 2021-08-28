@@ -22,6 +22,7 @@
     "children": [
       "vtex.store-components:product-name",
       "product-identifier.product",
+      "product-description",
       "product-price",
       "flex-layout.row#qty-sku",
       "add-to-cart-button"

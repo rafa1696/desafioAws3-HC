@@ -4,16 +4,7 @@
   padding: 0px;
 }
 
-<<<<<<< HEAD
-.logoImage--logomobile{
-  margin-top: 1.25rem;
-  margin-bottom: 1rem;
-}
-
-@media screen and (width: 1920px) {
-=======
 @media screen and (min-width: 1920px) {
->>>>>>> 2a7aa487a1b494aacc169e0b441c613f7e937c28
   .container {
     margin-left: 0;
     margin-right: 0;
@@ -37,7 +28,7 @@
 
 @media screen and (min-width: 768px) {
   .infoCardContainer {
-    height: 35vh;
+    height: 50vh;
   }
 }
 
@@ -151,4 +142,10 @@
 
 .currencyFraction {
   color: #000;
+}
+
+/* Espaçamento do logo mobile */
+.logoImage--logomobile{
+  margin-top: 1.25rem;
+  margin-bottom: 1rem;
 }

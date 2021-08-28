@@ -41,7 +41,6 @@
       "blockClass": "searchheaderdesktop"
     }
   },
-
   "flex-layout.col#spacer": {
     "props": {
       "width": "grow"
@@ -107,16 +106,29 @@
   },
   "menu#drawer": {
     "children": [
+      "rich-text#aws",
       "menu-item#contact",
       "menu-item#about",
+      "rich-text#suporte",
       "menu-item#submenusupport-support-center",
       "menu-item#submenusupport-knowledge-center",
       "menu-item#submenusupport-aws-support",
-      "menu-item#submenuloggin-console-management",
-      "menu-item#submenuloggin-manage-account",
-      "menu-item#submenuloggin-console-billing",
-      "menu-item#submenuloggin-console-credential",
-      "menu-item#submenuloggin-aws-phd",
+      "rich-text#login",
+      "menu-item#submenulogin-console-management",
+      "menu-item#submenulogin-manage-account",
+      "menu-item#submenulogin-console-billing",
+      "menu-item#submenulogin-console-credential",
+      "menu-item#submenulogin-aws-phd",
+      "rich-text#produtos",
+      "rich-text#solucoes",
+      "menu-item#submenusolucoes-aws-amazon-rds",
+      "menu-item#submenusolucoes-aws-aws-lambda",
+      "menu-item#submenusolucoes-aws-amazon-ec2",
+      "menu-item#submenusolucoes-aws-amazon-dynabodb",
+      "menu-item#submenusolucoes-aws-amazon-aurora",
+      "menu-item#submenusolucoes-aws-amazon-vpc",
+      "menu-item#submenusolucoes-aws-amazon-s3",
+      "rich-text#explore",
       "menu-item#pricing",
       "menu-item#documentation",
       "menu-item#learn",
@@ -124,10 +136,65 @@
       "menu-item#marketplace",
       "menu-item#customer",
       "menu-item#events",
+      
       "link#signup"
     ],
     "props": {
       "orientation": "vertical"
+    }
+  },
+  "rich-text#aws": {
+    "props": {
+      "blockClass": "textoAWS",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "AWS",
+      "textColor": "c-on-base--inverted"
+    }
+  },
+  "rich-text#suporte": {
+    "props": {
+      "blockClass": "textoSuporte",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Suporte",
+      "textColor": "c-on-base--inverted"
+    }
+  },
+  "rich-text#login": {
+    "props": {
+      "blockClass": "textoLogin",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Login",
+      "textColor": "c-on-base--inverted"
+    }
+  },
+  "rich-text#explore": {
+    "props": {
+      "blockClass": "textoExplore",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Explore Mais",
+      "textColor": "c-on-base--inverted"
+    }
+  },
+  "rich-text#produtos": {
+    "props": {
+      "blockClass": "textoProdutos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Produtos",
+      "textColor": "c-on-base--inverted"
+    }
+  },
+  "rich-text#solucoes": {
+    "props": {
+      "blockClass": "textoSolucoes",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Soluções",
+      "textColor": "c-on-base--inverted"
     }
   },
   "flex-layout.col#logo-mobile": {
