@@ -1,7 +1,15 @@
 /* Espaçamento do container principal da home */
 
-.container {
-  padding: 0px;
+@media screen and (max-width:768px) {
+  .container {
+    padding: 1rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0;
+  }
 }
 
 @media screen and (min-width: 1920px) {
@@ -100,8 +108,8 @@
   margin-left: auto;
 }
 
-@media screen and (min-width: 768px){
-  .infoCardCallActionContainer :global(.vtex-button){
+@media screen and (min-width: 768px) {
+  .infoCardCallActionContainer :global(.vtex-button) {
     margin: 1.5rem;
   }
 }
@@ -145,7 +153,7 @@
 }
 
 /* Espaçamento do logo mobile */
-.logoImage--logomobile{
+.logoImage--logomobile {
   margin-top: 1.25rem;
   margin-bottom: 1rem;
 }

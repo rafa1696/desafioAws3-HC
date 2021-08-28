@@ -1,0 +1,16 @@
+/* Espaçamento da página de produtos */
+
+@media screen and (min-width: 768px) {
+    .container--layout--pagBuscaDesk {
+        margin-left: 5vw;
+        margin-right: 6vw;
+    }
+}
+
+
+@media screen and (min-width: 1920px) {
+    .container--layout--pagBuscaDesk {
+        margin-left: 20vw!important;
+        margin-right: auto;
+    }
+}
