@@ -1,5 +1,4 @@
 {
-
   // Declaração do breadcrumb e fileira inicial da página de produtos
 
   "store.product": {
@@ -48,7 +47,7 @@
     }
   },
 
-  // Seletor de SKU e quantidade 
+  // Seletor de SKU e quantidade
 
   "flex-layout.row#qty-sku": {
     "children": ["sku-selector", "product-quantity"]
