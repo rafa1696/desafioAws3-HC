@@ -1,16 +1,24 @@
+/* Mudando o backgroundo do wrapper do submenu */ 
 .submenuWrapper {
   background-color: #232f3e;
 }
-
+/* Mudando a cor do texto */
 .styledLinkContent {
   color: #fff;
 }
-
+/* Mudando a cor do texto no hover */
 .styledLinkContent:hover {
   color: #f07114;
 }
-
+/* Inserindo espaçamento no container do menu */
 .menuContainer{
   margin-top: 1rem;
   
+}
+/* Inserindo espaçamento no container do menu */
+@media screen and (min-width: 1280px){
+  .styledLinkContainer{
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

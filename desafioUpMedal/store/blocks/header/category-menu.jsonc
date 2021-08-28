@@ -1,4 +1,5 @@
-{
+{   
+  // Menus e Submenus Secondários
     "vtex.menu@2.x:menu#category-menu": {
         "children": [
          "menu-item#hardware-aws",   
@@ -12,30 +13,97 @@
          "menu-item#events"
         ]
     },
-    /**/
+    // Menu de Produtos
     "menu-item#hardware-aws": {
         "props": {
           "id": "menu-item-hardware-aws",
           "type": "custom",
           "highlight": false,
           "itemProps": {
-            "type": "external",
+            "type": "internal",
             "href": "#",
             "noFollow": false,
             "tagTitle": "Produtos",
             "text": "Produtos"
           }
-        }
-        //"blocks": ["vtex.menu@2.x:submenu#hardware-aws"]
+        },
+        "blocks": ["vtex.menu@2.x:submenu#hardware-aws"]
     },
-    
+    // Submenus de Produtos
+    "vtex.menu@2.x:submenu#hardware-aws":{
+      "props": {
+        "width": "auto"
+      },
+      "children": ["vtex.menu@2.x:menu#submenuhardware-aws"]
+    },
+    "vtex.menu@2.x:menu#submenuhardware-aws": {
+      "props": {
+        "orientation": "vertical",
+        "blockClass": "submenu"
+      },
+      "children": [
+        "menu-item#submenuhardware-aws-snowcone",
+        "menu-item#submenuhardware-aws-snowball",
+        "menu-item#submenuhardware-aws-snowmobile"
+      ]
+    },
+    // Itens dos Submenus de Produtos
+    // Menu AWS Snowcone
+    "menu-item#submenuhardware-aws-snowcone": {
+      "props": {
+        "id": "menu-item-snowcone",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/awssnowcone/p",
+          "noFollow": false,
+          "tagTitle": "AWS Snowcone",
+          "text": "AWS Snowcone"
+        }
+      }
+    },
+    // Menu AWS Snowball
+    "menu-item#submenuhardware-aws-snowball": {
+      "props": {
+        "id": "menu-item-snowball",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/awssnowball/p",
+          "noFollow": false,
+          "tagTitle": "AWS Snowball",
+          "text": "AWS Snowball"
+        }
+      }
+    },
+    // Menu AWS Snowmobile
+    "menu-item#submenuhardware-aws-snowmobile": {
+      "props": {
+        "id": "menu-item-snowmobile",
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "itemProps": {
+          "type": "internal",
+          "href": "/awssnowmobile/p",
+          "noFollow": false,
+          "tagTitle": "AWS Snowmobile",
+          "text": "AWS Snowmobile"
+        }
+      }
+    },
+    // Menu de Soluções
     "menu-item#solucoes-aws": {
         "props": {
           "id": "menu-item-solucoes-aws",
           "type": "custom",
           "highlight": false,
           "itemProps": {
-            "type": "external",
+            "type": "internal",
             "href": "#",
             "noFollow": false,
             "tagTitle": "Soluções",
@@ -44,6 +112,7 @@
         },
         "blocks": ["vtex.menu@2.x:submenu#solucoes-aws"]
     },
+    // Submenus de Soluções
     "vtex.menu@2.x:submenu#solucoes-aws": {
         "props": {
           "width": "auto"
@@ -65,6 +134,8 @@
           "menu-item#submenusolucoes-aws-amazon-s3"
         ]
     },
+    // Itens do Submenus de Soluções
+    // Menu Amazon RDS
     "menu-item#submenusolucoes-aws-amazon-rds": {
         "props": {
           "id": "menu-item-amazon-rds",
@@ -80,6 +151,7 @@
           }
         }
     },
+    // Menu AWS Lambda
     "menu-item#submenusolucoes-aws-aws-lambda": {
         "props": {
           "id": "menu-item-aws-lambda",
@@ -95,6 +167,7 @@
           }
         }
     },
+    // Menu Amazon EC2
     "menu-item#submenusolucoes-aws-amazon-ec2": {
         "props": {
           "id": "menu-item-amazon-ec2",
@@ -110,6 +183,7 @@
           }
         }
     },
+    // Menu Amazon Dynamo DB
     "menu-item#submenusolucoes-aws-amazon-dynabodb": {
         "props": {
           "id": "menu-item-amazon-dynabodb",
@@ -125,6 +199,7 @@
           }
         }
     },
+    // Menu Amazon Aurora
     "menu-item#submenusolucoes-aws-amazon-aurora": {
         "props": {
           "id": "menu-item-amazon-aurora",
@@ -140,6 +215,7 @@
           }
         }
     },
+    // Menu Amazon VPC
     "menu-item#submenusolucoes-aws-amazon-vpc": {
         "props": {
           "id": "menu-item-amazon-vpc",
@@ -155,6 +231,7 @@
           }
         }
     },
+    // Menu Amazon S3
     "menu-item#submenusolucoes-aws-amazon-s3": {
         "props": {
           "id": "menu-item-amazon-s3",
@@ -170,6 +247,7 @@
           }
         }
     },
+    // Menu Definição de Preço
     "menu-item#pricing":{
         "props": {
             "id": "menu-item-pricing",
@@ -185,6 +263,7 @@
             }
         }    
     },
+    // Menu Documentação
     "menu-item#documentation":{
         "props": {
             "id": "menu-item-documentation",
@@ -200,6 +279,7 @@
             }
         }    
     },
+    // Menu Aprenda
     "menu-item#learn":{
         "props": {
             "id": "menu-item-learn",
@@ -215,6 +295,7 @@
             }
         }    
     },
+    // Menu Rede de parceiros
     "menu-item#partners":{
         "props": {
             "id": "menu-item-partners",
@@ -230,6 +311,7 @@
             }
         } 
     },
+    // Menu AWS Marketplace
     "menu-item#marketplace":{
         "props": {
             "id": "menu-item-marketplace",
@@ -245,6 +327,7 @@
             }
         } 
     },
+    // Menu Capacitação de clientes
     "menu-item#customer":{
         "props": {
             "id": "menu-item-customer",
@@ -260,6 +343,7 @@
             }
         } 
     },
+    // Menu Eventos
     "menu-item#events":{
         "props": {
             "id": "menu-item-events",
