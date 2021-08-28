@@ -1,10 +1,6 @@
 {
   "store.home": {
     "blocks": [
-<<<<<<< HEAD
-      /*Definimos aqui os blocos de resposta para Desktop e Mobile */
-=======
->>>>>>> 2a7aa487a1b494aacc169e0b441c613f7e937c28
       "slider-layout#home",
       "flex-layout.row#imagesDesktop",
       "rich-text#confira",
