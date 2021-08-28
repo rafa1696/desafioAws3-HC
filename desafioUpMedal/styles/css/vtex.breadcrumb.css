@@ -1,0 +1,18 @@
+/* Espaçamento dos breadcrumbs nas diferentes telas */
+
+@media screen and (max-width: 768px){
+    .container--breadProduct {
+        padding-left: 1rem;
+    }
+}
+@media screen and (min-width: 768px){
+    .container--breadProduct {
+        margin-top: 0.5rem;
+        padding-left: 2rem;
+    }
+}
+@media screen and (min-width: 1920px){
+    .container--breadProduct {
+        padding-left: 15vw;
+    }
+}

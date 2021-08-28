@@ -39,6 +39,33 @@
   color: white !important;
 }
 
+/* Espaçamento da coluna direita da página de produto */
+
+@media screen and (min-width: 768px) {
+  .flexCol--colDireitaProduto {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .flexCol--colDireitaProduto {
+    margin-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .flexCol--colEsquerdaProduto {
+    margin-left: 15vw;
+    margin-top: 3rem;
+    margin-right: 5rem;
+  }
+
+  .flexCol--colDireitaProduto {
+    margin-right: 0;
+    padding-left: 10rem;
+  }
+}
+
 /* Espaçamento do componente flex row em telas 1920x1080 */
 
 @media screen and (min-width: 1920px) {

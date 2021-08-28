@@ -5,6 +5,12 @@
     "children": ["breadcrumb", "flex-layout.row#main"]
   },
 
+  "breadcrumb": {
+    "props":{
+      "blockClass": "breadProduct"
+    }
+  },
+
   "flex-layout.row#main": {
     "props": {
       "marginTop": 6
@@ -18,6 +24,9 @@
   // Imagens do produto na coluna da esquerda
 
   "flex-layout.col#left": {
+    "props":{
+      "blockClass": "colEsquerdaProduto"
+    },
     "children": ["product-images"]
   },
 
@@ -26,7 +35,8 @@
   "flex-layout.col#right": {
     "props": {
       "preventVerticalStretch": true,
-      "verticalAlign": "middle"
+      "verticalAlign": "middle",
+      "blockClass": "colDireitaProduto"
     },
     "children": [
       "vtex.store-components:product-name",
