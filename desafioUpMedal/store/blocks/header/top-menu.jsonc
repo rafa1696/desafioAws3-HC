@@ -1,4 +1,5 @@
-{
+{ 
+  // Menus e Submenus Principal
   "vtex.menu@2.x:menu#websites": {
     "children": [
       "menu-item#contact",
@@ -7,6 +8,7 @@
       "menu-item#login"
     ]
   },
+  // Menu Entre em contato conosco
   "menu-item#contact": {
     "props": {
       "id": "menu-item-contact",
@@ -22,6 +24,7 @@
       }
     }
   },
+  // Menu Sobre
   "menu-item#about": {
     "props": {
       "id": "menu-item-about",
@@ -37,6 +40,7 @@
       }
     }
   },
+  // Menu de Suporte
   "menu-item#support": {
     "props": {
       "id": "menu-item-support",
@@ -53,6 +57,7 @@
     },
     "blocks": ["vtex.menu@2.x:submenu#support"] // Defining a submenu
   },
+  // Submenus de Suporte
   "vtex.menu@2.x:submenu#support": {
     "props": {
       "width": "auto"
@@ -70,6 +75,8 @@
       "menu-item#submenusupport-aws-support"
     ]
   },
+  // Itens dos Submenus de Suporte
+  // Menu Centro de suporte
   "menu-item#submenusupport-support-center": {
     "props": {
       "id": "menu-item-support-center",
@@ -85,6 +92,7 @@
       }
     }
   },
+  // Menu Central de conhecimento
   "menu-item#submenusupport-knowledge-center": {
     "props": {
       "id": "menu-item-knowledge-center",
@@ -100,6 +108,7 @@
       }
     }
   },
+  // Menu Visão geral do AWS Support
   "menu-item#submenusupport-aws-support": {
     "props": {
       "id": "menu-item-aws-support",
@@ -115,6 +124,7 @@
       }
     }
   },
+  // Menu de Minha conta
   "menu-item#login": {
     "props": {
       "id": "menu-item-login",
@@ -130,6 +140,7 @@
     },
     "blocks": ["vtex.menu@2.x:submenu#login"]
   },
+  // Submenus de Minha conta
   "vtex.menu@2.x:submenu#login": {
     "props": {
       "width": "auto"
@@ -149,6 +160,8 @@
       "menu-item#submenulogin-aws-phd"
     ]
   },
+  // Itens dos Submenus de Minha conta
+  // Menu Console de gerenciamento da AWS
   "menu-item#submenulogin-console-management": {
     "props": {
       "id": "menu-item-console-management",
@@ -164,6 +177,7 @@
       }
     }
   },
+  // Menu Configurações da conta
   "menu-item#submenulogin-manage-account": {
     "props": {
       "id": "menu-item-manage-account",
@@ -179,6 +193,7 @@
       }
     }
   },
+  // Menu Gerenciamento de faturamento e custo
   "menu-item#submenulogin-console-billing": {
     "props": {
       "id": "menu-item-console-billing",
@@ -194,6 +209,7 @@
       }
     }
   },
+  // Menu Credenciais de segurança
   "menu-item#submenulogin-console-credential": {
     "props": {
       "id": "menu-item-console-credential",
@@ -209,6 +225,7 @@
       }
     }
   },
+  // Menu AWS Personal Health Dashboard
   "menu-item#submenulogin-aws-phd": {
     "props": {
       "id": "menu-item-aws-phd",
@@ -224,6 +241,7 @@
       }
     }
   },
+  // Menu Crie uma conta da AWS
   "link#signup": {
     "props": {
       "displayMode": "button",
