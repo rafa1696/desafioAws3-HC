@@ -1,5 +1,24 @@
+/* Inserindo espaçamento no slider */
 .slider{
     margin-top: .5rem;
+}
+/* Inserindo espaçamento no container do slider parceiros*/
+.sliderLayoutContainer--imagensBannerParceiros{
+    margin: 2.5rem 0;
+    padding-bottom: 2rem;
+}
+/* Alinhando o Track no slider */
+.slideTrackContainer{
+    align-items: flex-end;
+}
+/* Mudando as cores do icone e dos dots de paginação do slider */
+.caretIcon,
+.paginationDotsContainer{
+    color: #232f3e;
+}
+
+.caretIcon:hover{
+   color: #f07114;
 }
 
 /* Largura do banner em tela 1920x1080 */

@@ -1,3 +1,4 @@
+/* Mudando os backgrounds dos conteúdos das fileiras */
 .flexRowContent--flexrowcontentheader,
 .flexRowContent--category-menu,
 .flexRowContent--flexrowcontentheadermobile,
@@ -14,11 +15,11 @@
   justify-content: center;
   align-items: center;
 }
-
+/* Fixando uma largura na fileira */
 .flexRow {
   width: 100%;
 }
-
+/* Inserindo espaçamento no fileira */
 .flexRow--imagesDesktop1 {
   margin-top: 3rem;
 }

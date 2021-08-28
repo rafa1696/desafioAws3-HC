@@ -1,7 +1,8 @@
+/* Mudando a cor do background do drawer */
 .drawer{
     background-color: #232f3e;
   }
-
+/* Mudando as cores dos ícones do drawer e adicionando uma margin */
   .closeIconButton,
   .openIconContainer{
     margin-top: .75rem;

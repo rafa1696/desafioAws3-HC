@@ -1,3 +1,4 @@
+/* Configurando o seletor de quantidade em telas 1200px */
 @media only screen and (min-device-width: 1200px) {
   .quantitySelectorContainer {
     position: relative;

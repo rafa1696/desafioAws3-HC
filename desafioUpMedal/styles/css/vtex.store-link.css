@@ -1,3 +1,4 @@
+/* Configurando botão */
 .buttonLink {
   color: white;
   background-color: #f07114;
@@ -12,7 +13,7 @@
   color: #f07114;
   background-color: #fff;
 }
-
+/* Alterando configurações de link */
 .link {
   max-width: 100%;
   margin-right: 5px;
@@ -20,7 +21,7 @@
   margin-bottom: 1rem;
 }
 
-
+/* Espaçamento do link em telas 768px */
 @media screen and (max-width: 768px){
   .link {
     max-width: fit-content;

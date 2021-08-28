@@ -1,12 +1,16 @@
-{
+{   
+    // Implementando componentes para página Sobre
     "store.custom#about": {
         "blocks": [
             "info-card#topo",
             "info-card#meio",
-            "info-card#final",
-            "slider-layout#parceiros"
+            "rich-text#slider",
+            "slider-layout#parceiros",
+            "info-card#final"
+            
         ]
     },
+    // 3 infocards descritivos sobre aws
     "info-card#topo": {
         "props": {
             "id": "info-card-aws-topo",
@@ -49,8 +53,31 @@
             "textAlignment": "center"
         }
     },
+    //Implementando um titulo para o slider
+    "rich-text#slider":{
+        "props": {
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "Empresas que usam a AWS",
+            "font": "t-heading-3"
+          }
+    },
+    // Implementando slider de parceiros aws
     "slider-layout#parceiros": {
-        "children": ["rich-text#mock"],
+        "children": [
+            "image#partner1",
+            "image#partner2",
+            "image#partner3",
+            "image#partner4",
+            "image#partner5",
+            "image#partner6",
+            "image#partner7",
+            "image#partner8",
+            "image#partner9",
+            "image#partner10",
+            "image#partner11",
+            "image#partner12"
+        ],
         "props": {
             "blockClass": "imagensBannerParceiros",
             "autoplay": {
@@ -58,13 +85,155 @@
                 "stopOnHover": true
             },
             "itemsPerPage": {
-                "desktop": 1
+                "desktop": 4,
+                "tablet": 3,
+                "phone": 2
             }
         }
     },
-    "rich-text#mock": {
-        "props":{
-            "text": "Remova esse rich text"
+    // Imagens dos parceiros aws
+    "image#partner1": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/finra-logo-feature.85a17ce4f98a977338d4815773bdc190f60567fe.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/solutions/case-studies/finra/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+          }
         }
-    }
+    },
+    "image#partner2": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/intuit-logo-feature.bc915b72d3bacc8151f763626c079c1311aca8c5.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/solutions/case-studies/Intuit/?pg=CRHuB",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      }
+    },  
+    "image#partner3": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/capitalone-logo-feature.cd67dcea3f62e9ca1e99140903ac60d8a482c584.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/solutions/case-studies/capital-one-enterprise/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      }
+    },
+    "image#partner4": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/coinbase-logo-feature.99142a786fcd4b5217c2612489a3e8efa9920a55.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/machine-learning/customers/innovators/coinbase/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      }
+    },
+    "image#partner5": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/aldo-group-logo-feature.bd0ea0579e4cdbce67404086880dfff8393bddad.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/solutions/case-studies/aldo-group-case-study/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      }
+    },
+    "image#partner6": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/coca-cola-logo-feature.e38db8e449bb5cd4ecc944bc13ce6ee4744357a8.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/solutions/case-studies/coca-cola-migration/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      } 
+    },
+    "image#partner7": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/glossier-logo-feature.99232c5b8456d716ee19d3cfee8e777ba4807279.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/blogs/startups/how-glossier-leveraged-tech-to-build-a-next-generation-cosmetics-company/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      }
+    },
+    "image#partner8": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/ibotta-logo-feature.c1f4b4e80ab9775dc4de15dc92f61053c63539d7.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/solutions/case-studies/Ibotta-marketplace1/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      }
+    },
+    "image#partner9": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/netflix-logo-feature.716587057934b03f5908a00e6ed30707d414aea5.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/solutions/case-studies/netflix/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      }
+    },
+    "image#partner10": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/formula-1-logo-feature.e4bfed74e99dcac099e71f58016d1577b71b3732.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/f1/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      }
+    },
+    "image#partner11": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/cet-logo-feature.feafe99b68f5e6763747c32411525a9976c10fbf.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/blogs/media/providing-remote-learning-for-millions-of-israel-students-through-live-stream/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      }
+    },
+    "image#partner12": {
+        "props": {
+          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/iflix-logo-feature.29d175a8ddb0287d24fdaa570b1a16cde974b8dc.png",
+          "maxHeight": 80,
+          "link":{
+            "url":"https://aws.amazon.com/solutions/case-studies/iflix/",
+            "noFollow": false,
+            "openNewTab": true,
+            "title": "Saiba mais"
+        }
+      }
+    }  
 }
