@@ -1,3 +1,13 @@
+/* Fundo do product-summary na página de busca */
+
+.element {
+  background-color: lightgray;
+}
+
+.buyButtonContainer {
+  background-color: lightgray;
+}
+
 .nameWrapper {
   color: white;
 }

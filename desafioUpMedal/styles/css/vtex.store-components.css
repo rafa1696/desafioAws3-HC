@@ -90,14 +90,6 @@
   color: white;
 }
 
-.infoCardSubhead--info-card-leads {
-  color: #fff;
-  font-weight: bold;
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  margin-left: 70mm;
-}
-
 /* Configurações do botão presente no banner */
 
 .infoCardCallActionContainer :global(.vtex-button) {

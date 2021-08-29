@@ -21,11 +21,12 @@
   margin-bottom: 1rem;
 }
 
-/* Espaçamento do link em telas 768px */
+/* Espaçamento do link em telas até 768px */
 @media screen and (max-width: 768px){
   .link {
     max-width: fit-content;
     margin-left: 1rem;
+    margin-right: 1.2rem;
   }
   
 }
