@@ -9,6 +9,9 @@
       "search-not-found-layout"
     ]
   },
+  
+  // Layout para desktop
+
   "search-result-layout.desktop": {
     "props": {
       "blockClass": "pagBuscaDesk"
@@ -16,14 +19,44 @@
     "children": [
       "breadcrumb.search",
       "search-title.v2",
-      "total-products.v2",
-      "order-by.v2",
+      "flex-layout.row#top",
       "search-fetch-previous",
-      "search-content",
-      "filter-navigator.v3",
+      "flex-layout.row#results",
       "search-fetch-more"
     ]
   },
+  // Quantidade de itens encontrados e ordenação
+  "flex-layout.row#top": {
+    "children": [
+      "total-products.v2",
+      "order-by.v2"
+    ]
+  },
+  // Declaração de colunas para filtros e resultados da busca
+  "flex-layout.row#results": {
+    "children": [
+      "flex-layout.col#filter",
+      "flex-layout.col#search"
+    ]
+  },
+  // Filtros: definição de largura em props; navegação em children
+  "flex-layout.col#filter": {
+    "props": {
+      "width": "20%"
+    },
+    "children": [
+      "filter-navigator.v3"
+    ]
+  },
+  // Itens encontrados
+  "flex-layout.col#search": {
+    "children": [
+      "search-content"
+    ]
+  },
+
+  // Layout para dispositivos móveis
+
   "search-result-layout.mobile": {
     "props": {
       "blockClass": "pagBuscaMob"
@@ -31,12 +64,20 @@
     "children": [
       "breadcrumb.search",
       "search-title.v2",
+      "filter-navigator.v3",
       "total-products.v2",
       "order-by.v2",
       "search-fetch-previous",
       "search-content",
-      "filter-navigator.v3",
       "search-fetch-more"
+    ]
+  },
+
+  // Layout para busca sem resultados
+
+  "search-not-found-layout": {
+    "children": [
+      "not-found"
     ]
   }
 }
