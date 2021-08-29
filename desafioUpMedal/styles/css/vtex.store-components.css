@@ -152,14 +152,23 @@
   color: #000;
 }
 
-/* Espaçamento do logo mobile */
+/* Espaçamento da logo no mobile */
 .logoImage--logomobile {
   margin-top: 1.25rem;
   margin-bottom: 1rem;
 }
 
+.logoContainer--logomobile{
+  padding-left: 0;
+  padding-right: 1rem;
+}
 /* Cores dos textos página de Sobre */
 
-.infoCardHeadline--info-card-aws-meio,.infoCardSubhead--info-card-aws-meio, .infoCardHeadline--info-card-aws-final, .infoCardSubhead--info-card-aws-final {
+.infoCardHeadline--info-card-aws-meio,.infoCardSubhead--info-card-aws-meio, 
+.infoCardHeadline--info-card-aws-final, .infoCardSubhead--info-card-aws-final {
   color: white;
+}
+/* Tirando borda do infocard sobre aws */
+.infoCardContainer--info-card-aws-final{
+  border: none;
 }
