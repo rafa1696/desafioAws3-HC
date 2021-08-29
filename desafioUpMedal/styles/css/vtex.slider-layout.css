@@ -12,6 +12,14 @@
     align-items: flex-end;
 }
 /* Mudando as cores do icone e dos dots de paginação do slider */
+.caretIcon--imagensBanner {
+    color: white!important;
+}
+
+.caretIcon--imagensBanner:hover {
+    color: #f07114!important;
+}
+
 .caretIcon,
 .paginationDotsContainer{
     color: #232f3e;
@@ -28,3 +36,4 @@
         width: 100vw!important;
     }
 }
+

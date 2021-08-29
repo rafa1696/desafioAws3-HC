@@ -14,15 +14,14 @@
     "info-card#topo": {
         "props": {
             "id": "info-card-aws-topo",
-            "isFullModeStyle": false,
+            "isFullModeStyle": true,
             "textPosition": "center",
-            "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
             "headline": "O que é a AWS?",
             "subhead": "O serviço web da Amazon é uma plataforma que oferece soluções de computação em nuvem flexíveis, confiáveis, escaláveis, fáceis de usar e econômicas. A AWS é uma plataforma de computação abrangente e fácil de usar oferecida pela Amazon.A plataforma é desenvolvida com uma combinação de infraestrutura como serviço(IaaS), plataforma como serviço(PaaS) e ofertas de software embalado como serviço(SaaS).",
             "callToActionText": "Crie uma conta AWS",
             "callToActionUrl": "/sale/d",
             "blockClass": "info-card-aws-topo",
-            "textAlignment": "left"
+            "textAlignment": "center"
         }
     },
     "info-card#meio": {
@@ -44,7 +43,7 @@
             "id": "info-card-aws-final",
             "isFullModeStyle": true,
             "textPosition": "center",
-            "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
+            "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473025252847616/bg3.jpg",
             "headline": "Comece a criar com a AWS ainda hoje",
             "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
             "callToActionText": "Comece a usar gratuitamente",

@@ -29,7 +29,7 @@
 
 /* Tamanhos do banner na página principal */
 
-.infoCardContainer {
+.infoCardContainer--info-card-example {
   width: 100vw !important;
   margin-bottom: 1rem;
 }
@@ -156,4 +156,10 @@
 .logoImage--logomobile {
   margin-top: 1.25rem;
   margin-bottom: 1rem;
+}
+
+/* Cores dos textos página de Sobre */
+
+.infoCardHeadline--info-card-aws-meio,.infoCardSubhead--info-card-aws-meio, .infoCardHeadline--info-card-aws-final, .infoCardSubhead--info-card-aws-final {
+  color: white;
 }
