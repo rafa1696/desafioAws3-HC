@@ -2,7 +2,7 @@
 .flexRowContent--flexrowcontentheader,
 .flexRowContent--category-menu,
 .flexRowContent--flexrowcontentheadermobile,
-.flexRowContent--flexrowcontentfooter {
+.flexRowContent--flexrowcontentfooter{
   background-color: #232f3e;
 }
 
@@ -22,6 +22,20 @@
 /* Inserindo espaçamento no fileira */
 .flexRow--imagesDesktop1 {
   margin-top: 3rem;
+}
+
+/* Configurando layout da fileira vantagens aws  */
+.flexRow--vantagens{
+  border: none;
+  background-color: #232f3e;
+}
+
+.flexRow--vantagens .stretchChildrenWidth {
+  align-items: center;
+}
+
+.flexRow--vantagens .flexCol {
+  align-items: center;
 }
 
 /* Cor e espaçamento dos rodapés desktop e móvel */
