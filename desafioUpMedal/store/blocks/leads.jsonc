@@ -1,7 +1,8 @@
 {
     "store.custom#leads": {
         "blocks": [
-            "flex-layout.row#leads"
+            "flex-layout.row#leads",
+            "back-to-top-button"
         ]
     },
     "flex-layout.row#leads": {

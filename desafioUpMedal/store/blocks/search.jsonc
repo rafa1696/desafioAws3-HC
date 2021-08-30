@@ -1,6 +1,6 @@
 {
   "store.search": {
-    "blocks": ["search-result-layout"]
+    "blocks": ["search-result-layout","back-to-top-button"]
   },
   "search-result-layout": {
     "blocks": [

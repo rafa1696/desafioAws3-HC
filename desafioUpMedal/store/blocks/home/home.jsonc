@@ -7,7 +7,8 @@
       "rich-text#setor",
       "flex-layout.row#imagesDesktopMiddle",
       "rich-text#categoria",
-      "flex-layout.row#imagesDesktopBottom"
+      "flex-layout.row#imagesDesktopBottom",
+      "back-to-top-button"
     ]
   },
   
@@ -305,5 +306,11 @@
       "blockClass": "info-card-example",
       "textAlignment": "center"
     }
+  },
+  "back-to-top-button":{
+     "props":{
+       "displayThreshold": 800,
+       "display":"caret-icon"
+     }
   }
 }
