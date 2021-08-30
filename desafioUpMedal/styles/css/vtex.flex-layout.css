@@ -2,7 +2,7 @@
 .flexRowContent--flexrowcontentheader,
 .flexRowContent--category-menu,
 .flexRowContent--flexrowcontentheadermobile,
-.flexRowContent--flexrowcontentfooter{
+.flexRowContent--flexrowcontentfooter {
   background-color: #232f3e;
 }
 
@@ -25,7 +25,7 @@
 }
 
 /* Configurando layout da fileira vantagens aws  */
-.flexRow--vantagens{
+.flexRow--vantagens {
   border: none;
   background-color: #1e2832;
 }
