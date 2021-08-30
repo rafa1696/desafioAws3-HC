@@ -13,25 +13,21 @@ const Leads: StorefrontFunctionComponent<LeadsProps> = ({}) => {
   const [email, setEmail] = useState('');
   const [telefone, setTelefone] = useState('');
   
-  function handlePesquisa() {
-    axios.get('https://0p3z4qvry6.execute-api.us-east-2.amazonaws.com/items').then(function(response:any){console.log(response)})
-    axios.put('https://0p3z4qvry6.execute-api.us-east-2.amazonaws.com/items', 
-      {
-      id: `${telefone}`,
-      email:`${email}`,
-      name:`${nome}`
-    }
-  )
-    .then(function (response:any) {
-      console.log(response);
-    })
-    .catch(function (error:any) {
-      console.log(error);
+  async function handleCreateLead() {
+    const { data, status } = await axios.post('https://marcosdesafio--hiringcoders202108.myvtex.com/_v/leads',  {
+      name: nome,
+      phone: telefone,
+      email
     });
-    setNome('');
-    setTelefone('');
-    setEmail('');
+
+    if (status === 201) {
+      console.log(data)
+      alert('Cadastro realizado com sucesso');
+      setNome('');
+      setTelefone('');
+      setEmail('');
     }
+  }
    
     return (
       <Box>
@@ -43,7 +39,7 @@ const Leads: StorefrontFunctionComponent<LeadsProps> = ({}) => {
         <p><Input type="text" placeholder="Seu nome completo" value={nome} onChange={ (e: any) => setNome((e.target as any).value)} /></p>
         <p><Input type="tel"  placeholder="telefone" value={telefone} onChange={(e: any) => setTelefone((e.target as any).value)} /></p>
         <p><Input type="email" placeholder="email" value={email} onChange={(e: any) => setEmail((e.target as any).value)} /></p>
-        <Button type="button" onClick={handlePesquisa} >Cadastrar</Button>
+        <Button type="button" onClick={handleCreateLead} >Cadastrar</Button>
         
       </Box>
     )
