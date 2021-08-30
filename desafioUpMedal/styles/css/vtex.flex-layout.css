@@ -25,12 +25,8 @@
 }
 
 /* Configurando layout da fileira vantagens aws  */
-<<<<<<< HEAD
-.flexRow--vantagens {
-=======
 .flexRow--vantagens{
   height: 50vh;
->>>>>>> 9cf287923bdb610035b0c1f2fb313cbfb9106e3e
   border: none;
   background-color: #1e2832;
 }
@@ -135,8 +131,6 @@
     margin-right: 10vw;
   }
 }
-<<<<<<< HEAD
-=======
 
 @media (min-width: 992px) and (max-width: 1199.98px){
   .flexRow--sobre-aws{
@@ -153,4 +147,3 @@
 @media (max-width: 575.98px){
   
 }
->>>>>>> 9cf287923bdb610035b0c1f2fb313cbfb9106e3e
