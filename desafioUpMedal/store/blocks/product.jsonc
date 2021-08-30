@@ -2,7 +2,7 @@
   // Declaração do breadcrumb e fileira inicial da página de produtos
 
   "store.product": {
-    "children": ["breadcrumb", "flex-layout.row#main"]
+    "children": ["breadcrumb", "flex-layout.row#main","back-to-top-button"]
   },
 
   "breadcrumb": {

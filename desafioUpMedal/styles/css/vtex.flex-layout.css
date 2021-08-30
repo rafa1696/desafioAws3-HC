@@ -38,6 +38,19 @@
   align-items: center;
 }
 
+.flexRow--sobre-aws{
+  align-items: space-around;
+}
+
+.flexRow--sobre-aws{
+  background-color: #1e2832;
+  padding:  2rem ;
+}
+
+.flexCol--video-aws{
+  background-color: #1e2832!important;
+}
+
 /* Cor e espaçamento dos rodapés desktop e móvel */
 
 .flexRow--rodapeDesk1 {
@@ -61,6 +74,20 @@
 @media screen and (min-width: 768px) {
   .flexCol--colDireitaProduto {
     margin-right: 1rem;
+  }
+
+  .flexRow--sobre-aws{
+    height: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px){
+  .flexRow--flexRow--sobre-aws{
+      padding: 1rem;
+  }
+
+  .flexRow--sobre-aws{
+    height: 70vh;
   }
 }
 

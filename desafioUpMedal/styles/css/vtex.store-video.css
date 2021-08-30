@@ -1,0 +1,22 @@
+/* Alterando padding e background do container do video */
+.videoContainer{
+    padding-right: 2rem;
+    background-color: #1e2832;
+}
+
+/* Espaçamento o player do video em telas no máximo de 768px */
+
+@media screen and (max-width: 768px){
+    .videoElement{
+        
+        width: 89vw;
+    }
+}
+
+/* Espaçamento o player do video em telas a prtir de 768px */
+@media screen and (min-width: 768px){
+    .videoElement{
+        width: 40vw!important;
+    }
+
+}
