@@ -1,4 +1,4 @@
-## Repósitorio de arquivos do projeto de desafio, desenvolvido na terceira fase do programa Hiring Coders
+## Repósitorio de arquivos do projeto de desafio #3 do programa Hiring Coders
 
 #### Página base do serviço Amazon AWS
 
