@@ -18,6 +18,7 @@ export async function createLead(ctx: Context, next: () => Promise<any>) {
   const result = await awsClient.createLead(lead)
 
   ctx.body = result
+  ctx.status = 201
 
   await next()
 }
