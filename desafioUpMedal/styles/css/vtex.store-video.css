@@ -1,5 +1,6 @@
 /* Alterando padding e background do container do video */
 .videoContainer{
+    padding-top: 1rem;
     padding-right: 2rem;
     background-color: #1e2832;
 }
@@ -19,4 +20,16 @@
         width: 40vw!important;
     }
 
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .videoContainer{
+        padding-top: 2.5rem;
+    }
+}
+
+@media (min-width: 1200px){
+    .videoContainer{
+        padding-top: 4rem;
+    }
 }

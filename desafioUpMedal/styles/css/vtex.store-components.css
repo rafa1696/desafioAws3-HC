@@ -26,7 +26,6 @@
   margin-bottom: 1rem;
 }
 
-
 /* Tamanhos do banner na página principal */
 
 .infoCardContainer--info-card-example {
@@ -36,10 +35,14 @@
 
 @media screen and (min-width: 768px) {
   .infoCardContainer {
-    height: 50vh;
+    height: 60vh;
   }
 
-  .infoCardContainer--info-card-aws-topo{
+  .infoCardTextContainer{
+    width: 50%;
+  }
+
+  /*.infoCardContainer--info-card-aws-topo{
     width: 44vw!important;
   }
 
@@ -48,7 +51,7 @@
     height: 60vh;
     padding-top: 12rem!important;
     padding-bottom: 3rem!important;
-  }
+  }*/
 }
 
 @media screen and (max-width: 768px) {
@@ -72,8 +75,14 @@
     margin-top: 0.5rem;
   }
 
+  .infoCardContainer--info-card-aws-topo{
+    height: 40vh;
+    width: 50vw;
+  }
+
   .infoCardTextContainer--info-card-aws-topo{
-    width: 100%!important;
+    width: 35vw;
+    margin-left: 0;
   }
 }
 
@@ -120,7 +129,7 @@
     margin: 1.5rem;
   }
 
-  .infoCardTextContainer--info-card-aws-topo{
+  /*.infoCardTextContainer--info-card-aws-topo{
     height: fit-content;
     width: 42vw!important;
     padding-top: 3rem;
@@ -130,7 +139,7 @@
   .infoCardTextContainer--info-card-aws-final{
     width: 52vw!important;
     height: 80vh;
-  }
+  }*/
 
   .infoCardCallActionContainer--info-card-aws-final{
     margin-top: 1rem;
@@ -194,17 +203,59 @@
 }
 .infoCardContainer--info-card-aws-topo,
 .infoCardContainer--info-card-aws-final{
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  /*padding-top: 2.5rem;
+  padding-bottom: 2.5rem;*/
   background-color: #1e2832;
 }
 
-.infoCardTextContainer--info-card-aws-topo{
+/*.infoCardTextContainer--info-card-aws-topo{
   width: 60%;
-}
+}*/
 
 /* Tirando borda do infocard sobre aws */
 .infoCardContainer--info-card-aws-topo,
 .infoCardContainer--info-card-aws-final{
   border: none;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .infoCardContainer--info-card-aws-topo{
+    height: 40vh;
+  }
+
+  .infoCardContainer--info-card-aws-final{
+    height: 40vh;
+  }
+  
+  .infoCardTextContainer--info-card-aws-topo{
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px){
+  .infoCardContainer--info-card-aws-final{
+    height: 40vh;
+  }
+
+  .infoCardTextContainer--info-card-aws-final{
+    width: 47vw;
+  }
+
+  .infoCardTextContainer--info-card-aws-topo{
+    height: 50vh;
+  }
+
+  .infoCardTextContainer--info-card-aws-topo{
+    width: 75%;
+  }
+}
+
+@media (max-width: 575.98px){
+  .infoCardTextContainer--info-card-aws-topo{
+    width: 60vw;
+  }
+
+  .infoCardImage{
+    display: none;
+  }
 }
