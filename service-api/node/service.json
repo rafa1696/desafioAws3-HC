@@ -1,0 +1,40 @@
+{
+  "memory": 256,
+  "ttl": 10,
+  "timeout": 2,
+  "minReplicas": 2,
+  "maxReplicas": 4,
+  "workers": 1,
+  "routes": {
+    "status": {
+      "path": "/_v/status/:code",
+      "public": true
+    },
+    "watchOrder": {
+      "path": "/_v/watch-order/",
+      "public": true
+    },
+    "updateLead": {
+      "path": "/_v/update-lead",
+      "public": true
+    },
+    "leads": {
+      "path": "/_v/leads",
+      "public": true
+    },
+    "products": {
+      "path": "/_v/products",
+      "public": true
+    }
+  },
+  "events": {
+    "allStates": {
+      "sender": "vtex.orders-broadcast",
+      "topics": ["order-status-updated"]
+    },
+    "orderStatus": {
+      "sender": "vtex.orders-broadcast",
+      "topics": ["cancel", "order-created"]
+    }
+  }
+}
