@@ -18,7 +18,9 @@ A versão móvel ficou assim:
 
 <img alt="Página inicial móvel" src="./desafioUpMedal/docs/assets/home-movel.png" alt="drawing" width="200"/>
 
-Cadastramos as "leads" em uma página acessada através de um link dentro de um banner na página principal. Após o preenchimento do formulário TROCAR TEXTO.
+Cadastramos as "leads" em uma página acessada através de um link dentro de um banner na página principal. Após o preenchimento do formulário, será cadastrado no banco de dados para futuramente checarmos se o interessado virou um cliente (vide fluxo presente no diagrama abaixo).
+
+<img alt="Componente de leads" src="./desafioUpMedal/docs/assets/componente-leads.png" width="400"/><br>
 
 ![Diagrama de funcionamento do back-end](./desafioUpMedal/docs/assets/diagrama-fluxo.png)
 
