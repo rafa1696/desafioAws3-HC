@@ -1,6 +1,6 @@
 import { UserInputError } from '@vtex/api'
 
-export async function skuById(ctx: Context, next: () => Promise<any>) {
+export async function validate(ctx: Context, next: () => Promise<any>) {
   const {
     vtex: {
       route: { params },
@@ -15,14 +15,9 @@ export async function skuById(ctx: Context, next: () => Promise<any>) {
     throw new UserInputError('Code is required') // Wrapper for a Bad Request (400) HTTP Error. Check others in https://github.com/vtex/node-vtex-api/blob/fd6139349de4e68825b1074f1959dd8d0c8f4d5b/src/errors/index.ts
   }
 
-  const codeNumber = code as string
+  const codeNumber = parseInt(code as string, 10)
 
-  const res = await ctx.clients.catalog.getSkuById(codeNumber).catch(reason => {
-    return reason?.response?.data
-  })
-  ctx.set('Cache-Control', 'no-cache no-store')
-  ctx.body = res
-  ctx.status = 200
+  ctx.state.code = codeNumber
 
   await next()
 }

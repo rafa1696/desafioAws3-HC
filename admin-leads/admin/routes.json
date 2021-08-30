@@ -1,0 +1,10 @@
+{
+  "admin.app.example": {
+    "component": "AdminLeads",
+    "path": "/admin/app/leads"
+  },
+  "admin.app.example-detail": {
+    "component": "AdminLeadDetail",
+    "path": "/admin/app/leadas/:id"
+  }
+}

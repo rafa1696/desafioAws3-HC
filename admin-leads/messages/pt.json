@@ -1,0 +1,9 @@
+{
+  "admin-example.navigation.label-group": "Gestão de Leads",
+  "admin-example.navigation.label-table": "Listagem de Leads",
+  "admin-example.navigation.search.kws": "teste, mock, fake",
+  "admin-example.navigation.details.search.kws": "detalhe, mock, test, oi",
+  "admin-example.navigation.table.search.kws": "tabela, mock, test, tchau",
+  "admin-example.hello-world": "Gestão de Leads",
+  "admin-example.details": "Admin detalhes"
+}

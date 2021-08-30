@@ -1,0 +1,13 @@
+{
+  "section": "orders",
+  "titleId": "admin-example.navigation.label-group",
+  "subSection": "leads",
+  "searchKeyWordsHelpers": "admin-example.navigation.search.kws",
+  "subSectionItems": [
+    {
+      "labelId": "admin-example.navigation.label-table",
+      "path": "/admin/leads",
+      "searchKeyWordsHelpers": "admin-example.navigation.table.search.kws"
+    }
+  ]
+}

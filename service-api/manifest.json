@@ -31,6 +31,20 @@
       }
     },
     {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "0p3z4qvry6.execute-api.us-east-2.amazonaws.com",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "puch0ptw3b.execute-api.us-east-2.amazonaws.com",
+        "path": "*"
+      }
+    },
+    {
       "name": "colossus-fire-event"
     },
     {
