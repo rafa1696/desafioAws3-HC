@@ -21,8 +21,8 @@ const Leads: StorefrontFunctionComponent<LeadsProps> = ({}) => {
     });
 
     if (status === 201) {
-      console.log(data)
-      alert('Cadastro realizado com sucesso');
+      console.log(data);
+      // alert('Cadastro realizado com sucesso');
       setNome('');
       setTelefone('');
       setEmail('');
