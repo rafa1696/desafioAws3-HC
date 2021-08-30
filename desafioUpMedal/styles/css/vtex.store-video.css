@@ -6,8 +6,19 @@
   background-color: #1e2832;
 }
 
-/* Espaçamento o player do video em telas no máximo de 768px */
+/* Espaçamento o player do video em telas menores que 576px*/
+@media (max-width: 575.98px){
+    .videoContainer{
+    padding-right: 0;
+    padding-top: 0;
+    }
 
+    .videoElement{
+        width: 85vw!important;
+    }
+  }
+
+/* Espaçamento o player do video em telas no máximo de 768px */
 @media screen and (max-width: 768px) {
   .videoElement {
     width: 89vw;
@@ -24,12 +35,12 @@
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .videoContainer {
-    padding-top: 2.5rem;
+    padding-top: 3.75rem;
   }
 }
 
 @media (min-width: 1200px) {
   .videoContainer {
-    padding-top: 4rem;
+    padding-top: 2rem;
   }
 }

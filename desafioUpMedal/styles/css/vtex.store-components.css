@@ -1,45 +1,82 @@
-/* Espaçamento do container principal da home */
+
+@media (max-width: 575.98px){
+  .infoCardContainer--info-card-aws-topo {
+    width: 100%;
+  }
+  .infoCardTextContainer--info-card-aws-topo{
+    width: 95vw!important;
+    height: 50vh;
+  }
+
+  .infoCardContainer--info-card-aws-final{
+    height: 50vh!important;
+  } 
+
+  .infoCardImage{
+    display: none;
+  }
+}
 
 @media screen and (max-width:768px) {
+  /* Espaçamento do container principal da home */
   .container {
     padding: 1rem;
   }
+
+  /*Espaçamento interno do Título e Subtítulo do banner */
+  .infoCardHeadline--info-card-example,
+  .infoCardSubhead--info-card-example {
+    padding: 1rem;
+    margin-top: 0.5rem;
+  }
+
+  /* .infoCardTextContainer {
+    height: 27rem;
+  }
+  .infoCardContainer--info-card-aws-topo{
+    height: 40vh;
+    width: 50vw;
+  }
+
+.infoCardTextContainer--info-card-aws-topo{
+  width: 35vw;
+  margin-left: 0;
+  }*/
+
 }
 
 @media screen and (min-width: 768px) {
   .container {
     padding: 0;
   }
-}
 
-@media screen and (min-width: 1920px) {
-  .container {
-    margin-left: 0;
-    margin-right: 0;
-  }
-}
-
-/* Espaçamento do logo */
-
-.logoImage {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-/* Tamanhos do banner na página principal */
-
-.infoCardContainer--info-card-example {
-  width: 100vw !important;
-  margin-bottom: 1rem;
-}
-
-@media screen and (min-width: 768px) {
-  .infoCardContainer {
+  .infoCardContainer--info-card-example {
     height: 60vh;
   }
 
-  .infoCardTextContainer{
+  .infoCardTextContainer--info-card-example{
     width: 50%;
+  }
+
+  .infoCardCallActionContainer :global(.vtex-button) {
+    margin: 1.5rem;
+  }
+
+  /*.infoCardTextContainer--info-card-aws-topo{
+    height: fit-content;
+    width: 42vw!important;
+    padding-top: 3rem;
+    margin:0 1.75rem  ;
+  }
+
+  .infoCardTextContainer--info-card-aws-final{
+    width: 52vw!important;
+    height: 80vh;
+  }*/
+
+  .infoCardCallActionContainer--info-card-aws-final{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 
   /*.infoCardContainer--info-card-aws-topo{
@@ -54,36 +91,60 @@
   }*/
 }
 
-@media screen and (max-width: 768px) {
-  .infoCardTextContainer {
-    height: 27rem;
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .infoCardContainer--info-card-aws-topo{
+    height: 40vh;
   }
+
+  .infoCardContainer--info-card-aws-final{
+    height: 40vh;
+  }
+  
+  .infoCardTextContainer--info-card-aws-topo{
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px){
+  .infoCardContainer--info-card-aws-final{
+    height: 40vh;
+  }
+
+  .infoCardTextContainer--info-card-aws-final{
+    width: 47vw;
+  }
+
+  .infoCardTextContainer--info-card-aws-topo{
+    height: 50vh;
+  }
+
+  .infoCardTextContainer--info-card-aws-topo{
+    width: 75%;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  .container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+/* Espaçamento do logo */
+.logoImage {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* Tamanhos do banner na página principal */
+.infoCardContainer--info-card-example {
+  width: 100vw !important;
+  margin-bottom: 1rem;
 }
 
 .infoCardHeadline--info-card-example,
 .infoCardSubhead--info-card-example {
   color: #fff;
-}
-
-/* Espaçamento interno do Título e Subtítulo do banner */
-
-@media screen and (max-width: 768px) {
-
-  .infoCardHeadline--info-card-example,
-  .infoCardSubhead--info-card-example {
-    padding: 1rem;
-    margin-top: 0.5rem;
-  }
-
-  .infoCardContainer--info-card-aws-topo{
-    height: 40vh;
-    width: 50vw;
-  }
-
-  .infoCardTextContainer--info-card-aws-topo{
-    width: 35vw;
-    margin-left: 0;
-  }
 }
 
 .infoCardCallActionText--info-card-example {
@@ -115,36 +176,12 @@
 }
 
 /* Configurações do botão presente no banner */
-
 .infoCardCallActionContainer :global(.vtex-button) {
   background-color: black;
   color: white;
   border: none;
   border-radius: 3mm;
   margin-left: auto;
-}
-
-@media screen and (min-width: 768px) {
-  .infoCardCallActionContainer :global(.vtex-button) {
-    margin: 1.5rem;
-  }
-
-  /*.infoCardTextContainer--info-card-aws-topo{
-    height: fit-content;
-    width: 42vw!important;
-    padding-top: 3rem;
-    margin:0 1.75rem  ;
-  }
-
-  .infoCardTextContainer--info-card-aws-final{
-    width: 52vw!important;
-    height: 80vh;
-  }*/
-
-  .infoCardCallActionContainer--info-card-aws-final{
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
 }
 
 .imageElement--imagestackpromocaomobile {
@@ -157,7 +194,6 @@
 }
 
 /* Cores do preço de produtos */
-
 .currencyContainer {
   color: #fff;
   font-size: 1.5rem;
@@ -195,17 +231,17 @@
   padding-left: 0;
   padding-right: 1rem;
 }
-/* Cores dos textos e background da página de Sobre */
 
+/* Cores dos textos e background da página de Sobre */
 .infoCardHeadline--info-card-aws-topo,.infoCardSubhead--info-card-aws-topo, 
 .infoCardHeadline--info-card-aws-final, .infoCardSubhead--info-card-aws-final {
   color: white;
 }
 .infoCardContainer--info-card-aws-topo,
 .infoCardContainer--info-card-aws-final{
+  background-color: #1e2832;
   /*padding-top: 2.5rem;
   padding-bottom: 2.5rem;*/
-  background-color: #1e2832;
 }
 
 /*.infoCardTextContainer--info-card-aws-topo{
@@ -216,46 +252,4 @@
 .infoCardContainer--info-card-aws-topo,
 .infoCardContainer--info-card-aws-final{
   border: none;
-}
-
-@media (min-width: 992px) and (max-width: 1199.98px){
-  .infoCardContainer--info-card-aws-topo{
-    height: 40vh;
-  }
-
-  .infoCardContainer--info-card-aws-final{
-    height: 40vh;
-  }
-  
-  .infoCardTextContainer--info-card-aws-topo{
-    width: 70%;
-  }
-}
-
-@media (min-width: 1200px){
-  .infoCardContainer--info-card-aws-final{
-    height: 40vh;
-  }
-
-  .infoCardTextContainer--info-card-aws-final{
-    width: 47vw;
-  }
-
-  .infoCardTextContainer--info-card-aws-topo{
-    height: 50vh;
-  }
-
-  .infoCardTextContainer--info-card-aws-topo{
-    width: 75%;
-  }
-}
-
-@media (max-width: 575.98px){
-  .infoCardTextContainer--info-card-aws-topo{
-    width: 60vw;
-  }
-
-  .infoCardImage{
-    display: none;
-  }
 }
