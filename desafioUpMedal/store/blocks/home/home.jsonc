@@ -11,11 +11,17 @@
       "back-to-top-button"
     ]
   },
-  
+
   // 4 infocards para mostrar conteúdo dos banners
 
   "slider-layout#home": {
-    "children": ["info-card#1", "info-card#2", "info-card#3", "info-card#4"],
+    "children": [
+      "info-card#1",
+      "info-card#2",
+      "info-card#3",
+      "info-card#4",
+      "info-card#5"
+    ],
     "props": {
       "blockClass": "imagensBanner",
       "autoplay": {
@@ -32,10 +38,10 @@
       "id": "info-card-example",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
-      "headline": "Comece a criar com a AWS ainda hoje",
-      "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
-      "callToActionText": "Comece a usar gratuitamente",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845281292767262/881967511732625438/bgaws.jpg",
+      "headline": "Cadastre-se para saber mais dos nossos produtos",
+      "subhead": "Por acaso se você estiver interessado em acompanhar nossos produtos, se inscreva em nossa newsletter e fique por dentro de todas novidades   ",
+      "callToActionText": "Cadastre-se aqui!",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -80,6 +86,20 @@
       "subhead": "O AWS Amplify oferece um fluxo de trabalho simples baseado em GIT para implantar aplicativos Web estáticos na AWS",
       "callToActionMode": "link",
       "callToActionText": "Saiba mais",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#5": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473022652379186/bg2.png",
+      "headline": "Conheça a plataforma, os produtos de nuvem e os recursos da AWS",
+      "callToActionMode": "link",
+      "callToActionText": "Comece a usar",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-example",
       "textAlignment": "center"
@@ -307,10 +327,10 @@
       "textAlignment": "center"
     }
   },
-  "back-to-top-button":{
-     "props":{
-       "displayThreshold": 800,
-       "display":"caret-icon"
-     }
+  "back-to-top-button": {
+    "props": {
+      "displayThreshold": 800,
+      "display": "caret-icon"
+    }
   }
 }
