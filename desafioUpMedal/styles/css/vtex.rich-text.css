@@ -17,7 +17,7 @@
 
 /* Mudando Cores e Tamanhos dos textos da fileira vantagens */
 .container--title-vantagens{
-  background-color: #232f3e;
+  background-color: #1e2832;
   color: #fff;
   border:none;
 }
@@ -27,6 +27,11 @@
   color: #fff;
   padding: 0 .5rem;
   padding-bottom: 1rem;
+}
+/* Mudando Cores e backgroundo dos textos da fileira parceiros */
+.container--title-parceiros{
+  background-color: #1e2832;
+  color: #fff;
 }
 
 /* Espaçamento e cor do último container com fotos */

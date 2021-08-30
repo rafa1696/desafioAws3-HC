@@ -4,15 +4,15 @@
 }
 /* Inserindo espaçamento no container do slider parceiros*/
 .sliderLayoutContainer--imagensBannerParceiros{
-    margin: 2.5rem 0;
-    padding-bottom: 2rem;
+    padding: 3rem 0;
+    background-color: #1e2832;
 }
 /* Alinhando o Track no slider */
 .slideTrackContainer{
     align-items: flex-end;
 }
 /* Mudando as cores do icone e dos dots de paginação do slider */
-.caretIcon--imagensBanner {
+.caretIcon {
     color: white!important;
 }
 
@@ -20,9 +20,8 @@
     color: #f07114!important;
 }
 
-.caretIcon,
-.paginationDotsContainer{
-    color: #232f3e;
+.paginationDot--imagensBannerParceiros{
+    color: #cacbcc;
 }
 
 .caretIcon:hover{

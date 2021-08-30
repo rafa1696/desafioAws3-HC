@@ -239,7 +239,8 @@
     "props": {
       "autoplay": {
         "timeout": 7000,
-        "stopOnHover": true
+        "stopOnHover": true,
+        "blockClass": "slider-home"
       },
       "itemsPerPage": {
         "mobile": 1

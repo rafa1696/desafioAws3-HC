@@ -27,7 +27,7 @@
 /* Configurando layout da fileira vantagens aws  */
 .flexRow--vantagens{
   border: none;
-  background-color: #232f3e;
+  background-color: #1e2832;
 }
 
 .flexRow--vantagens .stretchChildrenWidth {

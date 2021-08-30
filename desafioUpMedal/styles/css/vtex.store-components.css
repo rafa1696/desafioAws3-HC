@@ -154,13 +154,21 @@
   padding-left: 0;
   padding-right: 1rem;
 }
-/* Cores dos textos página de Sobre */
+/* Cores dos textos e background da página de Sobre */
 
-.infoCardHeadline--info-card-aws-meio,.infoCardSubhead--info-card-aws-meio, 
+.infoCardHeadline--info-card-aws-topo,.infoCardSubhead--info-card-aws-topo, 
 .infoCardHeadline--info-card-aws-final, .infoCardSubhead--info-card-aws-final {
   color: white;
 }
+.infoCardContainer--info-card-aws-topo,
+.infoCardContainer--info-card-aws-final{
+  padding-top: 5rem;
+  padding-bottom: 3rem;
+  background-color: #1e2832;
+  border-color: #232f3e;
+}
+
 /* Tirando borda do infocard sobre aws */
 .infoCardContainer--info-card-aws-final{
-  border: none;
+  border-top-color: #232f3e;
 }

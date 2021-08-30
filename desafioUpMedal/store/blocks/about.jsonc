@@ -2,6 +2,7 @@
     // Implementando componentes para página Sobre
     "store.custom#about": {
         "blocks": [
+           //"flex-layout.row#sobre-aws",
             "info-card#topo", 
             "rich-text#vantagens",
             "flex-layout.row#vantagens",
@@ -11,6 +12,39 @@
             
         ]
     },
+    /* 
+     "flex-layout.row#sobre-aws": {
+      "children": [
+        
+        "flex-layout.col#card-topo",
+        "flex-layout.col#video-aws"
+      ],
+      "props": {
+        "horizontalAlign":"CENTER",
+        "verticalAlign":"CENTER",
+        "blockClass": "sobre-aws",
+        "preventVerticalStretch": true,
+        "preventHorizontalStretch": true,
+        "fullWidth":true
+      }
+    },
+    "flex-layout.col#card-topo": {
+      "props":{
+        "blockClass": "vantagens"
+      },
+      "children": [
+        "info-card#topo"
+      ]
+    },
+    "flex-layout.col#video-aws": {
+      "props":{
+        "blockClass": "vantagens"
+      },
+      "children": [
+        "info-card#topo"
+      ]
+    },
+    */
     // 2 infocards descritivos sobre aws
     "info-card#topo": {
         "props": {
@@ -30,7 +64,7 @@
             "id": "info-card-aws-final",
             "isFullModeStyle": true,
             "textPosition": "center",
-            "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473025252847616/bg3.jpg",
+            
             "headline": "Comece a criar com a AWS ainda hoje",
             "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
             "callToActionText": "Comece a usar gratuitamente",
@@ -166,7 +200,8 @@
             "textAlignment": "CENTER",
             "textPosition": "CENTER",
             "text": "Empresas que usam a AWS",
-            "font": "t-heading-3"
+            "font": "t-heading-3",
+            "blockClass": "title-parceiros"
           }
     },
     // Implementando slider de parceiros aws
@@ -201,7 +236,7 @@
     // Imagens dos parceiros aws
     "image#partner1": {
         "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/finra-logo-feature.85a17ce4f98a977338d4815773bdc190f60567fe.png",
+          "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Finra-final.0dac58a45cae322bb45a33153acbaf3820228b1d.png",
           "maxHeight": 80,
           "maxWidth":180,
           "link":{
@@ -213,7 +248,7 @@
     },
     "image#partner2": {
         "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/intuit-logo-feature.bc915b72d3bacc8151f763626c079c1311aca8c5.png",
+          "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_DigitalGlobe-final.1e13c76b0c57e652ec8d29bf4a9184d16681eb6d.png",
           "maxHeight": 80,
           "maxWidth":180,
           "link":{
@@ -225,7 +260,7 @@
     },  
     "image#partner3": {
         "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/capitalone-logo-feature.cd67dcea3f62e9ca1e99140903ac60d8a482c584.png",
+          "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Coursera-final.c13e38940787372eb3d4526d50c96d797e62154b.png",
           "maxHeight": 80,
           "maxWidth":180,
           "link":{
@@ -249,7 +284,7 @@
     },
     "image#partner5": {
         "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/aldo-group-logo-feature.bd0ea0579e4cdbce67404086880dfff8393bddad.png",
+          "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_BrooksBrothers-final.dbefbdf05afc4b20b2a383b09e5d3e11d4abf804.png",
           "maxHeight": 80,
           "maxWidth":180,
           "link":{
@@ -273,7 +308,7 @@
     },
     "image#partner7": {
         "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/glossier-logo-feature.99232c5b8456d716ee19d3cfee8e777ba4807279.png",
+          "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Expedia-final.108743a11087e302989653c12eea8cebb010541c.png",
           "maxHeight": 80,
           "maxWidth":180,
           "link":{
