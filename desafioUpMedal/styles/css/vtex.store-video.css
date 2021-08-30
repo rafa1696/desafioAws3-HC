@@ -1,35 +1,35 @@
 /* Alterando padding e background do container do video */
-.videoContainer{
-    padding-top: 1rem;
-    padding-right: 2rem;
-    background-color: #1e2832;
+.videoContainer {
+  padding-top: 1rem;
+  padding-right: 2rem;
+  margin-bottom: 2.5rem;
+  background-color: #1e2832;
 }
 
 /* Espaçamento o player do video em telas no máximo de 768px */
 
-@media screen and (max-width: 768px){
-    .videoElement{
-        
-        width: 89vw;
-    }
+@media screen and (max-width: 768px) {
+  .videoElement {
+    width: 89vw;
+  }
 }
 
-/* Espaçamento o player do video em telas a prtir de 768px */
-@media screen and (min-width: 768px){
-    .videoElement{
-        width: 40vw!important;
-    }
-
+/* Espaçamento o player do video em telas a partir de 768px */
+@media screen and (min-width: 768px) {
+  .videoElement {
+    width: 36vw !important;
+    height: 18vw !important;
+  }
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px){
-    .videoContainer{
-        padding-top: 2.5rem;
-    }
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .videoContainer {
+    padding-top: 2.5rem;
+  }
 }
 
-@media (min-width: 1200px){
-    .videoContainer{
-        padding-top: 4rem;
-    }
+@media (min-width: 1200px) {
+  .videoContainer {
+    padding-top: 4rem;
+  }
 }

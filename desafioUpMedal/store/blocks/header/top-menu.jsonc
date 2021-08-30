@@ -1,4 +1,4 @@
-{ 
+{
   // Menus e Submenus Principal
   "vtex.menu@2.x:menu#websites": {
     "children": [
