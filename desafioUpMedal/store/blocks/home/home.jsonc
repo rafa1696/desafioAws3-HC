@@ -42,7 +42,7 @@
       "headline": "Cadastre-se para saber mais sobre nossos novos produtos",
       "subhead": "Por acaso se você estiver interessado em acompanhar nossos produtos, se inscreva em nossa newsletter e fique por dentro de todas novidades   ",
       "callToActionText": "Cadastre-se aqui!",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/leads",
       "blockClass": "info-card-example",
       "textAlignment": "center"
     }
@@ -274,11 +274,11 @@
       "id": "info-card-example",
       "isFullModeStyle": true,
       "textPosition": "center",
-      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
-      "headline": "Comece a criar com a AWS ainda hoje",
-      "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+      "imageUrl": "https://i.imgur.com/aGzpJNq.jpg",
+      "headline": "Cadastre-se para saber mais sobre nossos novos produtos",
+      "subhead": "Por acaso se você estiver interessado em acompanhar nossos produtos, se inscreva em nossa newsletter e fique por dentro de todas novidades   ",
       "callToActionText": "Comece a usar gratuitamente",
-      "callToActionUrl": "/sale/d",
+      "callToActionUrl": "/leads",
       "blockClass": "info-card-example",
       "textAlignment": "center"
     }
@@ -322,6 +322,20 @@
       "subhead": "O AWS Amplify oferece um fluxo de trabalho simples baseado em GIT para implantar aplicativos Web estáticos na AWS",
       "callToActionMode": "link",
       "callToActionText": "Saiba mais",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-example",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#mob5": {
+    "props": {
+      "id": "info-card-example",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "imageUrl": "https://cdn.discordapp.com/attachments/879845756310282330/880473020412620840/bg1.png",
+      "headline": "Comece a criar com a AWS ainda hoje",
+      "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+      "callToActionText": "Comece a usar gratuitamente",
       "callToActionUrl": "/sale/d",
       "blockClass": "info-card-example",
       "textAlignment": "center"
