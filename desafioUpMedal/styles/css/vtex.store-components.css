@@ -26,7 +26,6 @@
   margin-bottom: 1rem;
 }
 
-
 /* Tamanhos do banner na página principal */
 
 .infoCardContainer--info-card-example {
@@ -36,8 +35,23 @@
 
 @media screen and (min-width: 768px) {
   .infoCardContainer {
-    height: 50vh;
+    height: 60vh;
   }
+
+  .infoCardTextContainer{
+    width: 50%;
+  }
+
+  /*.infoCardContainer--info-card-aws-topo{
+    width: 44vw!important;
+  }
+
+  .infoCardContainer--info-card-aws-final{
+    width: 100%;
+    height: 60vh;
+    padding-top: 12rem!important;
+    padding-bottom: 3rem!important;
+  }*/
 }
 
 @media screen and (max-width: 768px) {
@@ -59,6 +73,16 @@
   .infoCardSubhead--info-card-example {
     padding: 1rem;
     margin-top: 0.5rem;
+  }
+
+  .infoCardContainer--info-card-aws-topo{
+    height: 40vh;
+    width: 50vw;
+  }
+
+  .infoCardTextContainer--info-card-aws-topo{
+    width: 35vw;
+    margin-left: 0;
   }
 }
 
@@ -103,6 +127,23 @@
 @media screen and (min-width: 768px) {
   .infoCardCallActionContainer :global(.vtex-button) {
     margin: 1.5rem;
+  }
+
+  /*.infoCardTextContainer--info-card-aws-topo{
+    height: fit-content;
+    width: 42vw!important;
+    padding-top: 3rem;
+    margin:0 1.75rem  ;
+  }
+
+  .infoCardTextContainer--info-card-aws-final{
+    width: 52vw!important;
+    height: 80vh;
+  }*/
+
+  .infoCardCallActionContainer--info-card-aws-final{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
   }
 }
 
@@ -162,13 +203,59 @@
 }
 .infoCardContainer--info-card-aws-topo,
 .infoCardContainer--info-card-aws-final{
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  /*padding-top: 2.5rem;
+  padding-bottom: 2.5rem;*/
   background-color: #1e2832;
-  border-color: #232f3e;
 }
 
+/*.infoCardTextContainer--info-card-aws-topo{
+  width: 60%;
+}*/
+
 /* Tirando borda do infocard sobre aws */
+.infoCardContainer--info-card-aws-topo,
 .infoCardContainer--info-card-aws-final{
-  border-top-color: #232f3e;
+  border: none;
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .infoCardContainer--info-card-aws-topo{
+    height: 40vh;
+  }
+
+  .infoCardContainer--info-card-aws-final{
+    height: 40vh;
+  }
+  
+  .infoCardTextContainer--info-card-aws-topo{
+    width: 70%;
+  }
+}
+
+@media (min-width: 1200px){
+  .infoCardContainer--info-card-aws-final{
+    height: 40vh;
+  }
+
+  .infoCardTextContainer--info-card-aws-final{
+    width: 47vw;
+  }
+
+  .infoCardTextContainer--info-card-aws-topo{
+    height: 50vh;
+  }
+
+  .infoCardTextContainer--info-card-aws-topo{
+    width: 75%;
+  }
+}
+
+@media (max-width: 575.98px){
+  .infoCardTextContainer--info-card-aws-topo{
+    width: 60vw;
+  }
+
+  .infoCardImage{
+    display: none;
+  }
 }

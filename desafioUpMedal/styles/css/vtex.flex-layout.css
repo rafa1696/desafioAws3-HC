@@ -25,7 +25,12 @@
 }
 
 /* Configurando layout da fileira vantagens aws  */
+<<<<<<< HEAD
 .flexRow--vantagens {
+=======
+.flexRow--vantagens{
+  height: 50vh;
+>>>>>>> 9cf287923bdb610035b0c1f2fb313cbfb9106e3e
   border: none;
   background-color: #1e2832;
 }
@@ -36,6 +41,19 @@
 
 .flexRow--vantagens .flexCol {
   align-items: center;
+}
+
+.flexRow--sobre-aws{
+  align-items: space-around;
+}
+
+.flexRow--sobre-aws{
+  background-color: #1e2832;
+  padding:  2rem ;
+}
+
+.flexCol--video-aws{
+  background-color: #1e2832!important;
 }
 
 /* Cor e espaçamento dos rodapés desktop e móvel */
@@ -56,11 +74,27 @@
   color: white !important;
 }
 
+.flexRowContent--rodapeMob1{
+  justify-content: space-around!important;
+}
+
 /* Espaçamento da coluna direita da página de produto */
 
 @media screen and (min-width: 768px) {
   .flexCol--colDireitaProduto {
     margin-right: 1rem;
+  }
+
+  /*
+  .flexRow--sobre-aws{
+    height: fit-content;
+  }
+  */
+}
+
+@media screen and (max-width: 768px){
+   .flexRow--sobre-aws{
+    height: 55vh;
   }
 }
 
@@ -101,3 +135,22 @@
     margin-right: 10vw;
   }
 }
+<<<<<<< HEAD
+=======
+
+@media (min-width: 992px) and (max-width: 1199.98px){
+  .flexRow--sobre-aws{
+    height: 45vh;
+  }
+}
+
+@media (min-width: 1200px){
+  .flexRow--sobre-aws{
+    height: 50vh;
+  }
+}
+
+@media (max-width: 575.98px){
+  
+}
+>>>>>>> 9cf287923bdb610035b0c1f2fb313cbfb9106e3e

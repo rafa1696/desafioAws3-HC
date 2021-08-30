@@ -2,18 +2,18 @@
     // Implementando componentes para página Sobre
     "store.custom#about": {
         "blocks": [
-           //"flex-layout.row#sobre-aws",
-            "info-card#topo", 
+           "flex-layout.row#sobre-aws",
             "rich-text#vantagens",
             "flex-layout.row#vantagens",
             "rich-text#slider",
             "slider-layout#parceiros",
-            "info-card#final"
+            "info-card#final",
+            "back-to-top-button"
             
         ]
     },
-    /* 
-     "flex-layout.row#sobre-aws": {
+    //Implementado fileira inicial sobre a aws 
+    "flex-layout.row#sobre-aws": {
       "children": [
         
         "flex-layout.col#card-topo",
@@ -38,13 +38,26 @@
     },
     "flex-layout.col#video-aws": {
       "props":{
-        "blockClass": "vantagens"
+        "blockClass": "video-aws"
       },
       "children": [
-        "info-card#topo"
+        "video#sobre-aws"
       ]
     },
-    */
+    // Inserindo o video sobre aws
+    "video#sobre-aws": {
+    "props": {
+      "width": "452px",
+      "height": "255px",
+      "controlsType":"custom-vtex",
+      "loop": false,
+      "autoPlay": false,
+      "muted": false,
+      "poster":"//d1.awsstatic.com/what-is-aws/WIAWS_Video-Thumbnail.ee5ad8cdbb403bcb524c4345a03e61d554bf917f.jpg",
+      "src": "https://www.youtube-nocookie.com/embed/a9__D53WsUs?controls=0&modestbranding=1&rel=0&showinfo=0&loop=0&fs=0&hl=pt&enablejsapi=1&origin=https%3A%2F%2Faws.amazon.com&widgetid=1",
+      "blockClass": "videoAWS"
+    }
+    },
     // 2 infocards descritivos sobre aws
     "info-card#topo": {
         "props": {
@@ -64,7 +77,6 @@
             "id": "info-card-aws-final",
             "isFullModeStyle": true,
             "textPosition": "center",
-            
             "headline": "Comece a criar com a AWS ainda hoje",
             "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
             "callToActionText": "Comece a usar gratuitamente",
@@ -249,10 +261,10 @@
     "image#partner2": {
         "props": {
           "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_DigitalGlobe-final.1e13c76b0c57e652ec8d29bf4a9184d16681eb6d.png",
-          "maxHeight": 80,
-          "maxWidth":180,
+          "maxHeight": "80px",
+          "maxWidth":"180px",
           "link":{
-            "url":"https://aws.amazon.com/solutions/case-studies/Intuit/?pg=CRHuB",
+            "url":"https://aws.amazon.com/pt/solutions/case-studies/digitalglobe/?pg=WIAWS",
             "noFollow": false,
             "openNewTab": true
         }
@@ -261,10 +273,10 @@
     "image#partner3": {
         "props": {
           "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Coursera-final.c13e38940787372eb3d4526d50c96d797e62154b.png",
-          "maxHeight": 80,
-          "maxWidth":180,
+          "maxHeight": "80px",
+          "maxWidth":"180px",
           "link":{
-            "url":"https://aws.amazon.com/solutions/case-studies/capital-one-enterprise/",
+            "url":"https://aws.amazon.com/pt/solutions/case-studies/coursera/?pg=WIAWS",
             "noFollow": false,
             "openNewTab": true
         }
@@ -285,10 +297,10 @@
     "image#partner5": {
         "props": {
           "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_BrooksBrothers-final.dbefbdf05afc4b20b2a383b09e5d3e11d4abf804.png",
-          "maxHeight": 80,
-          "maxWidth":180,
+          "maxHeight": "80px",
+          "maxWidth":"180px",
           "link":{
-            "url":"https://aws.amazon.com/solutions/case-studies/aldo-group-case-study/",
+            "url":"https://aws.amazon.com/pt/solutions/case-studies/brooks-brothers/?pg=WIAWS",
             "noFollow": false,
             "openNewTab": true
         }
@@ -309,10 +321,10 @@
     "image#partner7": {
         "props": {
           "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Expedia-final.108743a11087e302989653c12eea8cebb010541c.png",
-          "maxHeight": 80,
-          "maxWidth":180,
+          "maxHeight": "80px",
+          "maxWidth":"180px",
           "link":{
-            "url":"https://aws.amazon.com/blogs/startups/how-glossier-leveraged-tech-to-build-a-next-generation-cosmetics-company/",
+            "url":"https://aws.amazon.com/pt/solutions/case-studies/expedia/?pg=WIAWS",
             "noFollow": false,
             "openNewTab": true
         }
@@ -321,8 +333,8 @@
     "image#partner8": {
         "props": {
           "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/ibotta-logo-feature.c1f4b4e80ab9775dc4de15dc92f61053c63539d7.png",
-          "maxHeight": 80,
-          "maxWidth":180,
+          "maxHeight": "80px",
+          "maxWidth":"180px",
           "link":{
             "url":"https://aws.amazon.com/solutions/case-studies/Ibotta-marketplace1/",
             "noFollow": false,
@@ -333,8 +345,8 @@
     "image#partner9": {
         "props": {
           "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/netflix-logo-feature.716587057934b03f5908a00e6ed30707d414aea5.png",
-          "maxHeight": 80,
-          "maxWidth":180,
+          "maxHeight": "80px",
+          "maxWidth":"180px",
           "link":{
             "url":"https://aws.amazon.com/solutions/case-studies/netflix/",
             "noFollow": false,
@@ -345,8 +357,8 @@
     "image#partner10": {
         "props": {
           "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/formula-1-logo-feature.e4bfed74e99dcac099e71f58016d1577b71b3732.png",
-          "maxHeight": 80,
-          "maxWidth":180,
+          "maxHeight": "80px",
+          "maxWidth":"180px",
           "link":{
             "url":"https://aws.amazon.com/f1/",
             "noFollow": false,
@@ -357,8 +369,8 @@
     "image#partner11": {
         "props": {
           "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/cet-logo-feature.feafe99b68f5e6763747c32411525a9976c10fbf.png",
-          "maxHeight": 80,
-          "maxWidth":180,
+          "maxHeight": "80px",
+          "maxWidth":"180px",
           "link":{
             "url":"https://aws.amazon.com/blogs/media/providing-remote-learning-for-millions-of-israel-students-through-live-stream/",
             "noFollow": false,
@@ -369,8 +381,8 @@
     "image#partner12": {
         "props": {
           "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/iflix-logo-feature.29d175a8ddb0287d24fdaa570b1a16cde974b8dc.png",
-          "maxHeight": 80,
-          "maxWidth":180,
+          "maxHeight": "80px",
+          "maxWidth":"180px",
           "link":{
             "url":"https://aws.amazon.com/solutions/case-studies/iflix/",
             "noFollow": false,
