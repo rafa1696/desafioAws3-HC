@@ -54,66 +54,22 @@ class LeadsTable extends Component<Props> {
           title: 'Nome',
         },
         email: {
-          title: 'Tipo',
-          cellRenderer: ({ cellData }: any) => {
-            return <span className={`ws-normal ${fontSize}`}>{cellData}</span>
-          },
-        },
-        type: {
           title: 'Email',
           cellRenderer: ({ cellData }: any) => {
             return <span className={`ws-normal ${fontSize}`}>{cellData}</span>
           },
         },
+        type: {
+          title: 'Tipo',
+          cellRenderer: ({ cellData }: any) => {
+            if (cellData === 'prospect'){
+              return <span className={`ws-normal ${fontSize}`}>{"Prospect"}</span>              
+            }
+            return <span className={`ws-normal ${fontSize}`}>{"Cliente"}</span>
+          },
+          
+        },
       },
-    }
-  }
-
-  private simpleInputObject({ values, onChangeObjectCallback }: any) {
-    return (
-      <Input
-        value={values || ''}
-        onChange={(e: any) => onChangeObjectCallback(e.target.value)}
-      />
-    )
-  }
-
-  private simpleInputVerbsAndLabel() {
-    return {
-      renderFilterLabel: (st: any) => {
-        if (!st || !st.object) {
-          // you should treat empty object cases only for alwaysVisibleFilters
-          return 'Any'
-        }
-        return `${st.verb === '=' ? 'is' : st.verb === '!=' ? 'is not' : 'contains'
-          } ${st.object}`
-      },
-      verbs: [
-        {
-          label: 'is',
-          value: '=',
-          object: {
-            renderFn: this.simpleInputObject,
-            extraParams: {},
-          },
-        },
-        {
-          label: 'is not',
-          value: '!=',
-          object: {
-            renderFn: this.simpleInputObject,
-            extraParams: {},
-          },
-        },
-        {
-          label: 'contains',
-          value: 'contains',
-          object: {
-            renderFn: this.simpleInputObject,
-            extraParams: {},
-          },
-        },
-      ],
     }
   }
 
@@ -136,7 +92,7 @@ class LeadsTable extends Component<Props> {
           onRowClick={({ rowData }: any) =>
             navigate({
               page: 'admin.app.example-detail',
-              params: { id: rowData.id },
+              params: { id: rowData.leadId },
             })
           }
         />
