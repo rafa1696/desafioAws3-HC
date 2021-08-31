@@ -1,13 +1,13 @@
 {
   "store.custom#leads": {
       "blocks": [
-          "flex-layout.row#leads",
-          "back-to-top-button"
+          "flex-layout.row#leads"
       ]
   },
   "flex-layout.row#leads": {
       "props": {
         "horizontalAlign": "center",
+        "verticalAlign": "center",
         "marginTop":"10",
         "rowGap": "10"
       },
@@ -17,9 +17,13 @@
   },
   "flex-layout.col#leads": {
     "props": {
+      "blockClass":"leads",
       "horizontalAlign": "center",
       "verticalAlign":"middle",
-      "width": "40%"        
+      "width": "40%",
+      "border": "all",
+      "borderWidth": 2,
+      "borderColor": "#232f3e"        
     },
       "children": [
           "leads"

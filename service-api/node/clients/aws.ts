@@ -16,6 +16,10 @@ export default class Status extends ExternalClient {
     return this.http.get('leads')
   }
 
+  public async getLeadById(id: string) {
+    return this.http.get(`leads/${id}`)
+  }
+
   public async updateLead(lead: Lead) {
     const id = lead.leadId
 

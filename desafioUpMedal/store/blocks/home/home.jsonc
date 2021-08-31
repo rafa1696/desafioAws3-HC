@@ -117,25 +117,45 @@
 
   "image#1": {
     "props": {
-      "src": "https://i.imgur.com/xuBetdY.png"
+      "src": "https://i.imgur.com/xuBetdY.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/free/",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
   "image#2": {
     "props": {
-      "src": "https://i.imgur.com/N7fpX4w.png"
+      "src": "https://i.imgur.com/N7fpX4w.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/getting-started/",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
   "image#3": {
     "props": {
-      "src": "https://i.imgur.com/HAKUZiG.png"
+      "src": "https://i.imgur.com/HAKUZiG.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/remote-work-learning/",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
   "image#4": {
     "props": {
-      "src": "https://i.imgur.com/DPA0jDl.png"
+      "src": "https://i.imgur.com/DPA0jDl.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/free/compute/lightsail/",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
@@ -177,25 +197,45 @@
 
   "image#1middle": {
     "props": {
-      "src": "https://i.imgur.com/QxnwMGc.png"
+      "src": "https://i.imgur.com/QxnwMGc.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/advertising-marketing/?hp=tile&tile=industries",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
   "image#2middle": {
     "props": {
-      "src": "https://i.imgur.com/ACtOKm4.png"
+      "src": "https://i.imgur.com/ACtOKm4.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/financial-services/?hp=tile&tile=industries",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
   "image#3middle": {
     "props": {
-      "src": "https://i.imgur.com/HAbsGTe.png"
+      "src": "https://i.imgur.com/HAbsGTe.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/gametech/?hp=tile&tile=industries",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
   "image#4middle": {
     "props": {
-      "src": "https://i.imgur.com/8KCqn67.png"
+      "src": "https://i.imgur.com/8KCqn67.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/media/?hp=tile&tile=industries",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
@@ -226,25 +266,45 @@
 
   "image#1bottom": {
     "props": {
-      "src": "https://i.imgur.com/kEtDkRe.png"
+      "src": "https://i.imgur.com/kEtDkRe.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/big-data/datalakes-and-analytics/?hp=tile&tile=solutions",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
   "image#2bottom": {
     "props": {
-      "src": "https://i.imgur.com/TJ7Z6gt.png"
+      "src": "https://i.imgur.com/TJ7Z6gt.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/machine-learning/?hp=tile&tile=solutions",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
   "image#3bottom": {
     "props": {
-      "src": "https://i.imgur.com/CwEcYGC.png"
+      "src": "https://i.imgur.com/CwEcYGC.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/serverless/?hp=tile&tile=solutions",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 
   "image#4bottom": {
     "props": {
-      "src": "https://i.imgur.com/huUjPld.png"
+      "src": "https://i.imgur.com/huUjPld.png",
+      "link": {
+        "url": "https://aws.amazon.com/pt/products/storage/?hp=tile&tile=solutions",
+        "noFollow": false,
+        "openNewTab": true
+      }
     }
   },
 

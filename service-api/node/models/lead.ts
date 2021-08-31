@@ -12,20 +12,37 @@ export class Lead {
 
   public convertToClient(): void {
     this.type = 'client'
+    this.clientAt = new Date().toISOString()
   }
 
   public static mapperToLeads(responseAws: IResponseAws): Lead[] {
-    return responseAws.data.map((item: Lead) => {
+    const leads = responseAws.data as Lead[]
+
+    return leads.map((item: Lead) => {
       return new Lead(
         item.name,
         item.email,
         item.phone,
         item.prospectAt,
         item.clientAt,
-        'prospect',
+        item.type,
         item.leadId
       )
     })
+  }
+
+  public static mapperToLead(responseAws: IResponseAws): Lead {
+    const item = responseAws.data as Lead
+
+    return new Lead(
+      item.name,
+      item.email,
+      item.phone,
+      item.prospectAt,
+      item.clientAt,
+      item.type,
+      item.leadId
+    )
   }
 
   public static getLeadeByEmail(email: string, leads: Lead[]): Lead | null {
@@ -37,9 +54,25 @@ export class Lead {
 
     return lead
   }
+
+  public static getLeadeByPhone(phone: string, leads: Lead[]): Lead | null {
+    let newPhone = phone
+
+    if (phone.startsWith('+55')) {
+      newPhone = phone.replace('+55', '')
+    }
+
+    const lead = leads.find((l) => l.phone === newPhone)
+
+    if (lead === undefined) {
+      return null
+    }
+
+    return lead
+  }
 }
 
 export interface IResponseAws {
-  data: Lead[]
+  data: Lead[] | Lead
   Items?: Lead[]
 }
