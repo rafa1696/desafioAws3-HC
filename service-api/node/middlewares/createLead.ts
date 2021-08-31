@@ -1,4 +1,5 @@
 import { json } from 'co-body'
+
 import { Lead } from '../models/lead'
 
 export async function createLead(ctx: Context, next: () => Promise<any>) {
@@ -10,7 +11,7 @@ export async function createLead(ctx: Context, next: () => Promise<any>) {
     body.name,
     body.email,
     body.phone,
-    new Date().toString(),
+    new Date().toISOString(),
     '',
     'prospect'
   )

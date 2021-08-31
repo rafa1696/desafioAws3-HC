@@ -7,16 +7,14 @@ import type {
 import { LRUCache, method, Service } from '@vtex/api'
 
 import { Clients } from './clients'
-import { watchOrder } from './middlewares/watchOrder'
 import { getProducts } from './middlewares/getProducts'
+import { getSkuById } from './middlewares/getSkuById'
 import { getLeads } from './middlewares/getLeads'
 import { createLead } from './middlewares/createLead'
-import { orderStatus } from './middlewares/order'
-import { status } from './middlewares/status'
-import { validate } from './middlewares/validate'
-import { convertLeadToCliente } from './middlewares/convertLeadToClient'
+import { updateLead } from './middlewares/updateLead'
+import { watchOrder } from './middlewares/watchOrder'
 
-const TIMEOUT_MS = 800
+const TIMEOUT_MS = 3000
 
 // Create a LRU memory cache for the Status client.
 // The @vtex/api HttpClient respects Cache-Control headers and uses the provided cache.
@@ -30,13 +28,13 @@ const clients: ClientsConfig<Clients> = {
   implementation: Clients,
   options: {
     // All IO Clients will be initialized with these options, unless otherwise specified.
-    default: {
-      retries: 2,
-      timeout: TIMEOUT_MS,
-    },
     // This key will be merged with the default options and add this cache to our Status client.
     status: {
       memoryCache,
+    },
+    default: {
+      retries: 2,
+      timeout: TIMEOUT_MS,
     },
   },
 }
@@ -65,25 +63,19 @@ declare global {
 export default new Service({
   clients,
   routes: {
-    // `status` is the route ID from service.json. It maps to an array of middlewares (or a single handler).
-    status: method({
-      GET: [validate, status],
-    }),
-    watchOrder: method({
-      GET: watchOrder,
-    }),
-    updateLead: method({
-      POST: convertLeadToCliente,
-    }),
     leads: method({
       GET: getLeads,
       POST: createLead,
+      PUT: updateLead,
     }),
     products: method({
       GET: getProducts,
     }),
+    sku: method({
+      GET: getSkuById,
+    }),
   },
   events: {
-    orderStatus,
+    watchOrder,
   },
 })
