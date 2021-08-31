@@ -38,7 +38,7 @@ const AdminLeads: FC = () => {
         {leads && leads.length > 0 ? (
           <LeadsTable leads={leads} />
         ) : (
-          'Carregando '
+          'Carregando'
         )}
       </PageBlock>
     </Layout>
