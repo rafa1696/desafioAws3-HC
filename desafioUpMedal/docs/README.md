@@ -38,6 +38,8 @@ E aqui na versão móvel. <br>
 <img alt="Carrinho versão desktop" src="./assets/carrinho-movel.png" width="200"/>
 
 ## 4 - Página "Sobre"
+![Página "Sobre" desktop](./assets/sobre-desktop.png)
 
 ### 4.1 - Página "Sobre" móvel
  
+<img alt="Página 'Sobre' móvel" src="./assets/sobre-movel.png" width="200"/>
