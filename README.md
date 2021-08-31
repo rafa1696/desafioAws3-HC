@@ -1,6 +1,6 @@
 ## Repósitorio de arquivos do projeto de desafio #3 do programa Hiring Coders
 
-#### Página base do serviço Amazon AWS
+#### Página utilizada como base, do serviço Amazon AWS
 
 ![Página inicial do Amazon AWS](./desafioUpMedal/docs/assets/home-aws.png)
 
