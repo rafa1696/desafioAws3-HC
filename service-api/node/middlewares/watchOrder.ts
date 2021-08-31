@@ -1,28 +1,41 @@
 import { Lead } from '../models/lead'
 
-export async function watchOrder(ctx: Context, next: () => Promise<any>) {
-  ctx.set('Cache-Control', 'private')
+export async function watchOrder(
+  ctx: StatusChangeContext,
+  next: () => Promise<any>
+) {
+  const { orderId } = ctx.body
 
-  //console.log(ctx.route.rapms)
-  const { email } = ctx.vtex.route.params
+  const orderClient = ctx.clients.order
+  const awsClient = ctx.clients.aws
 
-  console.log(email)
+  if (orderId) {
+    const order = await orderClient.order(ctx.body.orderId)
 
-  const leadClient = ctx.clients.aws
-  const response = await leadClient.getLeads()
-  const leads = Lead.mapperToLeads(response)
-  const leadToClient = Lead.getLeadeByEmail(email as string, leads)
+    const { phone } = order.clientProfileData
 
-  if (leadToClient) {
-    leadToClient.convertToClient()
-    await leadClient.updateLead(leadToClient)
-    await next()
+    console.log(order)
+    console.log(phone)
 
-    return
+    if (!phone) {
+      await next()
+
+      return
+    }
+
+    const response = await awsClient.getLeads()
+    const leads = Lead.mapperToLeads(response)
+
+    const leadToClient = Lead.getLeadeByPhone(phone as string, leads)
+
+    if (leadToClient) {
+      leadToClient.convertToClient()
+      await awsClient.updateLead(leadToClient)
+      await next()
+
+      return
+    }
   }
 
-  ctx.body = {
-    message: 'does not found lead for convert to client',
-  }
   await next()
 }
