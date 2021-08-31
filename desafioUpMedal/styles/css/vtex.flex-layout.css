@@ -82,6 +82,10 @@
   .flexRow--vantagens{
     height: 100%!important;
   }
+
+  .flexRowContent--leads{
+    padding-bottom: 5rem;
+  }
 }
 
 /* Espaçamento do componente flex em telas de 768px e up */
@@ -103,6 +107,11 @@
   .flexRow--sobre-aws {
     height: 45vh;
   }
+
+  .flexRow--vantagens{
+    height: 60vh!important;
+  }
+
 }
 
 /* Espaçamento do componente flex em telas 1200px e up*/
@@ -110,6 +119,11 @@
   .flexRow--sobre-aws {
     height: 50vh;
   }
+
+  .flexRow--vantagens{
+    height: 55vh!important;
+  }
+
 }
 /* Espaçamento do componente flex em telas até  1200*/
 @media screen and (max-width: 1200px) {
