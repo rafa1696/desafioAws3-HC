@@ -29,6 +29,10 @@
     "sku": {
       "path": "/_v/sku/:skuId",
       "public": true
+    },
+    "orders": {
+      "path": "/_v/orders",
+      "public": true
     }
   },
   "events": {

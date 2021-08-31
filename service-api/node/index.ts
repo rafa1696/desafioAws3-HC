@@ -13,6 +13,7 @@ import { getLeads } from './middlewares/getLeads'
 import { createLead } from './middlewares/createLead'
 import { updateLead } from './middlewares/updateLead'
 import { watchOrder } from './middlewares/watchOrder'
+import { getOrders } from './middlewares/getOrders'
 
 const TIMEOUT_MS = 3000
 
@@ -73,6 +74,9 @@ export default new Service({
     }),
     sku: method({
       GET: getSkuById,
+    }),
+    orders: method({
+      GET: getOrders,
     }),
   },
   events: {
