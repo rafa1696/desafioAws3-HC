@@ -14,8 +14,6 @@ const Leads: StorefrontFunctionComponent<LeadsProps> = ({ }) => {
   const [isOk, setIsOk] = useState(false)
   const alertRef = React.createRef()
 
-  console.log(alertRef);
-
   async function handleCreateLead() {
     setLoading(true)
     try {

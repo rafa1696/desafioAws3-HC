@@ -1,13 +1,11 @@
 /* Ajustanto configurações do minicart */
-.minicartContainer--minicartheadermobile{
-    width: 38px;
-    height: 34px;
-    justify-content: center;
-    align-items: center;
-    
+.minicartContainer--minicartheadermobile {
+  width: 38px;
+  height: 34px;
+  justify-content: center;
+  align-items: center;
 }
-/* Mudando acor do ícone do minicart */
-.cartIcon{
+/* Mudando a cor do ícone do minicart */
+.cartIcon {
   color: #fff;
-  
 }

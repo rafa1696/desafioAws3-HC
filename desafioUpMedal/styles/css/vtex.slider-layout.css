@@ -4,6 +4,7 @@
 }
 /* Inserindo espaçamento no container do slider parceiros*/
 .sliderLayoutContainer--imagensBannerParceiros{
+    height: 25vh;
     padding: 3rem 0;
     background-color: #1e2832;
 }

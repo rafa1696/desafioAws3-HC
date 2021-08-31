@@ -1,62 +1,43 @@
-# Minimum Boilerplate Theme
+# Tema da loja para Desafio final do programa Hiring Coders
 
-The minimum Boilerplate Theme is basic store front model based on the VTEX IO Store Framework.
+Tema feito a partir do "Minimum Boilerplate Theme" e modificado para que ficasse semelhante a página da Amazon Web Services, AWS.
 
-It should be used only when you want to start a new store theme without any pre-set configurations, as is the case with [Store Theme](https://github.com/vtex-apps/store-theme). 
 
-While Store Theme gives developers a ready-to-go default store front structure, the Minimum Boilerplate Theme will enable you to build you store freely from scratch.
+## 1 - Página inicial
 
-## Configuration
+Essa é a página inicial quando se acessa pelo desktop.
 
-### Step 1 -  Basic setup
+![Página inicial desktop](./assets/home-desktop.png)
+### 1.1 - Página inicial Móvel
+Esta aqui quando utiliza-se um telefone.
 
-Access the VTEX IO [basic setup guide](https://vtex.io/docs/getting-started/build-stores-with-store-framework/1) and follow all the given steps. 
+<img alt="Página inicial móvel" src="./assets/home-movel.png"  width="200"/>
 
-By the end of the setup, you should have the VTEX command line interface (Toolbelt) installed along with a developer workspace you can work in.
+#### 1.1.1 - Menu móvel
+<img alt="Menu móvel" src="./assets/menu-movel.png" width="200"/>
 
-### Step 2 - Cloning the Minimum Boilerplate Theme repository
+### 1.2 - Campo de busca
+Quando utiliza-se o campo de pesquisas, resultados aparecem antes da tela final de busca.
 
-[Clone](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) this repository to your local files to be able to effectively start working on it.
+![Campo de busca desktop](./assets/busca-desktop.png)
+#### 1.2.1 - Campo de busca Móvel
+Na versão móvel. <br>
+<img alt="Campo de buscas móvel" src="./assets/busca-movel.png" width="200"/>
 
-Then, access the repository's directory using your terminal. 
+## 2 - Página de buscas
+Página de buscas na versão desktop.
+![Página de pesquisa desktop](./assets/pesquisa-desktop.png)
 
-### Step 3 - Editing the `Manifest.json`
+### 2.1 - Página de buscas móvel
+E aqui na versão móvel. <br>
+<img alt="Página inicial móvel" src="./assets/pesquisa-movel.png" width="200"/>
 
-Once in the repository directory, it is time to edit the Minimum Boilerplate `manifest.json` file. 
+## 3 - Carrinho
+![Carrinho versão desktop](./assets/carrinho-desktop.png)
+## 3.1 - Carrinho móvel
+<img alt="Carrinho versão desktop" src="./assets/carrinho-movel.png" width="200"/>
 
-Once you are in the file, you must replace the `vendor` and `account` values. `vendor` is the account name you are working on and `account` is anything you want to name your theme. For example:
+## 4 - Página "Sobre"
 
-```json
-{
-  "vendor": "storecomponents",
-  "name": "my-test-theme",
-}
-```
-
-### Step 4 -  Installing required apps
-
-In order to use Store Framework and work on your store theme, it is needed to have both `vtex.store-sitemap` and `vtex.store` installed.
-
-Run  `vtex list`  and check whether those apps are already installed. 
-
-If they aren't, run the following command to install them: `vtex install vtex.store-sitemap vtex.store -f`
-
-### Step 5 -  Uninstalling any existing theme
-
-By running `vtex list`,  you can verify if any theme is installed.
-
-It is common to already have a `vtex.store-theme`  installed when you start the store's front development process. 
-
-Therefore, if you find it in the app's list, copy its name and use it together with the command `vtex uninstall`. For example:
-
-```json
-vtex uninstall vtex.store-theme
-```
-
-### Step 6- Run and preview your store
-
-Then time has come to upload all the changes you made in your local files to the platform. For that, use the `vtex link` command. 
-
-If the process runs without any errors, the following message will be displayed: `App linked successfully`. Then, run the `vtex browse` command to open a browser window having your linked store in it.
-
-This will enable you to see the applied changes in real time, through the account and workspace in which you are working.
+### 4.1 - Página "Sobre" móvel
+ 

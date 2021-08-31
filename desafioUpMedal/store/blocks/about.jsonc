@@ -1,393 +1,371 @@
-{   
-    // Implementando componentes para página Sobre
-    "store.custom#about": {
-        "blocks": [
-           "flex-layout.row#sobre-aws",
-            "rich-text#vantagens",
-            "flex-layout.row#vantagens",
-            "rich-text#slider",
-            "slider-layout#parceiros",
-            "info-card#final",
-            "back-to-top-button"
-            
-        ]
+{
+  // Implementando componentes para página Sobre
+  "store.custom#about": {
+    "blocks": [
+      "flex-layout.row#sobre-aws",
+      "rich-text#vantagens",
+      "flex-layout.row#vantagens",
+      "rich-text#slider",
+      "slider-layout#parceiros",
+      "info-card#final",
+      "back-to-top-button"
+    ]
+  },
+  //Implementado fileira inicial sobre a aws
+  "flex-layout.row#sobre-aws": {
+    "children": ["flex-layout.col#card-topo", "flex-layout.col#video-aws"],
+    "props": {
+      "horizontalAlign": "CENTER",
+      "verticalAlign": "CENTER",
+      "blockClass": "sobre-aws",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  "flex-layout.col#card-topo": {
+    "props": {
+      "blockClass": "vantagens"
     },
-    //Implementado fileira inicial sobre a aws 
-    "flex-layout.row#sobre-aws": {
-      "children": [
-        
-        "flex-layout.col#card-topo",
-        "flex-layout.col#video-aws"
-      ],
-      "props": {
-        "horizontalAlign":"CENTER",
-        "verticalAlign":"CENTER",
-        "blockClass": "sobre-aws",
-        "preventVerticalStretch": true,
-        "preventHorizontalStretch": true,
-        "fullWidth":true
-      }
+    "children": ["info-card#topo"]
+  },
+  "flex-layout.col#video-aws": {
+    "props": {
+      "blockClass": "video-aws"
     },
-    "flex-layout.col#card-topo": {
-      "props":{
-        "blockClass": "vantagens"
-      },
-      "children": [
-        "info-card#topo"
-      ]
-    },
-    "flex-layout.col#video-aws": {
-      "props":{
-        "blockClass": "video-aws"
-      },
-      "children": [
-        "video#sobre-aws"
-      ]
-    },
-    // Inserindo o video sobre aws
-    "video#sobre-aws": {
+    "children": ["video#sobre-aws"]
+  },
+  // Inserindo o video sobre aws
+  "video#sobre-aws": {
     "props": {
       "width": "452px",
       "height": "255px",
-      "controlsType":"custom-vtex",
+      "controlsType": "custom-vtex",
       "loop": false,
       "autoPlay": false,
       "muted": false,
-      "poster":"//d1.awsstatic.com/what-is-aws/WIAWS_Video-Thumbnail.ee5ad8cdbb403bcb524c4345a03e61d554bf917f.jpg",
+      "poster": "//d1.awsstatic.com/what-is-aws/WIAWS_Video-Thumbnail.ee5ad8cdbb403bcb524c4345a03e61d554bf917f.jpg",
       "src": "https://www.youtube-nocookie.com/embed/a9__D53WsUs?controls=0&modestbranding=1&rel=0&showinfo=0&loop=0&fs=0&hl=pt&enablejsapi=1&origin=https%3A%2F%2Faws.amazon.com&widgetid=1",
       "blockClass": "videoAWS"
     }
+  },
+  // 2 infocards descritivos sobre aws
+  "info-card#topo": {
+    "props": {
+      "id": "info-card-aws-topo",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "headline": "O que é a AWS?",
+      "subhead": "O serviço web da Amazon é uma plataforma que oferece soluções de computação em nuvem flexíveis, confiáveis, escaláveis, fáceis de usar e econômicas. A AWS é uma plataforma de computação abrangente e fácil de usar oferecida pela Amazon.A plataforma é desenvolvida com uma combinação de infraestrutura como serviço(IaaS), plataforma como serviço(PaaS) e ofertas de software embalado como serviço(SaaS).",
+      "callToActionText": "Crie uma conta AWS",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-aws-topo",
+      "textAlignment": "center"
+    }
+  },
+  "info-card#final": {
+    "props": {
+      "id": "info-card-aws-final",
+      "isFullModeStyle": true,
+      "textPosition": "center",
+      "headline": "Comece a criar com a AWS ainda hoje",
+      "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
+      "callToActionText": "Comece a usar gratuitamente",
+      "callToActionUrl": "/sale/d",
+      "blockClass": "info-card-aws-final",
+      "textAlignment": "center"
+    }
+  },
+  // Título do fileira vantagens
+  "rich-text#vantagens": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Vantagens de usar a AWS",
+      "font": "t-heading-3",
+      "blockClass": "title-vantagens"
+    }
+  },
+  // Implementando a fileira das vantagens aws
+  "flex-layout.row#vantagens": {
+    "children": [
+      "flex-layout.col#vantagens1",
+      "flex-layout.col#vantagens2",
+      "flex-layout.col#vantagens3",
+      "flex-layout.col#vantagens4"
+    ],
+    "props": {
+      "horizontalAlign": "CENTER",
+      "verticalAlign": "CENTER",
+      "blockClass": "vantagens",
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true,
+      "fullWidth": true
+    }
+  },
+  //Configurandos as colunas e os conteudos respectivos
+  "flex-layout.col#vantagens1": {
+    "props": {
+      "blockClass": "vantagens"
     },
-    // 2 infocards descritivos sobre aws
-    "info-card#topo": {
-        "props": {
-            "id": "info-card-aws-topo",
-            "isFullModeStyle": true,
-            "textPosition": "center",
-            "headline": "O que é a AWS?",
-            "subhead": "O serviço web da Amazon é uma plataforma que oferece soluções de computação em nuvem flexíveis, confiáveis, escaláveis, fáceis de usar e econômicas. A AWS é uma plataforma de computação abrangente e fácil de usar oferecida pela Amazon.A plataforma é desenvolvida com uma combinação de infraestrutura como serviço(IaaS), plataforma como serviço(PaaS) e ofertas de software embalado como serviço(SaaS).",
-            "callToActionText": "Crie uma conta AWS",
-            "callToActionUrl": "/sale/d",
-            "blockClass": "info-card-aws-topo",
-            "textAlignment": "center"
-        }
-    },    
-    "info-card#final": {
-        "props": {
-            "id": "info-card-aws-final",
-            "isFullModeStyle": true,
-            "textPosition": "center",
-            "headline": "Comece a criar com a AWS ainda hoje",
-            "subhead": "Por acaso você está buscando potência computacional, armazenamento de banco de dados, entrega de conteúdo ou outras funcionalidades? A AWS tem os serviços para ajudar a acriar aplicações sofisticadas com mais flexibilidade, escalabilidade e confiabilidade",
-            "callToActionText": "Comece a usar gratuitamente",
-            "callToActionUrl": "/sale/d",
-            "blockClass": "info-card-aws-final",
-            "textAlignment": "center"
-        }
+    "children": ["image#vantagens1", "rich-text#vantagens1"]
+  },
+  "image#vantagens1": {
+    "props": {
+      "src": "https://d1.awsstatic.com/What%20is%20AWS/WIAWS_Video-Placeholder_Functionality_350.2ec51f816912d9cbe9b0d615a15c9a0f64c7328d.png",
+      "maxHeight": "180px"
+    }
+  },
+  "rich-text#vantagens1": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### **A maior funcionalidade de recursos**\n A AWS oferece uma quantidade consideravelmente maior de serviços – e mais recursos com esses serviços – do que qualquer outro provedor de nuvem.",
+      "blockClass": "vantagens"
+    }
+  },
+  "flex-layout.col#vantagens2": {
+    "props": {
+      "blockClass": "vantagens"
     },
-    // Título do fileira vantagens
-    "rich-text#vantagens":{
-      "props": {
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text":"Vantagens de usar a AWS",
-        "font": "t-heading-3",
-        "blockClass": "title-vantagens"
-      }  
+    "children": ["image#vantagens2", "rich-text#vantagens2"]
+  },
+  "image#vantagens2": {
+    "props": {
+      "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Video-Placeholder_Community_350-N.ccec4fa0d79e7ab09b0fc708cfb908a098138a51.png",
+      "maxHeight": "180px"
+    }
+  },
+  "rich-text#vantagens2": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### **A maior comunidade de clientes e parceiros**\n A AWS tem a maior e mais dinâmica comunidade, com milhões de clientes ativos e dezenas de milhares de parceiros no mundo todo.",
+      "blockClass": "vantagens"
+    }
+  },
+  "flex-layout.col#vantagens3": {
+    "props": {
+      "blockClass": "vantagens"
     },
-    // Implementando a fileira das vantagens aws
-    "flex-layout.row#vantagens": {
-      "children": [
-        
-        "flex-layout.col#vantagens1",
-        "flex-layout.col#vantagens2",
-        "flex-layout.col#vantagens3",
-        "flex-layout.col#vantagens4"
-      ],
-      "props": {
-        "horizontalAlign":"CENTER",
-        "verticalAlign":"CENTER",
-        "blockClass": "vantagens",
-        "preventVerticalStretch": true,
-        "preventHorizontalStretch": true,
-        "fullWidth":true
-      }
+    "children": ["image#vantagens3", "rich-text#vantagens3"]
+  },
+  "image#vantagens3": {
+    "props": {
+      "src": "https://d1.awsstatic.com/what-is-aws/WICC_Video-Placeholder_Rapid_350-N.b48c88da3d1e3dc5d8ffb0101f85ad18bf08855e.png",
+      "maxHeight": "180px"
+    }
+  },
+  "rich-text#vantagens3": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### **O ritmo de inovação acelerado**\nA AWS inova a um ritmo cada vez mais acelerado para criar tecnologias completamente novas que você pode usar para transformar seus negócios.",
+      "blockClass": "vantagens"
+    }
+  },
+  "flex-layout.col#vantagens4": {
+    "props": {
+      "blockClass": "vantagens"
     },
-    //Configurandos as colunas e os conteudos respectivos
-    "flex-layout.col#vantagens1": {
-      "props":{
-        "blockClass": "vantagens"
+    "children": ["image#vantagens4", "rich-text#vantagens4"]
+  },
+  "image#vantagens4": {
+    "props": {
+      "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Video-Placeholder_Operational_350.2d63a0789c30baf43b2238743dfd425fcbb09b05.png",
+      "maxHeight": "180px"
+    }
+  },
+  "rich-text#vantagens4": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "#### **O conhecimento operacional AWS**\nA AWS tem experiência, maturidade, confiabilidade, segurança e performance incomparáveis, e a mais longa experiência operacional e em maior escala do mundo. ",
+      "blockClass": "vantagens"
+    }
+  },
+  //Implementando um titulo para o slider
+  "rich-text#slider": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Empresas que usam a AWS",
+      "font": "t-heading-3",
+      "blockClass": "title-parceiros"
+    }
+  },
+  // Implementando slider de parceiros aws
+  "slider-layout#parceiros": {
+    "children": [
+      "image#partner1",
+      "image#partner2",
+      "image#partner3",
+      "image#partner4",
+      "image#partner5",
+      "image#partner6",
+      "image#partner7",
+      "image#partner8",
+      "image#partner9",
+      "image#partner10",
+      "image#partner11",
+      "image#partner12"
+    ],
+    "props": {
+      "blockClass": "imagensBannerParceiros",
+      "autoplay": {
+        "timeout": 7000,
+        "stopOnHover": true
       },
-      "children": [
-        "image#vantagens1",
-        "rich-text#vantagens1"
-      ]
-    },
-    "image#vantagens1": {
-      "props": {
-        "src": "https://d1.awsstatic.com/What%20is%20AWS/WIAWS_Video-Placeholder_Functionality_350.2ec51f816912d9cbe9b0d615a15c9a0f64c7328d.png",
-        "maxHeight": "180px"
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 2,
+        "phone": 1
       }
-    },
-    "rich-text#vantagens1": {
-      "props": {
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text": "#### **A maior funcionalidade de recursos**\n A AWS oferece uma quantidade consideravelmente maior de serviços – e mais recursos com esses serviços – do que qualquer outro provedor de nuvem.",
-        "blockClass": "vantagens"
+    }
+  },
+  // Imagens dos parceiros aws
+  "image#partner1": {
+    "props": {
+      "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Finra-final.0dac58a45cae322bb45a33153acbaf3820228b1d.png",
+      "maxHeight": 80,
+      "maxWidth": 180,
+      "link": {
+        "url": "https://aws.amazon.com/solutions/case-studies/finra/",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    "flex-layout.col#vantagens2": {
-      "props":{
-        "blockClass": "vantagens"
-      },
-      "children": [
-        "image#vantagens2",
-        "rich-text#vantagens2"
-      ]
-    },
-    "image#vantagens2": {
-      "props": {
-        "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Video-Placeholder_Community_350-N.ccec4fa0d79e7ab09b0fc708cfb908a098138a51.png",
-        "maxHeight": "180px"
+    }
+  },
+  "image#partner2": {
+    "props": {
+      "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_DigitalGlobe-final.1e13c76b0c57e652ec8d29bf4a9184d16681eb6d.png",
+      "maxHeight": "80px",
+      "maxWidth": "180px",
+      "link": {
+        "url": "https://aws.amazon.com/pt/solutions/case-studies/digitalglobe/?pg=WIAWS",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    "rich-text#vantagens2": {
-      "props": {
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text": "#### **A maior comunidade de clientes e parceiros**\n A AWS tem a maior e mais dinâmica comunidade, com milhões de clientes ativos e dezenas de milhares de parceiros no mundo todo.",
-        "blockClass": "vantagens"
+    }
+  },
+  "image#partner3": {
+    "props": {
+      "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Coursera-final.c13e38940787372eb3d4526d50c96d797e62154b.png",
+      "maxHeight": "80px",
+      "maxWidth": "180px",
+      "link": {
+        "url": "https://aws.amazon.com/pt/solutions/case-studies/coursera/?pg=WIAWS",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    "flex-layout.col#vantagens3": {
-      "props":{
-        "blockClass": "vantagens"
-      },
-      "children": [
-        "image#vantagens3",
-        "rich-text#vantagens3"
-      ]
-    },
-    "image#vantagens3": {
-      "props": {
-        "src": "https://d1.awsstatic.com/what-is-aws/WICC_Video-Placeholder_Rapid_350-N.b48c88da3d1e3dc5d8ffb0101f85ad18bf08855e.png",
-        "maxHeight": "180px"
+    }
+  },
+  "image#partner4": {
+    "props": {
+      "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/coinbase-logo-feature.99142a786fcd4b5217c2612489a3e8efa9920a55.png",
+      "maxHeight": 80,
+      "maxWidth": 180,
+      "link": {
+        "url": "https://aws.amazon.com/machine-learning/customers/innovators/coinbase/",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    "rich-text#vantagens3": {
-      "props": {
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text": "#### **O ritmo de inovação acelerado**\nA AWS inova a um ritmo cada vez mais acelerado para criar tecnologias completamente novas que você pode usar para transformar seus negócios.",
-        "blockClass": "vantagens"
+    }
+  },
+  "image#partner5": {
+    "props": {
+      "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_BrooksBrothers-final.dbefbdf05afc4b20b2a383b09e5d3e11d4abf804.png",
+      "maxHeight": "80px",
+      "maxWidth": "180px",
+      "link": {
+        "url": "https://aws.amazon.com/pt/solutions/case-studies/brooks-brothers/?pg=WIAWS",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    "flex-layout.col#vantagens4": {
-      "props":{
-        "blockClass": "vantagens"
-      },
-      "children": [
-        "image#vantagens4",
-        "rich-text#vantagens4"
-      ]
-    },
-    "image#vantagens4": {
-      "props": {
-        "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Video-Placeholder_Operational_350.2d63a0789c30baf43b2238743dfd425fcbb09b05.png",
-        "maxHeight": "180px"
+    }
+  },
+  "image#partner6": {
+    "props": {
+      "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/coca-cola-logo-feature.e38db8e449bb5cd4ecc944bc13ce6ee4744357a8.png",
+      "maxHeight": 80,
+      "maxWidth": 180,
+      "link": {
+        "url": "https://aws.amazon.com/solutions/case-studies/coca-cola-migration/",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    "rich-text#vantagens4": {
-      "props": {
-        "textAlignment": "CENTER",
-        "textPosition": "CENTER",
-        "text": "#### **O conhecimento operacional AWS**\nA AWS tem experiência, maturidade, confiabilidade, segurança e performance incomparáveis, e a mais longa experiência operacional e em maior escala do mundo. ",
-        "blockClass": "vantagens"
+    }
+  },
+  "image#partner7": {
+    "props": {
+      "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Expedia-final.108743a11087e302989653c12eea8cebb010541c.png",
+      "maxHeight": "80px",
+      "maxWidth": "180px",
+      "link": {
+        "url": "https://aws.amazon.com/pt/solutions/case-studies/expedia/?pg=WIAWS",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    //Implementando um titulo para o slider
-    "rich-text#slider":{
-        "props": {
-            "textAlignment": "CENTER",
-            "textPosition": "CENTER",
-            "text": "Empresas que usam a AWS",
-            "font": "t-heading-3",
-            "blockClass": "title-parceiros"
-          }
-    },
-    // Implementando slider de parceiros aws
-    "slider-layout#parceiros": {
-        "children": [
-            "image#partner1",
-            "image#partner2",
-            "image#partner3",
-            "image#partner4",
-            "image#partner5",
-            "image#partner6",
-            "image#partner7",
-            "image#partner8",
-            "image#partner9",
-            "image#partner10",
-            "image#partner11",
-            "image#partner12"
-        ],
-        "props": {
-            "blockClass": "imagensBannerParceiros",
-            "autoplay": {
-                "timeout": 7000,
-                "stopOnHover": true
-            },
-            "itemsPerPage": {
-                "desktop": 3,
-                "tablet": 2,
-                "phone": 1
-            }
-        }
-    },
-    // Imagens dos parceiros aws
-    "image#partner1": {
-        "props": {
-          "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Finra-final.0dac58a45cae322bb45a33153acbaf3820228b1d.png",
-          "maxHeight": 80,
-          "maxWidth":180,
-          "link":{
-            "url":"https://aws.amazon.com/solutions/case-studies/finra/",
-            "noFollow": false,
-            "openNewTab": true
-          }
-        }
-    },
-    "image#partner2": {
-        "props": {
-          "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_DigitalGlobe-final.1e13c76b0c57e652ec8d29bf4a9184d16681eb6d.png",
-          "maxHeight": "80px",
-          "maxWidth":"180px",
-          "link":{
-            "url":"https://aws.amazon.com/pt/solutions/case-studies/digitalglobe/?pg=WIAWS",
-            "noFollow": false,
-            "openNewTab": true
-        }
+    }
+  },
+  "image#partner8": {
+    "props": {
+      "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/ibotta-logo-feature.c1f4b4e80ab9775dc4de15dc92f61053c63539d7.png",
+      "maxHeight": "80px",
+      "maxWidth": "180px",
+      "link": {
+        "url": "https://aws.amazon.com/solutions/case-studies/Ibotta-marketplace1/",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },  
-    "image#partner3": {
-        "props": {
-          "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Coursera-final.c13e38940787372eb3d4526d50c96d797e62154b.png",
-          "maxHeight": "80px",
-          "maxWidth":"180px",
-          "link":{
-            "url":"https://aws.amazon.com/pt/solutions/case-studies/coursera/?pg=WIAWS",
-            "noFollow": false,
-            "openNewTab": true
-        }
+    }
+  },
+  "image#partner9": {
+    "props": {
+      "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/netflix-logo-feature.716587057934b03f5908a00e6ed30707d414aea5.png",
+      "maxHeight": "80px",
+      "maxWidth": "180px",
+      "link": {
+        "url": "https://aws.amazon.com/solutions/case-studies/netflix/",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    "image#partner4": {
-        "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/coinbase-logo-feature.99142a786fcd4b5217c2612489a3e8efa9920a55.png",
-          "maxHeight": 80,
-          "maxWidth":180,
-          "link":{
-            "url":"https://aws.amazon.com/machine-learning/customers/innovators/coinbase/",
-            "noFollow": false,
-            "openNewTab": true
-        }
+    }
+  },
+  "image#partner10": {
+    "props": {
+      "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/formula-1-logo-feature.e4bfed74e99dcac099e71f58016d1577b71b3732.png",
+      "maxHeight": "80px",
+      "maxWidth": "180px",
+      "link": {
+        "url": "https://aws.amazon.com/f1/",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    "image#partner5": {
-        "props": {
-          "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_BrooksBrothers-final.dbefbdf05afc4b20b2a383b09e5d3e11d4abf804.png",
-          "maxHeight": "80px",
-          "maxWidth":"180px",
-          "link":{
-            "url":"https://aws.amazon.com/pt/solutions/case-studies/brooks-brothers/?pg=WIAWS",
-            "noFollow": false,
-            "openNewTab": true
-        }
+    }
+  },
+  "image#partner11": {
+    "props": {
+      "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/cet-logo-feature.feafe99b68f5e6763747c32411525a9976c10fbf.png",
+      "maxHeight": "80px",
+      "maxWidth": "180px",
+      "link": {
+        "url": "https://aws.amazon.com/blogs/media/providing-remote-learning-for-millions-of-israel-students-through-live-stream/",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    "image#partner6": {
-        "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/coca-cola-logo-feature.e38db8e449bb5cd4ecc944bc13ce6ee4744357a8.png",
-          "maxHeight": 80,
-          "maxWidth":180,
-          "link":{
-            "url":"https://aws.amazon.com/solutions/case-studies/coca-cola-migration/",
-            "noFollow": false,
-            "openNewTab": true
-        }
-      } 
-    },
-    "image#partner7": {
-        "props": {
-          "src": "https://d1.awsstatic.com/what-is-aws/WIAWS_Logo_Expedia-final.108743a11087e302989653c12eea8cebb010541c.png",
-          "maxHeight": "80px",
-          "maxWidth":"180px",
-          "link":{
-            "url":"https://aws.amazon.com/pt/solutions/case-studies/expedia/?pg=WIAWS",
-            "noFollow": false,
-            "openNewTab": true
-        }
+    }
+  },
+  "image#partner12": {
+    "props": {
+      "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/iflix-logo-feature.29d175a8ddb0287d24fdaa570b1a16cde974b8dc.png",
+      "maxHeight": "80px",
+      "maxWidth": "180px",
+      "link": {
+        "url": "https://aws.amazon.com/solutions/case-studies/iflix/",
+        "noFollow": false,
+        "openNewTab": true
       }
-    },
-    "image#partner8": {
-        "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/ibotta-logo-feature.c1f4b4e80ab9775dc4de15dc92f61053c63539d7.png",
-          "maxHeight": "80px",
-          "maxWidth":"180px",
-          "link":{
-            "url":"https://aws.amazon.com/solutions/case-studies/Ibotta-marketplace1/",
-            "noFollow": false,
-            "openNewTab": true
-        }
-      }
-    },
-    "image#partner9": {
-        "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/netflix-logo-feature.716587057934b03f5908a00e6ed30707d414aea5.png",
-          "maxHeight": "80px",
-          "maxWidth":"180px",
-          "link":{
-            "url":"https://aws.amazon.com/solutions/case-studies/netflix/",
-            "noFollow": false,
-            "openNewTab": true
-        }
-      }
-    },
-    "image#partner10": {
-        "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/formula-1-logo-feature.e4bfed74e99dcac099e71f58016d1577b71b3732.png",
-          "maxHeight": "80px",
-          "maxWidth":"180px",
-          "link":{
-            "url":"https://aws.amazon.com/f1/",
-            "noFollow": false,
-            "openNewTab": true
-        }
-      }
-    },
-    "image#partner11": {
-        "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/cet-logo-feature.feafe99b68f5e6763747c32411525a9976c10fbf.png",
-          "maxHeight": "80px",
-          "maxWidth":"180px",
-          "link":{
-            "url":"https://aws.amazon.com/blogs/media/providing-remote-learning-for-millions-of-israel-students-through-live-stream/",
-            "noFollow": false,
-            "openNewTab": true
-        }
-      }
-    },
-    "image#partner12": {
-        "props": {
-          "src": "https://d1.awsstatic.com/Customer%20References%20Home%20Feature%20logos/iflix-logo-feature.29d175a8ddb0287d24fdaa570b1a16cde974b8dc.png",
-          "maxHeight": "80px",
-          "maxWidth":"180px",
-          "link":{
-            "url":"https://aws.amazon.com/solutions/case-studies/iflix/",
-            "noFollow": false,
-            "openNewTab": true
-        }
-      }
-    }  
+    }
+  }
 }

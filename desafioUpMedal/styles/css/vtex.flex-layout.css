@@ -2,7 +2,7 @@
 .flexRowContent--flexrowcontentheader,
 .flexRowContent--category-menu,
 .flexRowContent--flexrowcontentheadermobile,
-.flexRowContent--flexrowcontentfooter{
+.flexRowContent--flexrowcontentfooter {
   background-color: #232f3e;
 }
 
@@ -25,7 +25,8 @@
 }
 
 /* Configurando layout da fileira vantagens aws  */
-.flexRow--vantagens{
+.flexRow--vantagens {
+  height: 70vh;
   border: none;
   background-color: #1e2832;
 }
@@ -38,21 +39,20 @@
   align-items: center;
 }
 
-.flexRow--sobre-aws{
+.flexRow--sobre-aws {
   align-items: space-around;
 }
 
-.flexRow--sobre-aws{
+.flexRow--sobre-aws {
   background-color: #1e2832;
-  padding:  2rem ;
+  padding: 2rem;
 }
 
-.flexCol--video-aws{
-  background-color: #1e2832!important;
+.flexCol--video-aws {
+  background-color: #1e2832 !important;
 }
 
 /* Cor e espaçamento dos rodapés desktop e móvel */
-
 .flexRow--rodapeDesk1 {
   background-color: #232f3e;
   padding-left: 16vw;
@@ -69,34 +69,56 @@
   color: white !important;
 }
 
-/* Espaçamento da coluna direita da página de produto */
+.flexRowContent--rodapeMob1 {
+  justify-content: space-around !important;
+}
 
+/* Espaçamento do componente flex em telas menores que 576px*/
+@media (max-width: 575.98px) {
+  .flexRowContent--sobre-aws{
+    height: 85vh;
+  }
+
+  .flexRow--vantagens{
+    height: 100%!important;
+  }
+}
+
+/* Espaçamento do componente flex em telas de 768px e up */
+/* Espaçamento da coluna direita da página de produto */
 @media screen and (min-width: 768px) {
   .flexCol--colDireitaProduto {
     margin-right: 1rem;
   }
+}
+/* Espaçamento do componente flex em telas até 768px
+@media screen and (max-width: 768px) {
+  .flexRow--sobre-aws {
+    height: 55vh;
+  }
+}*/
 
-  .flexRow--sobre-aws{
-    height: fit-content;
+/* Espaçamento do componente flex em telas a partir de 992px e menores de 1200px*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .flexRow--sobre-aws {
+    height: 45vh;
   }
 }
 
-@media screen and (max-width: 768px){
-  .flexRow--flexRow--sobre-aws{
-      padding: 1rem;
-  }
-
-  .flexRow--sobre-aws{
-    height: 70vh;
+/* Espaçamento do componente flex em telas 1200px e up*/
+@media (min-width: 1200px) {
+  .flexRow--sobre-aws {
+    height: 50vh;
   }
 }
-
+/* Espaçamento do componente flex em telas até  1200*/
 @media screen and (max-width: 1200px) {
   .flexCol--colDireitaProduto {
     margin-right: 1rem;
   }
 }
 
+/* Espaçamento do componente flex em telas 1920x1080 e up*/
 @media screen and (min-width: 1920px) {
   .flexCol--colEsquerdaProduto {
     margin-left: 15vw;
@@ -108,11 +130,7 @@
     margin-right: 0;
     padding-left: 10rem;
   }
-}
 
-/* Espaçamento do componente flex row em telas 1920x1080 */
-
-@media screen and (min-width: 1920px) {
   .flexRow--imagesDesktop1 {
     padding-left: 10vw;
     margin-right: 10vw;
