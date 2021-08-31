@@ -1,8 +1,5 @@
 {
   "leads": {
     "component": "Leads"
-  },
-  "formplace": {
-    "component": "FormPlaced"
   }
 }
